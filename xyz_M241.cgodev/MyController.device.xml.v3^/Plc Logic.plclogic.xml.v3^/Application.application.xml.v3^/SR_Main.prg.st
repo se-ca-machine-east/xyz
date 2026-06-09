@@ -18,4 +18,6 @@ VAR
 END_VAR
 __IMPLEMENTATION__
 
-xBool1 := GVL.iVal1 > 2000;
+xBool1 := GVL.iVal1 > 2500;
+
+ 	
