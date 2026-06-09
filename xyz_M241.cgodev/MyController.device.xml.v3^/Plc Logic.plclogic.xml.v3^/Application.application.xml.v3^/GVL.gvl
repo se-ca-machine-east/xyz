@@ -13,4 +13,5 @@ __METADATA__
 __DECLARATION__
 {attribute 'qualified_only'}
 VAR_GLOBAL
+	iVal1 : INT := 175;
 END_VAR
