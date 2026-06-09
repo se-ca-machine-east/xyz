@@ -1,0 +1,516 @@
+__V3_META__
+{
+  "objectGuid": "33392c1e-cdc4-4ff7-be44-f9740898df57",
+  "objectTypeGuid": "225bfe47-7336-4dbc-9419-4105a7c831fa",
+  "embeddedObjectTypeGuids": [],
+  "properties": {
+    "_3S.CoDeSys.DeviceObject.DeviceProperty": "<?xml version=\"1.0\" encoding=\"utf-8\"?><Single xml:space=\"preserve\" Type=\"{cdadfc2b-8598-4621-ad56-5b1df7db910f}\" Method=\"IArchivable\"><Single Name=\"DeviceIdentification\" Type=\"{959f677a-b4e4-4930-8d88-b3b6b116d4d6}\" Method=\"IArchivable\"><Single Name=\"ModuleId\" Type=\"string\">IO_EXPANSION_BUS</Single><Single Name=\"Type\" Type=\"int\">4096</Single><Single Name=\"Id\" Type=\"string\">101a 0707</Single><Single Name=\"Version\" Type=\"string\">5.5.14.15</Single><Single Name=\"BaseName\" Type=\"string\">IO_Bus</Single></Single></Single>",
+    "schneider.Automation.OEM.MSDIOManager.IOHarmonizationProperty": "<?xml version=\"1.0\" encoding=\"utf-8\"?><Single xml:space=\"preserve\" Type=\"{275991af-8cbe-452b-ad98-cb6842331ae4}\" Method=\"IArchivable\"><Single Name=\"InitialModuleName\" Type=\"string\">IO_Bus</Single><Single Name=\"InitialTemplate\" Type=\"string\">#X#T#D_#C</Single></Single>",
+    "schneiderAutomation.Platform.Core.ObjectProperty.AlreadyHandledObjectProperty": "<?xml version=\"1.0\" encoding=\"utf-8\"?><Single xml:space=\"preserve\" Type=\"{f34a3cea-eaf7-46ee-9371-24d10b0ab1d5}\" Method=\"IArchivable\"><List2 Name=\"PropertyList\"><Single Type=\"string\">IOHarmonizationService</Single></List2></Single>"
+  },
+  "subObjects": {}
+}
+__V3_CONTENT__
+<?xml version="1.0" encoding="utf-8"?>
+<Single xml:space="preserve" Type="{225bfe47-7336-4dbc-9419-4105a7c831fa}" Method="IArchivable">
+  <Single Name="UniqueIdGenerator" Type="string">4108</Single>
+  <Null Name="TypeList" />
+  <Single Name="NeedsBusCycle" Type="bool">False</Single>
+  <Single Name="Id" Type="{959f677a-b4e4-4930-8d88-b3b6b116d4d6}" Method="IArchivable">
+    <Single Name="ModuleId" Type="string">IO_EXPANSION_BUS</Single>
+    <Single Name="Type" Type="int">4096</Single>
+    <Single Name="Id" Type="string">101a 0707</Single>
+    <Single Name="Version" Type="string">5.5.14.15</Single>
+    <Single Name="BaseName" Type="string">IO_Bus</Single>
+  </Single>
+  <Single Name="DefaultDeviceInfo" Type="{59a90934-c888-40db-a9df-306fcf36d75c}" Method="IArchivable">
+    <Single Name="Name" Type="string">IO bus - TM3</Single>
+    <Single Name="Description" Type="string"></Single>
+    <Single Name="Vendor" Type="string">Schneider Electric</Single>
+    <Single Name="OrderNumber" Type="string">-</Single>
+    <Array Name="Categories" Type="int" />
+    <Array Name="Families" Type="string" />
+    <Single Name="Custom" Type="string"></Single>
+    <Null Name="DefaultInstanceName" />
+  </Single>
+  <Single Name="DeviceParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+    <List2 Name="Params" />
+    <Single Name="LmGuid" Type="System.Guid">dce87b8c-963e-518a-937b-c7e6816e1102</Single>
+    <Null Name="Sections" />
+    <Single Name="InitOnOnlineChange" Type="bool">False</Single>
+    <Single Name="AlwaysMapping" Type="bool">False</Single>
+    <Null Name="EditorName" />
+    <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+    <Single Name="CreateBitChannels" Type="bool">False</Single>
+  </Single>
+  <Single Name="Disable" Type="bool">False</Single>
+  <Single Name="Exclude" Type="bool">False</Single>
+  <List Name="Connectors" Type="System.Collections.ArrayList" />
+  <Single Name="ConnectorList" Type="{52a6325f-063a-4748-86b6-ec8aa02d3232}" Method="IArchivable">
+    <List Name="InnerList" Type="System.Collections.ArrayList">
+      <Single Type="{850f737d-2abf-45f4-89c1-63ed6b29593d}" Method="IArchivable">
+        <Single Name="VisibleInterfaceName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+          <Single Name="Namespace" Type="string">local</Single>
+          <Single Name="Identifier" Type="string">dummy</Single>
+          <Single Name="Default" Type="string">IO Bus</Single>
+        </Single>
+        <Single Name="ConnectorObjectGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="IsExplicit" Type="bool">False</Single>
+        <Single Name="ModuleType" Type="ushort">45020</Single>
+        <Single Name="Interface" Type="string">MSD.M2XX</Single>
+        <Single Name="Role" Type="{6827a808-5967-49c4-a827-10f6c446e075}">Child</Single>
+        <Single Name="ConnectorId" Type="int">1</Single>
+        <Single Name="Hostpath" Type="int">-1</Single>
+        <Single Name="Adapters" Type="{1da2f14a-1c63-4268-9171-3b6869b8ccd6}" Method="IArchivable">
+          <List Name="Adapters" Type="System.Collections.ArrayList">
+            <Single Type="{6d49a564-d0d1-4914-86ee-4465387ab144}" Method="IArchivable">
+              <Single Name="AllowEmptySlot" Type="bool">True</Single>
+              <Null Name="DefaultModules" />
+              <Array Name="Modules" Type="System.Guid">
+                <Single Type="System.Guid">801ebf5c-dbeb-4511-9a45-2ed26e25b40f</Single>
+              </Array>
+              <Single Name="IncludeSlotNumber" Type="bool">False</Single>
+              <Single Name="StartSlotNumber" Type="uint">0</Single>
+              <Null Name="SlotNames" />
+              <Single Name="HiddenSlot" Type="bool">False</Single>
+            </Single>
+          </List>
+        </Single>
+        <Single Name="HostParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+          <List2 Name="Params" />
+          <Single Name="LmGuid" Type="System.Guid">0ce94f98-5cf2-5f6b-8746-8dad2eab5eff</Single>
+          <Null Name="Sections" />
+          <Single Name="InitOnOnlineChange" Type="bool">False</Single>
+          <Single Name="AlwaysMapping" Type="bool">False</Single>
+          <Null Name="EditorName" />
+          <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+          <Single Name="CreateBitChannels" Type="bool">False</Single>
+        </Single>
+        <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+          <List Name="RequiredLibs" Type="System.Collections.ArrayList" />
+          <Null Name="RequiredTasks" />
+          <Single Name="NeedsBusCycle" Type="bool">True</Single>
+          <Single Name="BusCycleTask" Type="string"></Single>
+          <Single Name="IoApp" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="IoAppSet" Type="bool">False</Single>
+          <Array Name="PositionIds" Type="long">BBAAAAAAAAAFEAAAAAAAAAYQAAAAAAAA</Array>
+          <Single Name="UseSlowestTask" Type="bool">False</Single>
+          <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+          <Single Name="GenerateForceVariables" Type="bool">False</Single>
+          <Single Name="EnableDiagnosis" Type="bool">False</Single>
+          <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+          <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+          <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+          <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+          <Single Name="SymbolicAccessMode" Type="{866ccdec-84a7-4590-aeab-383c7bd79437}">Disabled</Single>
+          <Single Name="DeviceScanSupported" Type="bool">False</Single>
+          <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+          <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+          <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+          <Single Name="UpdateIOsInStop" Type="bool">False</Single>
+          <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">KeepCurrentValues</Single>
+          <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+          <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+          <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        </Single>
+        <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}" />
+        <Single Name="ModuleId" Type="int">-1</Single>
+        <Null Name="IoUpdateTask" />
+        <List Name="AdditionalInterfaces" Type="System.Collections.ArrayList" />
+        <List Name="Constraints" Type="System.Collections.ArrayList" />
+        <Single Name="hideInStatusPage" Type="bool">False</Single>
+        <Single Name="updateAllowed" Type="bool">True</Single>
+        <Single Name="fixedInputAddress" Type="string"></Single>
+        <Single Name="fixedOutputAddress" Type="string"></Single>
+        <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+        <List Name="AllowOnlyDevices" Type="System.Collections.ArrayList" />
+        <Single Name="InitialStatusFlag" Type="uint">1</Single>
+        <Single Name="UseBlobInitConst" Type="bool">False</Single>
+        <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        <Single Name="ConnectorGroup" Type="uint">0</Single>
+        <Array Name="AllowedPages" Type="string">
+          <Single Type="string">IOMappingEditor</Single>
+          <Single Type="string">StatusPage</Single>
+        </Array>
+        <Single Name="AlwaysMapping" Type="bool">False</Single>
+        <Single Name="Client" Type="string"></Single>
+        <Single Name="MaxInputSize" Type="uint">0</Single>
+        <Single Name="MaxOutputSize" Type="uint">0</Single>
+        <Single Name="MaxInOutputSize" Type="uint">0</Single>
+        <Single Name="ClientTypeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="ClientConnectorInterface" Type="string"></Single>
+        <Single Name="ClientConnectorId" Type="int">-1</Single>
+        <Single Name="AlwaysMappingDisabled" Type="bool">False</Single>
+      </Single>
+      <Single Type="{850f737d-2abf-45f4-89c1-63ed6b29593d}" Method="IArchivable">
+        <Single Name="VisibleInterfaceName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+          <Single Name="Namespace" Type="string">local</Single>
+          <Single Name="Identifier" Type="string">dummy</Single>
+          <Single Name="Default" Type="string">Local IO</Single>
+        </Single>
+        <Single Name="ConnectorObjectGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="IsExplicit" Type="bool">False</Single>
+        <Single Name="ModuleType" Type="ushort">45200</Single>
+        <Single Name="Interface" Type="string">MSD.TM2-3.ExpansionBus</Single>
+        <Single Name="Role" Type="{6827a808-5967-49c4-a827-10f6c446e075}">Parent</Single>
+        <Single Name="ConnectorId" Type="int">2</Single>
+        <Single Name="Hostpath" Type="int">-1</Single>
+        <Single Name="Adapters" Type="{1da2f14a-1c63-4268-9171-3b6869b8ccd6}" Method="IArchivable">
+          <List Name="Adapters" Type="System.Collections.ArrayList">
+            <Single Type="{3f828f0b-c67b-430a-8c93-1e9bc324df64}" Method="IArchivable">
+              <List Name="Modules" Type="System.Collections.ArrayList" />
+              <Single Name="MaxDevices" Type="int">7</Single>
+              <Single Name="SupportPlaceholderObjects" Type="bool">False</Single>
+            </Single>
+          </List>
+        </Single>
+        <Single Name="HostParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+          <List2 Name="Params" />
+          <Single Name="LmGuid" Type="System.Guid">f2c2a53c-2e77-51bc-b42f-075509a63e2a</Single>
+          <Null Name="Sections" />
+          <Single Name="InitOnOnlineChange" Type="bool">False</Single>
+          <Single Name="AlwaysMapping" Type="bool">False</Single>
+          <Null Name="EditorName" />
+          <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+          <Single Name="CreateBitChannels" Type="bool">False</Single>
+        </Single>
+        <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+          <List Name="RequiredLibs" Type="System.Collections.ArrayList" />
+          <Null Name="RequiredTasks" />
+          <Single Name="NeedsBusCycle" Type="bool">False</Single>
+          <Single Name="BusCycleTask" Type="string"></Single>
+          <Single Name="IoApp" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="IoAppSet" Type="bool">False</Single>
+          <Array Name="PositionIds" Type="long">BxAAAAAAAAAIEAAAAAAAAAkQAAAAAAAA</Array>
+          <Single Name="UseSlowestTask" Type="bool">False</Single>
+          <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+          <Single Name="GenerateForceVariables" Type="bool">False</Single>
+          <Single Name="EnableDiagnosis" Type="bool">False</Single>
+          <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+          <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+          <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+          <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+          <Single Name="SymbolicAccessMode" Type="{866ccdec-84a7-4590-aeab-383c7bd79437}">Disabled</Single>
+          <Single Name="DeviceScanSupported" Type="bool">False</Single>
+          <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+          <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+          <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+          <Single Name="UpdateIOsInStop" Type="bool">False</Single>
+          <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">KeepCurrentValues</Single>
+          <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+          <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+          <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        </Single>
+        <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}">
+          <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+            <Single Name="Name" Type="string">se:Power</Single>
+            <Single Name="Data" Type="string">&lt;se:Power SupplyBus="520" SupplyIO="630" ConsumptionBus="0" ConsumptionIO="0" xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd" /&gt;</Single>
+          </Single>
+          <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+            <Single Name="Name" Type="string">se:ParameterFilters</Single>
+            <Single Name="Data" Type="string">&lt;se:ParameterFilters FallBack="false" OptionalModule="true" xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd" /&gt;</Single>
+          </Single>
+          <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+            <Single Name="Name" Type="string">se:AcceptedModule</Single>
+            <Single Name="Data" Type="string">&lt;se:AcceptedModule acceptAllOther="true" xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;&lt;!--TM2 that should not be proposed anymore--&gt;&lt;se:DeviceIdentification deviceType="51200" deviceId="101a 0150" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51201" deviceId="101a 0151" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51202" deviceId="101a 0152" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51203" deviceId="101a 0153" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51204" deviceId="101a 0154" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51205" deviceId="101a 0155" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51206" deviceId="101a 0156" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51207" deviceId="101a 0157" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51208" deviceId="101a 0158" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51209" deviceId="101a 0159" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51210" deviceId="101a 0160" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51211" deviceId="101a 0161" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51212" deviceId="101a 0162" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51213" deviceId="101a 0163" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51214" deviceId="101a 0164" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51215" deviceId="101a 0165" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51216" deviceId="101a 0166" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51217" deviceId="101a 0167" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51218" deviceId="101a 0168" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51219" deviceId="101a 0169" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51220" deviceId="101a 0170" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51221" deviceId="101a 0171" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51222" deviceId="101a 0172" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51223" deviceId="101a 0173" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51224" deviceId="101a 0174" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51225" deviceId="101a 0175" groupId="3" /&gt;&lt;se:DeviceIdentification deviceType="51226" deviceId="101a 0176" groupId="3" /&gt;&lt;/se:AcceptedModule&gt;</Single>
+          </Single>
+        </List>
+        <Single Name="ModuleId" Type="int">-1</Single>
+        <Null Name="IoUpdateTask" />
+        <List Name="AdditionalInterfaces" Type="System.Collections.ArrayList">
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2DDI8DT</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2DAI8DT</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2DDI16DT</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2DDI16DK</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2DDI32DK</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2DDO8UT</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2DDO8TT</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2DDO16TK</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2DDO16UK</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2DDO32TK</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2DDO32UK</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2DMM8DRT</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2DMM24DRF</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2DRA8RT</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2DRA16RT</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2ALM3LT</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2AMI2HT</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2AMI2LT</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2AMI4LT</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2AMI8HT</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2AMM3HT</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2AMM6HT</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2AMO1HT</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2ARI8HT</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2ARI8LRJ</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2ARI8LT</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM2AVO2HT</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3DI8_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3DI16_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3DI16K</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3DI32K</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3DM8R_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3DM24R_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3DQ8R_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3DQ8T_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3DQ8U_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3DQ16R_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3DQ16T_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3DQ16TK</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3DQ16U_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3DQ16UK</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3DQ32TK</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3DQ32UK</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3DI8A</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3XTYS4</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3AI2H_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3AI4_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3AI8_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3AQ2_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3AQ4_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3AM6_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3TM3_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3TI4_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3TI4D_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3TI8T_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3XPID2</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3SAC5R_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3SAF5R_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3SAFL5R_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3SAK6R_G</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3XHSC2</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3DM16R</Single>
+          <Single Type="string">MSD.TM2-3.ExpansionBus.TM3DM32R</Single>
+        </List>
+        <List Name="Constraints" Type="System.Collections.ArrayList" />
+        <Single Name="hideInStatusPage" Type="bool">False</Single>
+        <Single Name="updateAllowed" Type="bool">True</Single>
+        <Single Name="fixedInputAddress" Type="string"></Single>
+        <Single Name="fixedOutputAddress" Type="string"></Single>
+        <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+        <List Name="AllowOnlyDevices" Type="System.Collections.ArrayList" />
+        <Single Name="InitialStatusFlag" Type="uint">1</Single>
+        <Single Name="UseBlobInitConst" Type="bool">False</Single>
+        <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        <Single Name="ConnectorGroup" Type="uint">0</Single>
+        <Array Name="AllowedPages" Type="string" />
+        <Single Name="AlwaysMapping" Type="bool">False</Single>
+        <Single Name="Client" Type="string"></Single>
+        <Single Name="MaxInputSize" Type="uint">0</Single>
+        <Single Name="MaxOutputSize" Type="uint">0</Single>
+        <Single Name="MaxInOutputSize" Type="uint">0</Single>
+        <Single Name="ClientTypeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="ClientConnectorInterface" Type="string"></Single>
+        <Single Name="ClientConnectorId" Type="int">-1</Single>
+        <Single Name="AlwaysMappingDisabled" Type="bool">False</Single>
+      </Single>
+      <Single Type="{850f737d-2abf-45f4-89c1-63ed6b29593d}" Method="IArchivable">
+        <Single Name="VisibleInterfaceName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+          <Single Name="Namespace" Type="string">local</Single>
+          <Single Name="Identifier" Type="string">dummy</Single>
+          <Single Name="Default" Type="string">Remote IO</Single>
+        </Single>
+        <Single Name="ConnectorObjectGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="IsExplicit" Type="bool">False</Single>
+        <Single Name="ModuleType" Type="ushort">45202</Single>
+        <Single Name="Interface" Type="string">MSD.TM2-3.ExpansionBus.TM3XTRA1</Single>
+        <Single Name="Role" Type="{6827a808-5967-49c4-a827-10f6c446e075}">Parent</Single>
+        <Single Name="ConnectorId" Type="int">3</Single>
+        <Single Name="Hostpath" Type="int">-1</Single>
+        <Single Name="Adapters" Type="{1da2f14a-1c63-4268-9171-3b6869b8ccd6}" Method="IArchivable">
+          <List Name="Adapters" Type="System.Collections.ArrayList">
+            <Single Type="{3f828f0b-c67b-430a-8c93-1e9bc324df64}" Method="IArchivable">
+              <List Name="Modules" Type="System.Collections.ArrayList" />
+              <Single Name="MaxDevices" Type="int">1</Single>
+              <Single Name="SupportPlaceholderObjects" Type="bool">False</Single>
+            </Single>
+          </List>
+        </Single>
+        <Single Name="HostParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+          <List2 Name="Params" />
+          <Single Name="LmGuid" Type="System.Guid">c46bd2fb-183b-5532-97a3-f00b887d7986</Single>
+          <Null Name="Sections" />
+          <Single Name="InitOnOnlineChange" Type="bool">False</Single>
+          <Single Name="AlwaysMapping" Type="bool">False</Single>
+          <Null Name="EditorName" />
+          <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+          <Single Name="CreateBitChannels" Type="bool">False</Single>
+        </Single>
+        <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+          <List Name="RequiredLibs" Type="System.Collections.ArrayList" />
+          <Null Name="RequiredTasks" />
+          <Single Name="NeedsBusCycle" Type="bool">False</Single>
+          <Single Name="BusCycleTask" Type="string"></Single>
+          <Single Name="IoApp" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="IoAppSet" Type="bool">False</Single>
+          <Array Name="PositionIds" Type="long">ChAAAAAAAAALEAAAAAAAAAwQAAAAAAAA</Array>
+          <Single Name="UseSlowestTask" Type="bool">False</Single>
+          <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+          <Single Name="GenerateForceVariables" Type="bool">False</Single>
+          <Single Name="EnableDiagnosis" Type="bool">False</Single>
+          <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+          <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+          <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+          <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+          <Single Name="SymbolicAccessMode" Type="{866ccdec-84a7-4590-aeab-383c7bd79437}">Disabled</Single>
+          <Single Name="DeviceScanSupported" Type="bool">False</Single>
+          <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+          <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+          <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+          <Single Name="UpdateIOsInStop" Type="bool">False</Single>
+          <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">KeepCurrentValues</Single>
+          <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+          <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+          <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        </Single>
+        <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}">
+          <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+            <Single Name="Name" Type="string">se:AcceptedModule</Single>
+            <Single Name="Data" Type="string">&lt;se:AcceptedModule xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;&lt;!--TM3XTRA1--&gt;&lt;se:DeviceIdentification deviceType="51426" deviceId="101a 0450" groupId="4" /&gt;&lt;/se:AcceptedModule&gt;</Single>
+          </Single>
+        </List>
+        <Single Name="ModuleId" Type="int">-1</Single>
+        <Null Name="IoUpdateTask" />
+        <List Name="AdditionalInterfaces" Type="System.Collections.ArrayList" />
+        <List Name="Constraints" Type="System.Collections.ArrayList" />
+        <Single Name="hideInStatusPage" Type="bool">False</Single>
+        <Single Name="updateAllowed" Type="bool">True</Single>
+        <Single Name="fixedInputAddress" Type="string"></Single>
+        <Single Name="fixedOutputAddress" Type="string"></Single>
+        <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+        <List Name="AllowOnlyDevices" Type="System.Collections.ArrayList" />
+        <Single Name="InitialStatusFlag" Type="uint">1</Single>
+        <Single Name="UseBlobInitConst" Type="bool">False</Single>
+        <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        <Single Name="ConnectorGroup" Type="uint">0</Single>
+        <Array Name="AllowedPages" Type="string" />
+        <Single Name="AlwaysMapping" Type="bool">False</Single>
+        <Single Name="Client" Type="string"></Single>
+        <Single Name="MaxInputSize" Type="uint">0</Single>
+        <Single Name="MaxOutputSize" Type="uint">0</Single>
+        <Single Name="MaxInOutputSize" Type="uint">0</Single>
+        <Single Name="ClientTypeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="ClientConnectorInterface" Type="string"></Single>
+        <Single Name="ClientConnectorId" Type="int">-1</Single>
+        <Single Name="AlwaysMappingDisabled" Type="bool">False</Single>
+      </Single>
+    </List>
+  </Single>
+  <Single Name="Attributes" Type="{1fdbedd8-b518-4ebd-99df-805f2f77c071}" Method="IArchivable">
+    <Dictionary Type="System.Collections.Hashtable" Name="Attributes" />
+  </Single>
+  <Single Name="CommunicationSettings" Type="{58f2b04d-505d-4589-9fcf-0ec83491f9b2}" Method="IArchivable">
+    <Single Name="SaveLocally" Type="bool">False</Single>
+    <Single Name="CommunicationSettingFilter" Type="int">1</Single>
+    <Single Name="CommunicationSettingSorting" Type="int">0</Single>
+    <Single Name="TrackingMode" Type="int">5</Single>
+    <Single Name="GatewayGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+    <Null Name="Address" />
+    <Single Name="PromptAtLogin" Type="bool">False</Single>
+    <Single Name="SimulationMode" Type="bool">False</Single>
+    <Single Name="SecureOnlineMode" Type="bool">False</Single>
+    <Single Name="SecureOnlineModeExplicitelySet" Type="bool">False</Single>
+    <Single Name="Name" Type="string"></Single>
+    <Single Name="MonitoringIntervalMsec" Type="int">200</Single>
+    <Null Name="ScanInformation" />
+    <Single Name="IsCommunicationEncrypted" Type="bool">True</Single>
+    <Single Name="IsDefaultNameTrackingFromScanActive" Type="bool">False</Single>
+  </Single>
+  <Single Name="IoProviderBase" Type="{848f25ec-eecf-4290-8329-7f6500fd2e0f}" Method="IArchivable">
+    <Array Name="UserBaseAddress" Type="string">
+      <Null />
+      <Null />
+      <Null />
+    </Array>
+  </Single>
+  <Single Name="GuidBusCycleTask" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+  <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+    <List Name="RequiredLibs" Type="System.Collections.ArrayList" />
+    <Null Name="RequiredTasks" />
+    <Single Name="NeedsBusCycle" Type="bool">False</Single>
+    <Single Name="BusCycleTask" Type="string"></Single>
+    <Single Name="IoApp" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+    <Single Name="IoAppSet" Type="bool">False</Single>
+    <Array Name="PositionIds" Type="long">ARAAAAAAAAACEAAAAAAAAAMQAAAAAAAA</Array>
+    <Single Name="UseSlowestTask" Type="bool">False</Single>
+    <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+    <Single Name="GenerateForceVariables" Type="bool">False</Single>
+    <Single Name="EnableDiagnosis" Type="bool">False</Single>
+    <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+    <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+    <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+    <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+    <Single Name="SymbolicAccessMode" Type="{866ccdec-84a7-4590-aeab-383c7bd79437}">Disabled</Single>
+    <Single Name="DeviceScanSupported" Type="bool">False</Single>
+    <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+    <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+    <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+    <Single Name="UpdateIOsInStop" Type="bool">False</Single>
+    <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">KeepCurrentValues</Single>
+    <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+    <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+    <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+    <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+  </Single>
+  <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}">
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BusManager</Single>
+      <Single Name="Data" Type="string">&lt;se:BusManager MaxNodeId="16" xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd" /&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{6F0558A9-E461-452E-AD03-BD3B2812EF5D}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{72ED5E1F-C73D-4B14-BD0B-F564FB40B23B}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{BBEF9E92-1348-4B17-B1C7-7AE4B9BAC206}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{EC5E45D7-A6A4-44CB-AD2E-0D353B00C7CD}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:ParameterFilters</Single>
+      <Single Name="Data" Type="string">&lt;se:ParameterFilters FallBack="false" OptionalModule="true" xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd" /&gt;</Single>
+    </Single>
+  </List>
+  <Single Name="IoConfigGlobalsGuid" Type="System.Guid">fadb54dc-36b6-5477-8f4e-287319bbf8ab</Single>
+  <Single Name="IoConfigGlobalsMappingGuid" Type="System.Guid">51b3423b-f037-563c-83b5-7948fb88de66</Single>
+  <Single Name="IoConfigVarConfigGuid" Type="System.Guid">07bfbad5-863f-56e0-9c21-25f806e4533e</Single>
+  <Single Name="IoConfigErrorPouGuid" Type="System.Guid">578cc6e4-c1ea-5bfa-91ba-e2366746a8f3</Single>
+  <Single Name="ModuleId" Type="int">-1</Single>
+  <Null Name="IoUpdateTask" />
+  <Array Name="FunctionalChildren" Type="System.Guid" />
+  <Null Name="UserManagement" />
+  <Null Name="RightsManagement" />
+  <Single Name="showParamsInDevDescOrder" Type="bool">False</Single>
+  <Single Name="fixedInputAddress" Type="string"></Single>
+  <Single Name="fixedOutputAddress" Type="string"></Single>
+  <Single Name="HostObjectGuid" Type="System.Guid">801ebf5c-dbeb-4511-9a45-2ed26e25b40f</Single>
+  <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+  <Single Name="CreateBitChannels" Type="bool">False</Single>
+  <Null Name="AdditionalStringTable" />
+  <Null Name="OnlineHelpUrl" />
+  <Single Name="InteractiveLoginMode" Type="int">-1</Single>
+  <Single Name="UseDeviceApplicationStructure" Type="bool">False</Single>
+  <Single Name="AllowSymbolicVarAccessInSyncWithIecCycle" Type="bool">False</Single>
+  <Single Name="LogicalDeviceList" Type="{ec1f8a3a-98c6-404c-883e-ce9e54b42542}" Method="IArchivable">
+    <List Name="InnerList" Type="System.Collections.ArrayList" />
+  </Single>
+  <Single Name="LogicalLanguageModelPositionId" Type="long">-1</Single>
+  <List Name="SupportedLogicalBusSystems" Type="System.Collections.ArrayList" />
+  <Single Name="MappingPossible" Type="bool">False</Single>
+  <Single Name="HidePropertiesDialog" Type="bool">False</Single>
+  <Null Name="PlaceholderResolution" />
+  <Null Name="RedirectedPlaceholderResolution" />
+</Single>

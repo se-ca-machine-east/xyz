@@ -1,0 +1,1106 @@
+__V3_META__
+{
+  "objectGuid": "801ebf5c-dbeb-4511-9a45-2ed26e25b40f",
+  "objectTypeGuid": "225bfe47-7336-4dbc-9419-4105a7c831fa",
+  "embeddedObjectTypeGuids": [],
+  "properties": {
+    "_3S.CoDeSys.DeviceObject.DeviceProperty": "<?xml version=\"1.0\" encoding=\"utf-8\"?><Single xml:space=\"preserve\" Type=\"{cdadfc2b-8598-4621-ad56-5b1df7db910f}\" Method=\"IArchivable\"><Single Name=\"DeviceIdentification\" Type=\"{05ee0b98-6639-4276-bc32-b75578b819ef}\" Method=\"IArchivable\"><Single Name=\"Type\" Type=\"int\">4096</Single><Single Name=\"Id\" Type=\"string\">101a 0707</Single><Single Name=\"Version\" Type=\"string\">5.5.14.15</Single><Null Name=\"BaseName\" /></Single></Single>",
+    "schneider.Automation.OEM.MSDIOManager.IOHarmonizationProperty": "<?xml version=\"1.0\" encoding=\"utf-8\"?><Single xml:space=\"preserve\" Type=\"{275991af-8cbe-452b-ad98-cb6842331ae4}\" Method=\"IArchivable\"><Single Name=\"InitialModuleName\" Type=\"string\">MyController</Single><Single Name=\"InitialTemplate\" Type=\"string\">#X#T#D_#C</Single></Single>",
+    "schneiderAutomation.Platform.Core.ObjectProperty.AlreadyHandledObjectProperty": "<?xml version=\"1.0\" encoding=\"utf-8\"?><Single xml:space=\"preserve\" Type=\"{f34a3cea-eaf7-46ee-9371-24d10b0ab1d5}\" Method=\"IArchivable\"><List2 Name=\"PropertyList\"><Single Type=\"string\">IOHarmonizationService</Single><Single Type=\"string\">OpcUAPlcDevice</Single></List2></Single>"
+  },
+  "subObjects": {}
+}
+__V3_CONTENT__
+<?xml version="1.0" encoding="utf-8"?>
+<Single xml:space="preserve" Type="{225bfe47-7336-4dbc-9419-4105a7c831fa}" Method="IArchivable">
+  <Single Name="UniqueIdGenerator" Type="string">4154</Single>
+  <Null Name="TypeList" />
+  <Single Name="NeedsBusCycle" Type="bool">False</Single>
+  <Single Name="Id" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}" Method="IArchivable">
+    <Single Name="Type" Type="int">4096</Single>
+    <Single Name="Id" Type="string">101a 0707</Single>
+    <Single Name="Version" Type="string">5.5.14.15</Single>
+    <Null Name="BaseName" />
+  </Single>
+  <Single Name="DefaultDeviceInfo" Type="{59a90934-c888-40db-a9df-306fcf36d75c}" Method="IArchivable">
+    <Single Name="Name" Type="string">TM241CEC24R</Single>
+    <Single Name="Description" Type="string">TM241CEC24R
+14 digital inputs, 4 transistor source outputs (0.5A), 6 relay outputs (2A), 2 serial line ports, 1 Ethernet port, 1 CANopen port, 100-240 Vac modular controller with removable terminal blocks.</Single>
+    <Single Name="Vendor" Type="string">Schneider Electric</Single>
+    <Single Name="OrderNumber" Type="string">TM241CEC24R</Single>
+    <Array Name="Categories" Type="int">ABAAAA==</Array>
+    <Array Name="Families" Type="string">
+      <Single Type="string">4122:1004</Single>
+    </Array>
+    <Single Name="Custom" Type="string">&lt;Catalog name="Controllers" xmlns="http://www.3s-software.com/schemas/DeviceDescription-1.0.xsd"&gt;
+            &lt;Section name="Logic Controller"&gt;
+              &lt;Category name="M241" /&gt;
+            &lt;/Section&gt;
+          &lt;/Catalog&gt;</Single>
+    <Single Name="DefaultInstanceName" Type="string">MyController</Single>
+  </Single>
+  <Single Name="DeviceParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+    <List2 Name="Params">
+      <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+        <Single Name="Id" Type="uint">1000</Single>
+        <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+        <Single Name="DalaElement" Type="{4322e2a3-55e5-4e47-9fcd-b70eb1e6bfee}" Method="IArchivable">
+          <Null Name="FilterFlags" />
+          <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+          <Single Name="PositionId" Type="long">4102</Single>
+          <Single Name="EditorPositionId" Type="long">4103</Single>
+          <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+            <Single Name="Namespace" Type="string">local</Single>
+            <Single Name="Identifier" Type="string">dummy</Single>
+            <Single Name="Default" Type="string">Run Stop mode</Single>
+          </Single>
+          <Single Name="Identifier" Type="string">1000</Single>
+          <Single Name="TypeName" Type="string">DeviceParameterSet.EnumRunStop</Single>
+          <Single Name="LmEnumTypeGuid" Type="System.Guid">3ef06168-e426-5818-9e36-df916331ccd9</Single>
+          <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+            <Null Name="FilterFlags" />
+            <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+            <Single Name="PositionId" Type="long">4102</Single>
+            <Single Name="EditorPositionId" Type="long">4103</Single>
+            <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+              <Single Name="Namespace" Type="string">local</Single>
+              <Single Name="Identifier" Type="string">dummy</Single>
+              <Single Name="Default" Type="string">Run Stop mode</Single>
+            </Single>
+            <Single Name="Identifier" Type="string">1000</Single>
+            <Single Name="Value" Type="string">0</Single>
+            <Single Name="Type" Type="string">BYTE</Single>
+            <Single Name="Default" Type="string">0</Single>
+          </Single>
+          <Array Name="Values" Type="{b955cc99-aa13-473b-b43f-7c76a865c138}">
+            <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+              <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                <Single Name="Namespace" Type="string">localStrings</Single>
+                <Single Name="Identifier" Type="string">DeviceParameterSet.EnumRunStop.Previous</Single>
+                <Single Name="Default" Type="string">Start as previous state</Single>
+              </Single>
+              <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+              <Single Name="Identifier" Type="string">Previous</Single>
+              <Single Name="Value" Type="string">0</Single>
+            </Single>
+            <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+              <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                <Single Name="Namespace" Type="string">localStrings</Single>
+                <Single Name="Identifier" Type="string">DeviceParameterSet.EnumRunStop.Stop</Single>
+                <Single Name="Default" Type="string">Start in stop</Single>
+              </Single>
+              <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+              <Single Name="Identifier" Type="string">Stop</Single>
+              <Single Name="Value" Type="string">1</Single>
+            </Single>
+            <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+              <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                <Single Name="Namespace" Type="string">localStrings</Single>
+                <Single Name="Identifier" Type="string">DeviceParameterSet.EnumRunStop.Run</Single>
+                <Single Name="Default" Type="string">Start in run</Single>
+              </Single>
+              <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+              <Single Name="Identifier" Type="string">Run</Single>
+              <Single Name="Value" Type="string">2</Single>
+            </Single>
+          </Array>
+        </Single>
+        <Single Name="ParamType" Type="string">localTypes:DeviceParameterSet.EnumRunStop</Single>
+        <Single Name="IndexInDevDesc" Type="long">0</Single>
+      </Single>
+      <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+        <Single Name="Id" Type="uint">1101</Single>
+        <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+        <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+        <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+          <Null Name="FilterFlags" />
+          <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+          <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+          <Single Name="PositionId" Type="long">4104</Single>
+          <Single Name="EditorPositionId" Type="long">4105</Single>
+          <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+            <Single Name="Namespace" Type="string">local</Single>
+            <Single Name="Identifier" Type="string">dummy</Single>
+            <Single Name="Default" Type="string">Max routes</Single>
+          </Single>
+          <Single Name="Identifier" Type="string">1101</Single>
+          <Single Name="Value" Type="string">20</Single>
+          <Single Name="Type" Type="string">WORD</Single>
+          <Single Name="Default" Type="string">20</Single>
+        </Single>
+        <Single Name="ParamType" Type="string">std:WORD</Single>
+        <Single Name="IndexInDevDesc" Type="long">1</Single>
+      </Single>
+      <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+        <Single Name="Id" Type="uint">1102</Single>
+        <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+        <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+          <Null Name="FilterFlags" />
+          <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+          <Single Name="PositionId" Type="long">4106</Single>
+          <Single Name="EditorPositionId" Type="long">4107</Single>
+          <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+            <Single Name="Namespace" Type="string">local</Single>
+            <Single Name="Identifier" Type="string">dummy</Single>
+            <Single Name="Default" Type="string">Routes count</Single>
+          </Single>
+          <Single Name="Identifier" Type="string">1102</Single>
+          <Single Name="Value" Type="string">0</Single>
+          <Single Name="Type" Type="string">WORD</Single>
+          <Single Name="Default" Type="string">0</Single>
+        </Single>
+        <Single Name="ParamType" Type="string">std:WORD</Single>
+        <Single Name="IndexInDevDesc" Type="long">2</Single>
+      </Single>
+      <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+        <Single Name="Id" Type="uint">1103</Single>
+        <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+        <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+          <Null Name="FilterFlags" />
+          <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+          <Single Name="PositionId" Type="long">4108</Single>
+          <Single Name="EditorPositionId" Type="long">4109</Single>
+          <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+            <Single Name="Namespace" Type="string">local</Single>
+            <Single Name="Identifier" Type="string">dummy</Single>
+            <Single Name="Default" Type="string">Routing Table</Single>
+          </Single>
+          <Single Name="Identifier" Type="string">1103</Single>
+          <Single Name="Type" Type="string">ARRAY[0..239] OF BYTE</Single>
+        </Single>
+        <Single Name="ParamType" Type="string">std:ARRAY[0..239] OF BYTE</Single>
+        <Single Name="IndexInDevDesc" Type="long">3</Single>
+      </Single>
+      <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+        <Single Name="Id" Type="uint">1106</Single>
+        <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+        <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+          <Null Name="FilterFlags" />
+          <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+          <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}">
+            <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+              <Single Name="Name" Type="string">se:LateConfiguration</Single>
+              <Single Name="Data" Type="string">&lt;se:LateConfiguration xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;1=encryption enforced, 0 otherwise&lt;/se:LateConfiguration&gt;</Single>
+            </Single>
+          </List>
+          <Single Name="PositionId" Type="long">4110</Single>
+          <Single Name="EditorPositionId" Type="long">4111</Single>
+          <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+            <Single Name="Namespace" Type="string">local</Single>
+            <Single Name="Identifier" Type="string">dummy</Single>
+          </Single>
+          <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+            <Single Name="Namespace" Type="string">local</Single>
+            <Single Name="Identifier" Type="string">dummy</Single>
+            <Single Name="Default" Type="string">FTP Encryption</Single>
+          </Single>
+          <Single Name="Identifier" Type="string">1106</Single>
+          <Single Name="Value" Type="string">1</Single>
+          <Single Name="Type" Type="string">UINT</Single>
+          <Single Name="Default" Type="string">1</Single>
+        </Single>
+        <Single Name="ParamType" Type="string">std:UINT</Single>
+        <Single Name="IndexInDevDesc" Type="long">5</Single>
+      </Single>
+      <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+        <Single Name="Id" Type="uint">1110</Single>
+        <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+        <Single Name="Download" Type="bool">False</Single>
+        <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+          <Null Name="FilterFlags" />
+          <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+          <Single Name="PositionId" Type="long">4112</Single>
+          <Single Name="EditorPositionId" Type="long">4113</Single>
+          <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+            <Single Name="Namespace" Type="string">local</Single>
+            <Single Name="Identifier" Type="string">dummy</Single>
+            <Single Name="Default" Type="string">Comment Routing Table</Single>
+          </Single>
+          <Single Name="Identifier" Type="string">1110</Single>
+          <Single Name="Type" Type="string">ARRAY[0..19] OF STRING(20)</Single>
+        </Single>
+        <Single Name="ParamType" Type="string">std:ARRAY[0..19] OF STRING(20)</Single>
+        <Single Name="IndexInDevDesc" Type="long">4</Single>
+      </Single>
+      <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+        <Single Name="Id" Type="uint">1200</Single>
+        <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+        <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+        <Single Name="Download" Type="bool">False</Single>
+        <Single Name="DalaElement" Type="{87130527-d8a8-4a3f-a43d-fabaec05f356}" Method="IArchivable">
+          <Single Name="SubElements" Type="{45b6f676-61a0-4c78-a679-8c725851fa1e}" Method="IArchivable">
+            <List2 Name="elements">
+              <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4116</Single>
+                <Single Name="EditorPositionId" Type="long">4117</Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Rejected certificates path</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">RejectedCertificatesPath</Single>
+                <Single Name="Value" Type="string">\usr\Cfg\pki\rejected</Single>
+                <Single Name="Type" Type="string">STRING</Single>
+                <Single Name="Default" Type="string">\usr\Cfg\pki\rejected</Single>
+              </Single>
+              <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4118</Single>
+                <Single Name="EditorPositionId" Type="long">4119</Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Server config path</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">ServerConfigPath</Single>
+                <Single Name="Value" Type="string">\usr\app\settings.conf</Single>
+                <Single Name="Type" Type="string">STRING</Single>
+                <Single Name="Default" Type="string">\usr\app\settings.conf</Single>
+              </Single>
+              <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4120</Single>
+                <Single Name="EditorPositionId" Type="long">4121</Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Trusted certificates path</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">TrustedCertificatesPath</Single>
+                <Single Name="Value" Type="string">\usr\Cfg\pki\trusted\certs</Single>
+                <Single Name="Type" Type="string">STRING</Single>
+                <Single Name="Default" Type="string">\usr\Cfg\pki\trusted\certs</Single>
+              </Single>
+              <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4122</Single>
+                <Single Name="EditorPositionId" Type="long">4123</Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Server certificates folder</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">ServerCertificateFolder</Single>
+                <Single Name="Value" Type="string">\usr\Cfg\pki\own</Single>
+                <Single Name="Type" Type="string">STRING</Single>
+                <Single Name="Default" Type="string">\usr\Cfg\pki\own</Single>
+              </Single>
+              <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4124</Single>
+                <Single Name="EditorPositionId" Type="long">4125</Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Server certificates path to .der file</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">DerServerCertificatePath</Single>
+                <Single Name="Value" Type="string">\usr\Cfg\pki\own\uaservercert.der</Single>
+                <Single Name="Type" Type="string">STRING</Single>
+                <Single Name="Default" Type="string">\usr\Cfg\pki\own\uaservercert.der</Single>
+              </Single>
+              <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4126</Single>
+                <Single Name="EditorPositionId" Type="long">4127</Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Server certificates path to .pem file</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">PemServerCertificatePath</Single>
+                <Single Name="Value" Type="string">\usr\Cfg\pki\own\httpsservercert.pem</Single>
+                <Single Name="Type" Type="string">STRING</Single>
+                <Single Name="Default" Type="string">\usr\Cfg\pki\own\httpsservercert.pem</Single>
+              </Single>
+              <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4128</Single>
+                <Single Name="EditorPositionId" Type="long">4129</Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Server config filename</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">ServerConfigFile</Single>
+                <Single Name="Value" Type="string">settings.conf</Single>
+                <Single Name="Type" Type="string">STRING</Single>
+                <Single Name="Default" Type="string">settings.conf</Single>
+              </Single>
+              <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4130</Single>
+                <Single Name="EditorPositionId" Type="long">4131</Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">device name used to access the filesystem</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">DeviceAccessName</Single>
+                <Single Name="Type" Type="string">STRING</Single>
+              </Single>
+              <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4132</Single>
+                <Single Name="EditorPositionId" Type="long">4133</Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Maximum number of sampling rates supported</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">SamplingRatesMaxNumber</Single>
+                <Single Name="Value" Type="string">3</Single>
+                <Single Name="Type" Type="string">INT</Single>
+                <Single Name="Default" Type="string">3</Single>
+              </Single>
+              <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4134</Single>
+                <Single Name="EditorPositionId" Type="long">4135</Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Maximum number of node exposed by the server</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">NodeMaxNumber</Single>
+                <Single Name="Value" Type="string">3</Single>
+                <Single Name="Type" Type="string">INT</Single>
+                <Single Name="Default" Type="string">3</Single>
+              </Single>
+              <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4136</Single>
+                <Single Name="EditorPositionId" Type="long">4137</Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Stack used by the firmware</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">Stack</Single>
+                <Single Name="Value" Type="string">ANSI_C</Single>
+                <Single Name="Type" Type="string">STRING</Single>
+                <Single Name="Default" Type="string">ANSI_C</Single>
+              </Single>
+              <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4138</Single>
+                <Single Name="EditorPositionId" Type="long">4139</Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Revision of the configuration for the stack</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">Revision</Single>
+                <Single Name="Value" Type="string">1.3</Single>
+                <Single Name="Type" Type="string">STRING</Single>
+                <Single Name="Default" Type="string">1.3</Single>
+              </Single>
+              <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4140</Single>
+                <Single Name="EditorPositionId" Type="long">4141</Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Maximum selectable variables</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">MaxSelectionableVariables</Single>
+                <Single Name="Value" Type="string">1000</Single>
+                <Single Name="Type" Type="string">STRING</Single>
+                <Single Name="Default" Type="string">1000</Single>
+              </Single>
+            </List2>
+          </Single>
+          <Null Name="FilterFlags" />
+          <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+          <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+          <Single Name="PositionId" Type="long">4114</Single>
+          <Single Name="EditorPositionId" Type="long">4115</Single>
+          <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+            <Single Name="Namespace" Type="string">local</Single>
+            <Single Name="Identifier" Type="string">dummy</Single>
+            <Single Name="Default" Type="string">default options for OPCUA</Single>
+          </Single>
+          <Single Name="Identifier" Type="string">1200</Single>
+          <Single Name="TypeName" Type="string">StructOpcUaConfiguration</Single>
+          <Single Name="LmStructTypeGuid" Type="System.Guid">35ff42b4-f997-5a9d-969e-47331f724094</Single>
+        </Single>
+        <Single Name="ParamType" Type="string">localTypes:StructOpcUaConfiguration</Single>
+        <Single Name="IndexInDevDesc" Type="long">6</Single>
+      </Single>
+      <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+        <Single Name="Id" Type="uint">1201</Single>
+        <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+        <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+        <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+          <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+          <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+          <Single Name="PositionId" Type="long">4153</Single>
+          <Single Name="EditorPositionId" Type="long">4154</Single>
+          <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+            <Single Name="Default" Type="string">opcUaSettingFile</Single>
+          </Single>
+          <Single Name="Identifier" Type="string">1201</Single>
+          <Single Name="Value" Type="string">[35,32,65,78,83,73,32,67,32,77,50,52,49,45,50,53,49,32,79,80,67,85,65,32,83,101,114,118,101,114,32,67,111,110,102,105,103,117,114,97,116,105,111,110,32,70,105,108,101,124,124,91,71,101,110,101,114,97,108,93,124,77,97,120,80,114,111,118,105,100,101,114,78,111,100,101,115,32,61,32,51,56,48,48,124,77,97,120,82,101,102,101,114,101,110,99,101,115,84,111,82,101,116,117,114,110,32,61,32,49,48,48,48,48,124,77,97,120,83,101,99,117,114,101,67,104,97,110,110,101,108,115,32,61,32,49,48,48,124,77,97,120,83,101,115,115,105,111,110,115,32,61,32,50,124,77,97,120,83,117,98,115,99,114,105,112,116,105,111,110,115,80,101,114,83,101,115,115,105,111,110,32,61,32,50,48,124,77,97,120,80,117,98,108,105,115,104,80,101,114,83,101,115,115,105,111,110,32,61,32,49,48,124,77,97,120,67,111,110,116,105,110,117,97,116,105,111,110,80,111,105,110,116,115,80,101,114,83,101,115,115,105,111,110,32,61,32,53,124,77,97,120,81,117,101,114,121,67,111,110,116,105,110,117,97,116,105,111,110,80,111,105,110,116,115,80,101,114,83,101,115,115,105,111,110,32,61,32,53,124,77,97,120,72,105,115,116,111,114,121,67,111,110,116,105,110,117,97,116,105,111,110,80,111,105,110,116,115,80,101,114,83,101,115,115,105,111,110,32,61,32,53,124,77,105,110,80,117,98,108,105,115,104,105,110,103,73,110,116,101,114,118,97,108,32,61,32,49,48,48,48,124,77,97,120,80,117,98,108,105,115,104,105,110,103,73,110,116,101,114,118,97,108,32,61,32,51,54,48,48,48,48,48,124,77,105,110,75,101,101,112,65,108,105,118,101,73,110,116,101,114,118,97,108,32,61,32,53,48,48,124,77,97,120,75,101,101,112,65,108,105,118,101,73,110,116,101,114,118,97,108,32,61,32,49,50,48,48,48,48,48,124,77,105,110,76,105,102,101,116,105,109,101,73,110,116,101,114,118,97,108,32,61,32,49,53,48,48,124,77,97,120,76,105,102,101,116,105,109,101,73,110,116,101,114,118,97,108,32,61,32,51,54,48,48,48,48,48,124,77,97,120,77,111,110,105,116,111,114,101,100,73,116,101,109,115,80,101,114,83,117,98,115,99,114,105,112,116,105,111,110,32,61,32,49,48,48,124,77,97,120,77,111,110,105,116,111,114,101,100,73,116,101,109,115,81,117,101,117,101,83,105,122,101,32,61,32,49,48,48,48,48,124,77,97,120,69,118,101,110,116,77,111,110,105,116,111,114,101,100,73,116,101,109,115,81,117,101,117,101,83,105,122,101,32,61,32,49,48,48,48,48,124,77,97,120,68,97,116,97,76,111,103,103,101,114,83,117,98,115,99,114,105,112,116,105,111,110,73,116,101,109,115,32,61,32,49,48,48,48,124,68,97,116,97,76,111,103,103,101,114,83,117,98,115,99,114,105,112,116,105,111,110,80,117,98,108,105,115,104,105,110,103,73,110,116,101,114,118,97,108,32,61,32,53,48,48,124,124,91,69,110,100,112,111,105,110,116,115,93,124,69,110,100,112,111,105,110,116,115,47,115,105,122,101,32,61,32,50,124,69,110,100,112,111,105,110,116,115,47,48,47,69,110,100,112,111,105,110,116,85,82,76,32,61,32,111,112,99,46,116,99,112,58,47,47,48,46,48,46,48,46,48,58,52,56,52,48,124,69,110,100,112,111,105,110,116,115,47,48,47,66,105,110,100,85,82,76,32,61,32,111,112,99,46,116,99,112,58,47,47,48,46,48,46,48,46,48,58,52,56,52,48,124,69,110,100,112,111,105,110,116,115,47,48,47,83,101,99,117,114,105,116,121,80,111,108,105,99,105,101,115,32,61,32,83,101,99,117,114,105,116,121,80,111,108,105,99,121,95,66,97,115,105,99,50,53,54,83,104,97,50,53,54,124,69,110,100,112,111,105,110,116,115,47,48,47,85,115,101,114,84,111,107,101,110,80,111,108,105,99,105,101,115,32,61,32,85,115,101,114,78,97,109,101,124,69,110,100,112,111,105,110,116,115,47,48,47,80,75,73,83,116,111,114,101,32,61,32,80,75,73,83,116,111,114,101,95,79,112,101,110,83,83,76,124,69,110,100,112,111,105,110,116,115,47,48,47,84,114,117,115,116,65,108,108,67,108,105,101,110,116,67,101,114,116,105,102,105,99,97,116,101,115,32,61,32,102,97,108,115,101,124,124,69,110,100,112,111,105,110,116,115,47,48,47,68,105,115,97,98,108,101,69,114,114,111,114,67,101,114,116,105,102,105,99,97,116,101,84,105,109,101,73,110,118,97,108,105,100,32,61,32,116,114,117,101,124,69,110,100,112,111,105,110,116,115,47,48,47,68,105,115,97,98,108,101,69,114,114,111,114,67,101,114,116,105,102,105,99,97,116,101,73,115,115,117,101,114,84,105,109,101,73,110,118,97,108,105,100,32,61,32,116,114,117,101,124,69,110,100,112,111,105,110,116,115,47,48,47,68,105,115,97,98,108,101,69,114,114,111,114,67,101,114,116,105,102,105,99,97,116,101,82,101,118,111,99,97,116,105,111,110,85,110,107,110,111,119,110,32,61,32,116,114,117,101,124,69,110,100,112,111,105,110,116,115,47,48,47,68,105,115,97,98,108,101,69,114,114,111,114,67,101,114,116,105,102,105,99,97,116,101,73,115,115,117,101,114,82,101,118,111,99,97,116,105,111,110,85,110,107,110,111,119,110,32,61,32,116,114,117,101,124,124,69,110,100,112,111,105,110,116,115,47,49,47,69,110,100,112,111,105,110,116,85,82,76,32,61,32,111,112,99,46,116,99,112,58,47,47,48,46,48,46,48,46,48,58,52,56,52,48,124,69,110,100,112,111,105,110,116,115,47,49,47,66,105,110,100,85,82,76,32,61,32,111,112,99,46,116,99,112,58,47,47,48,46,48,46,48,46,48,58,52,56,52,48,124,69,110,100,112,111,105,110,116,115,47,49,47,83,101,99,117,114,105,116,121,80,111,108,105,99,105,101,115,32,61,32,83,101,99,117,114,105,116,121,80,111,108,105,99,121,95,66,97,115,105,99,50,53,54,83,104,97,50,53,54,124,69,110,100,112,111,105,110,116,115,47,49,47,85,115,101,114,84,111,107,101,110,80,111,108,105,99,105,101,115,32,61,32,85,115,101,114,78,97,109,101,124,69,110,100,112,111,105,110,116,115,47,49,47,80,75,73,83,116,111,114,101,32,61,32,80,75,73,83,116,111,114,101,95,79,112,101,110,83,83,76,124,69,110,100,112,111,105,110,116,115,47,49,47,84,114,117,115,116,65,108,108,67,108,105,101,110,116,67,101,114,116,105,102,105,99,97,116,101,115,32,61,32,102,97,108,115,101,124,124,69,110,100,112,111,105,110,116,115,47,49,47,68,105,115,97,98,108,101,69,114,114,111,114,67,101,114,116,105,102,105,99,97,116,101,84,105,109,101,73,110,118,97,108,105,100,32,61,32,116,114,117,101,124,69,110,100,112,111,105,110,116,115,47,49,47,68,105,115,97,98,108,101,69,114,114,111,114,67,101,114,116,105,102,105,99,97,116,101,73,115,115,117,101,114,84,105,109,101,73,110,118,97,108,105,100,32,61,32,116,114,117,101,124,69,110,100,112,111,105,110,116,115,47,49,47,68,105,115,97,98,108,101,69,114,114,111,114,67,101,114,116,105,102,105,99,97,116,101,82,101,118,111,99,97,116,105,111,110,85,110,107,110,111,119,110,32,61,32,116,114,117,101,124,69,110,100,112,111,105,110,116,115,47,49,47,68,105,115,97,98,108,101,69,114,114,111,114,67,101,114,116,105,102,105,99,97,116,101,73,115,115,117,101,114,82,101,118,111,99,97,116,105,111,110,85,110,107,110,111,119,110,32,61,32,116,114,117,101,124,124,91,83,101,99,117,114,105,116,121,80,111,108,105,99,121,95,78,111,110,101,93,124,85,114,108,32,61,32,104,116,116,112,58,47,47,111,112,99,102,111,117,110,100,97,116,105,111,110,46,111,114,103,47,85,65,47,83,101,99,117,114,105,116,121,80,111,108,105,99,121,35,78,111,110,101,124,77,101,115,115,97,103,101,83,101,99,117,114,105,116,121,32,61,32,78,111,110,101,124,91,83,101,99,117,114,105,116,121,80,111,108,105,99,121,95,66,97,115,105,99,50,53,54,93,124,85,114,108,32,61,32,104,116,116,112,58,47,47,111,112,99,102,111,117,110,100,97,116,105,111,110,46,111,114,103,47,85,65,47,83,101,99,117,114,105,116,121,80,111,108,105,99,121,35,66,97,115,105,99,50,53,54,124,77,101,115,115,97,103,101,83,101,99,117,114,105,116,121,32,61,32,83,105,103,110,65,110,100,69,110,99,114,121,112,116,124,91,83,101,99,117,114,105,116,121,80,111,108,105,99,121,95,66,97,115,105,99,50,53,54,83,104,97,50,53,54,93,124,85,114,108,32,61,32,104,116,116,112,58,47,47,111,112,99,102,111,117,110,100,97,116,105,111,110,46,111,114,103,47,85,65,47,83,101,99,117,114,105,116,121,80,111,108,105,99,121,35,66,97,115,105,99,50,53,54,83,104,97,50,53,54,124,77,101,115,115,97,103,101,83,101,99,117,114,105,116,121,32,61,32,83,105,103,110,65,110,100,69,110,99,114,121,112,116,124,124,91,65,110,111,110,121,109,111,117,115,93,124,80,111,108,105,99,121,73,100,32,61,32,65,110,111,110,121,109,111,117,115,95,84,111,107,101,110,124,84,111,107,101,110,84,121,112,101,32,61,32,65,110,111,110,121,109,111,117,115,124,124,91,85,115,101,114,78,97,109,101,93,124,80,111,108,105,99,121,73,100,32,61,32,85,115,101,114,78,97,109,101,124,84,111,107,101,110,84,121,112,101,32,61,32,85,115,101,114,78,97,109,101,124,124,91,80,75,73,83,116,111,114,101,95,79,112,101,110,83,83,76,93,124,80,107,105,84,121,112,101,32,61,32,79,112,101,110,83,83,76,124,67,101,114,116,105,102,105,99,97,116,101,70,105,108,101,32,61,32,47,117,115,114,47,46,112,107,105,47,111,119,110,47,99,101,114,116,47,99,97,99,101,114,116,46,100,101,114,124,67,101,114,116,105,102,105,99,97,116,101,75,101,121,70,105,108,101,32,61,32,47,117,115,114,47,46,112,107,105,47,111,119,110,47,107,101,121,47,107,101,121,46,110,111,112,97,115,115,46,112,101,109,124,84,114,117,115,116,76,105,115,116,80,97,116,104,32,61,32,47,117,115,114,47,46,112,107,105,47,116,114,117,115,116,101,100,47,99,101,114,116,124,67,82,76,80,97,116,104,32,61,32,47,117,115,114,47,46,112,107,105,47,116,114,117,115,116,101,100,47,99,114,108,124,73,115,115,117,101,114,84,114,117,115,116,76,105,115,116,80,97,116,104,32,61,32,47,117,115,114,47,46,112,107,105,47,105,115,115,117,101,114,115,47,99,101,114,116,115,124,73,115,115,117,101,114,67,82,76,80,97,116,104,32,61,32,47,117,115,114,47,46,112,107,105,47,105,115,115,117,101,114,115,47,99,114,108,124,124,71,101,110,101,114,97,116,101,67,101,114,116,105,102,105,99,97,116,101,32,61,32,102,97,108,115,101,124,124,91,80,75,73,83,116,111,114,101,95,78,111,110,101,93,124,80,107,105,84,121,112,101,32,61,32,78,111,110,101,124,124,91,80,75,73,93,124,82,101,106,101,99,116,101,100,80,97,116,104,32,61,32,47,117,115,114,47,46,112,107,105,47,113,117,97,114,97,110,116,105,110,101,124,77,97,120,82,101,106,101,99,116,101,100,67,101,114,116,105,102,105,99,97,116,101,115,32,61,32,53,48,124,80,75,73,83,116,111,114,101,115,32,61,32,80,75,73,83,116,111,114,101,95,79,112,101,110,83,83,76,124,65,108,108,111,119,68,101,112,114,101,99,97,116,101,100,83,101,99,117,114,105,116,121,80,111,108,105,99,105,101,115,32,61,32,116,114,117,101,124,124,91,68,105,115,99,111,118,101,114,121,93,124,82,101,103,105,115,116,101,114,32,61,32,102,97,108,115,101,124,68,105,115,99,111,118,101,114,121,85,82,76,32,61,32,111,112,99,46,116,99,112,58,47,47,108,111,99,97,108,104,111,115,116,58,52,56,52,48,47,85,65,68,105,115,99,111,118,101,114,121,47,100,105,115,99,111,118,101,114,121,124,68,105,115,99,111,118,101,114,121,73,110,116,101,114,118,97,108,32,61,32,51,48,48,48,48,124,124,91,65,117,116,104,101,110,116,105,99,97,116,105,111,110,93,124,80,97,115,115,119,100,70,105,108,101,80,97,116,104,32,61,32,112,97,115,115,119,100,124,71,114,111,117,112,70,105,108,101,80,97,116,104,32,61,32,103,114,111,117,112,124,82,111,111,116,85,115,101,114,32,61,32,48,124,83,101,99,117,114,105,116,121,65,100,109,105,110,71,114,111,117,112,32,61,32,48,124,85,115,101,114,67,101,114,116,115,68,105,114,32,61,32,97,117,116,104,95,112,107,105,47,99,101,114,116,115,124,85,115,101,114,67,114,108,68,105,114,32,61,32,97,117,116,104,95,112,107,105,47,99,114,108,124,85,115,101,114,73,115,115,117,101,114,67,101,114,116,115,68,105,114,32,61,32,97,117,116,104,95,112,107,105,47,99,97,99,101,114,116,115,124,85,115,101,114,73,115,115,117,101,114,67,114,108,68,105,114,32,61,32,97,117,116,104,95,112,107,105,47,99,97,99,114,108,124,124,91,83,69,80,114,111,118,105,100,101,114,93,124,70,105,108,101,77,97,112,80,97,116,104,32,61,32,47,117,115,114,47,97,112,112,47,79,112,99,85,65,83,121,109,98,111,108,67,111,110,102,46,109,97,112,124,78,111,100,101,73,100,73,115,83,116,114,105,110,103,32,61,32,102,97,108,115,101,124,83,97,109,112,108,105,110,103,84,105,109,101,114,78,98,32,61,32,51,124,83,97,109,112,108,105,110,103,84,105,109,101,114,46,49,32,61,32,53,48,48,124,83,97,109,112,108,105,110,103,84,105,109,101,114,46,50,32,61,32,49,48,48,48,124,83,97,109,112,108,105,110,103,84,105,109,101,114,46,51,32,61,32,50,48,48,48,124,124,91,84,114,97,99,101,93,124,69,110,97,98,108,101,100,32,61,32,116,114,117,101,124,76,101,118,101,108,32,61,32,65,76,76,124,76,111,99,97,108,84,105,109,101,84,114,97,99,101,32,61,32,116,114,117,101,124,80,114,105,110,116,68,97,116,101,73,110,84,114,97,99,101,32,61,32,116,114,117,101,124,70,105,108,101,84,114,97,99,101,69,110,97,98,108,101,100,32,61,32,116,114,117,101,124,70,105,108,101,84,114,97,99,101,70,105,108,101,110,97,109,101,32,61,32,47,117,115,114,47,115,121,115,108,111,103,47,111,112,99,117,97,116,114,97,99,101,46,108,111,103,124,70,105,108,101,84,114,97,99,101,77,97,120,69,110,116,114,105,101,115,32,61,32,49,48,48,48,124,70,105,108,101,84,114,97,99,101,78,117,109,66,97,99,107,117,112,70,105,108,101,115,32,61,32,53,124,67,111,110,115,111,108,101,84,114,97,99,101,69,110,97,98,108,101,100,32,61,32,102,97,108,115,101,124,124,91,85,97,83,116,97,99,107,93,124,83,101,114,105,97,108,105,122,101,114,95,77,97,120,65,108,108,111,99,32,61,32,54,53,53,51,54,124,83,101,114,105,97,108,105,122,101,114,95,77,97,120,83,116,114,105,110,103,76,101,110,103,116,104,32,61,32,54,53,53,51,54,124,83,101,114,105,97,108,105,122,101,114,95,77,97,120,66,121,116,101,83,116,114,105,110,103,76,101,110,103,116,104,32,61,32,54,53,53,51,54,124,83,101,114,105,97,108,105,122,101,114,95,77,97,120,65,114,114,97,121,76,101,110,103,116,104,61,32,54,53,53,51,54,124,83,101,114,105,97,108,105,122,101,114,95,77,97,120,77,101,115,115,97,103,101,83,105,122,101,32,61,32,54,53,53,51,54]</Single>
+          <Single Name="Type" Type="string">ARRAY[0..3674] OF BYTE</Single>
+        </Single>
+        <Single Name="ParamType" Type="string">std:ARRAY[0..3674] OF BYTE</Single>
+      </Single>
+      <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+        <Single Name="Id" Type="uint">1202</Single>
+        <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+          <Null Name="FilterFlags" />
+          <Single Name="PositionId" Type="long">4142</Single>
+          <Single Name="EditorPositionId" Type="long">4143</Single>
+          <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+            <Single Name="Namespace" Type="string">local</Single>
+            <Single Name="Identifier" Type="string">dummy</Single>
+            <Single Name="Default" Type="string">OPCUA enable</Single>
+          </Single>
+          <Single Name="Identifier" Type="string">1202</Single>
+          <Single Name="Value" Type="string">FALSE</Single>
+          <Single Name="Type" Type="string">BOOL</Single>
+          <Single Name="Default" Type="string">FALSE</Single>
+        </Single>
+        <Single Name="ParamType" Type="string">std:BOOL</Single>
+        <Single Name="IndexInDevDesc" Type="long">7</Single>
+      </Single>
+      <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+        <Single Name="OnlineChangeEnable" Type="bool">True</Single>
+        <Single Name="Id" Type="uint">1203</Single>
+        <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+          <Null Name="FilterFlags" />
+          <Single Name="PositionId" Type="long">4144</Single>
+          <Single Name="EditorPositionId" Type="long">4145</Single>
+          <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+            <Single Name="Namespace" Type="string">local</Single>
+            <Single Name="Identifier" Type="string">dummy</Single>
+            <Single Name="Default" Type="string">Dummy int param for online change</Single>
+          </Single>
+          <Single Name="Identifier" Type="string">1203</Single>
+          <Single Name="Type" Type="string">INT</Single>
+        </Single>
+        <Single Name="ParamType" Type="string">std:INT</Single>
+        <Single Name="OnlineChangeEnabled" Type="bool">True</Single>
+        <Single Name="IndexInDevDesc" Type="long">8</Single>
+      </Single>
+      <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+        <Single Name="Id" Type="uint">1204</Single>
+        <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+          <Null Name="FilterFlags" />
+          <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}">
+            <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+              <Single Name="Name" Type="string">se:LateConfiguration</Single>
+              <Single Name="Data" Type="string">&lt;se:LateConfiguration xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;Only ASCII letters, digits, '-' and '_', 30 char max&lt;/se:LateConfiguration&gt;</Single>
+            </Single>
+          </List>
+          <Single Name="PositionId" Type="long">4146</Single>
+          <Single Name="EditorPositionId" Type="long">4147</Single>
+          <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+            <Single Name="Namespace" Type="string">local</Single>
+            <Single Name="Identifier" Type="string">dummy</Single>
+            <Single Name="Default" Type="string">OPCUA server name</Single>
+          </Single>
+          <Single Name="Identifier" Type="string">1204</Single>
+          <Single Name="Value" Type="string">''</Single>
+          <Single Name="Type" Type="string">STRING(32)</Single>
+          <Single Name="Default" Type="string">''</Single>
+        </Single>
+        <Single Name="ParamType" Type="string">std:STRING(32)</Single>
+        <Single Name="IndexInDevDesc" Type="long">9</Single>
+      </Single>
+      <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+        <Single Name="Id" Type="uint">1300</Single>
+        <Single Name="Download" Type="bool">False</Single>
+        <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+          <Null Name="FilterFlags" />
+          <Single Name="PositionId" Type="long">4148</Single>
+          <Single Name="EditorPositionId" Type="long">4149</Single>
+          <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+            <Single Name="Namespace" Type="string">local</Single>
+            <Single Name="Identifier" Type="string">dummy</Single>
+            <Single Name="Default" Type="string">Write clock as UTC</Single>
+          </Single>
+          <Single Name="Identifier" Type="string">1300</Single>
+          <Single Name="Value" Type="string">TRUE</Single>
+          <Single Name="Type" Type="string">BOOL</Single>
+          <Single Name="Default" Type="string">TRUE</Single>
+        </Single>
+        <Single Name="ParamType" Type="string">std:BOOL</Single>
+        <Single Name="IndexInDevDesc" Type="long">10</Single>
+      </Single>
+    </List2>
+    <Single Name="LmGuid" Type="System.Guid">cab40902-7d59-5a44-a259-52f777951d4f</Single>
+    <Null Name="Sections" />
+    <Single Name="InitOnOnlineChange" Type="bool">False</Single>
+    <Single Name="AlwaysMapping" Type="bool">False</Single>
+    <Null Name="EditorName" />
+    <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+    <Single Name="CreateBitChannels" Type="bool">False</Single>
+  </Single>
+  <Single Name="Disable" Type="bool">False</Single>
+  <Single Name="Exclude" Type="bool">False</Single>
+  <List Name="Connectors" Type="System.Collections.ArrayList" />
+  <Single Name="ConnectorList" Type="{52a6325f-063a-4748-86b6-ec8aa02d3232}" Method="IArchivable">
+    <List Name="InnerList" Type="System.Collections.ArrayList">
+      <Single Type="{850f737d-2abf-45f4-89c1-63ed6b29593d}" Method="IArchivable">
+        <Single Name="VisibleInterfaceName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+          <Single Name="Default" Type="string">MSD.M2XX</Single>
+        </Single>
+        <Single Name="ConnectorObjectGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="IsExplicit" Type="bool">False</Single>
+        <Single Name="ModuleType" Type="ushort">45000</Single>
+        <Single Name="Interface" Type="string">MSD.M2XX</Single>
+        <Single Name="Role" Type="{6827a808-5967-49c4-a827-10f6c446e075}">Parent</Single>
+        <Single Name="ConnectorId" Type="int">1</Single>
+        <Single Name="Hostpath" Type="int">-1</Single>
+        <Single Name="Adapters" Type="{1da2f14a-1c63-4268-9171-3b6869b8ccd6}" Method="IArchivable">
+          <List Name="Adapters" Type="System.Collections.ArrayList">
+            <Single Type="{48ed2d53-8733-46f1-bf62-13f190518ba8}" Method="IArchivable">
+              <Array Name="DefaultModules" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}">
+                <Single Type="{959f677a-b4e4-4930-8d88-b3b6b116d4d6}" Method="IArchivable">
+                  <Single Name="ModuleId" Type="string">DIG_IN</Single>
+                  <Single Name="Type" Type="int">4096</Single>
+                  <Single Name="Id" Type="string">101a 0707</Single>
+                  <Single Name="Version" Type="string">5.5.14.15</Single>
+                  <Single Name="BaseName" Type="string">DI</Single>
+                </Single>
+              </Array>
+              <Array Name="Modules" Type="System.Guid">
+                <Single Type="System.Guid">830c1a27-18d9-4a7e-8720-49ef7d8cbf26</Single>
+              </Array>
+            </Single>
+            <Single Type="{48ed2d53-8733-46f1-bf62-13f190518ba8}" Method="IArchivable">
+              <Array Name="DefaultModules" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}">
+                <Single Type="{959f677a-b4e4-4930-8d88-b3b6b116d4d6}" Method="IArchivable">
+                  <Single Name="ModuleId" Type="string">DIG_OUT</Single>
+                  <Single Name="Type" Type="int">4096</Single>
+                  <Single Name="Id" Type="string">101a 0707</Single>
+                  <Single Name="Version" Type="string">5.5.14.15</Single>
+                  <Single Name="BaseName" Type="string">DQ</Single>
+                </Single>
+              </Array>
+              <Array Name="Modules" Type="System.Guid">
+                <Single Type="System.Guid">6b4bcc17-bfa6-4e0f-b79d-e571417550c2</Single>
+              </Array>
+            </Single>
+            <Single Type="{48ed2d53-8733-46f1-bf62-13f190518ba8}" Method="IArchivable">
+              <Array Name="DefaultModules" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}">
+                <Single Type="{959f677a-b4e4-4930-8d88-b3b6b116d4d6}" Method="IArchivable">
+                  <Single Name="ModuleId" Type="string">COUNTERS</Single>
+                  <Single Name="Type" Type="int">4096</Single>
+                  <Single Name="Id" Type="string">101a 0707</Single>
+                  <Single Name="Version" Type="string">5.5.14.15</Single>
+                  <Single Name="BaseName" Type="string">Counters</Single>
+                </Single>
+              </Array>
+              <Array Name="Modules" Type="System.Guid">
+                <Single Type="System.Guid">d32f50a8-08d0-434f-862c-416bd9e1027e</Single>
+              </Array>
+            </Single>
+            <Single Type="{48ed2d53-8733-46f1-bf62-13f190518ba8}" Method="IArchivable">
+              <Array Name="DefaultModules" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}">
+                <Single Type="{959f677a-b4e4-4930-8d88-b3b6b116d4d6}" Method="IArchivable">
+                  <Single Name="ModuleId" Type="string">PULSE_GENERATORS</Single>
+                  <Single Name="Type" Type="int">4096</Single>
+                  <Single Name="Id" Type="string">101a 0707</Single>
+                  <Single Name="Version" Type="string">5.5.14.15</Single>
+                  <Single Name="BaseName" Type="string">Pulse_Generators</Single>
+                </Single>
+              </Array>
+              <Array Name="Modules" Type="System.Guid">
+                <Single Type="System.Guid">d2c51faa-87a0-4a0f-a0f2-1829db0b325b</Single>
+              </Array>
+            </Single>
+            <Single Type="{48ed2d53-8733-46f1-bf62-13f190518ba8}" Method="IArchivable">
+              <Array Name="DefaultModules" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}">
+                <Single Type="{959f677a-b4e4-4930-8d88-b3b6b116d4d6}" Method="IArchivable">
+                  <Single Name="ModuleId" Type="string">CARTRIDGE_1</Single>
+                  <Single Name="Type" Type="int">4096</Single>
+                  <Single Name="Id" Type="string">101a 0707</Single>
+                  <Single Name="Version" Type="string">5.5.14.15</Single>
+                  <Single Name="BaseName" Type="string">Cartridge_1</Single>
+                </Single>
+              </Array>
+              <Array Name="Modules" Type="System.Guid">
+                <Single Type="System.Guid">2938618f-2fd8-47e5-bdda-8c503bd796c1</Single>
+              </Array>
+            </Single>
+            <Single Type="{48ed2d53-8733-46f1-bf62-13f190518ba8}" Method="IArchivable">
+              <Array Name="DefaultModules" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}">
+                <Single Type="{959f677a-b4e4-4930-8d88-b3b6b116d4d6}" Method="IArchivable">
+                  <Single Name="ModuleId" Type="string">IO_EXPANSION_BUS</Single>
+                  <Single Name="Type" Type="int">4096</Single>
+                  <Single Name="Id" Type="string">101a 0707</Single>
+                  <Single Name="Version" Type="string">5.5.14.15</Single>
+                  <Single Name="BaseName" Type="string">IO_Bus</Single>
+                </Single>
+              </Array>
+              <Array Name="Modules" Type="System.Guid">
+                <Single Type="System.Guid">33392c1e-cdc4-4ff7-be44-f9740898df57</Single>
+              </Array>
+            </Single>
+            <Single Type="{48ed2d53-8733-46f1-bf62-13f190518ba8}" Method="IArchivable">
+              <Array Name="DefaultModules" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}">
+                <Single Type="{959f677a-b4e4-4930-8d88-b3b6b116d4d6}" Method="IArchivable">
+                  <Single Name="ModuleId" Type="string">COM_EXPANSION_BUS</Single>
+                  <Single Name="Type" Type="int">4096</Single>
+                  <Single Name="Id" Type="string">101a 0707</Single>
+                  <Single Name="Version" Type="string">5.5.14.15</Single>
+                  <Single Name="BaseName" Type="string">COM_Bus</Single>
+                </Single>
+              </Array>
+              <Array Name="Modules" Type="System.Guid">
+                <Single Type="System.Guid">c944a989-e07d-462e-9323-2225362dece3</Single>
+              </Array>
+            </Single>
+            <Single Type="{48ed2d53-8733-46f1-bf62-13f190518ba8}" Method="IArchivable">
+              <Array Name="DefaultModules" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}">
+                <Single Type="{959f677a-b4e4-4930-8d88-b3b6b116d4d6}" Method="IArchivable">
+                  <Single Name="ModuleId" Type="string">ETHERNET_1</Single>
+                  <Single Name="Type" Type="int">4096</Single>
+                  <Single Name="Id" Type="string">101a 0707</Single>
+                  <Single Name="Version" Type="string">5.5.14.15</Single>
+                  <Single Name="BaseName" Type="string">Ethernet_1</Single>
+                </Single>
+              </Array>
+              <Array Name="Modules" Type="System.Guid">
+                <Single Type="System.Guid">77729652-614c-4a12-8656-be3696812e21</Single>
+              </Array>
+            </Single>
+            <Single Type="{48ed2d53-8733-46f1-bf62-13f190518ba8}" Method="IArchivable">
+              <Array Name="DefaultModules" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}">
+                <Single Type="{959f677a-b4e4-4930-8d88-b3b6b116d4d6}" Method="IArchivable">
+                  <Single Name="ModuleId" Type="string">SERIAL_LINE_1</Single>
+                  <Single Name="Type" Type="int">4096</Single>
+                  <Single Name="Id" Type="string">101a 0707</Single>
+                  <Single Name="Version" Type="string">5.5.14.15</Single>
+                  <Single Name="BaseName" Type="string">Serial_Line_1</Single>
+                </Single>
+              </Array>
+              <Array Name="Modules" Type="System.Guid">
+                <Single Type="System.Guid">efc475f9-92ec-472a-9ff1-9a34e7898d88</Single>
+              </Array>
+            </Single>
+            <Single Type="{48ed2d53-8733-46f1-bf62-13f190518ba8}" Method="IArchivable">
+              <Array Name="DefaultModules" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}">
+                <Single Type="{959f677a-b4e4-4930-8d88-b3b6b116d4d6}" Method="IArchivable">
+                  <Single Name="ModuleId" Type="string">SERIAL_LINE_2</Single>
+                  <Single Name="Type" Type="int">4096</Single>
+                  <Single Name="Id" Type="string">101a 0707</Single>
+                  <Single Name="Version" Type="string">5.5.14.15</Single>
+                  <Single Name="BaseName" Type="string">Serial_Line_2</Single>
+                </Single>
+              </Array>
+              <Array Name="Modules" Type="System.Guid">
+                <Single Type="System.Guid">35f460e4-c12e-41fb-96b7-f18ee01a722d</Single>
+              </Array>
+            </Single>
+            <Single Type="{48ed2d53-8733-46f1-bf62-13f190518ba8}" Method="IArchivable">
+              <Array Name="DefaultModules" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}">
+                <Single Type="{959f677a-b4e4-4930-8d88-b3b6b116d4d6}" Method="IArchivable">
+                  <Single Name="ModuleId" Type="string">CANOPEN</Single>
+                  <Single Name="Type" Type="int">4096</Single>
+                  <Single Name="Id" Type="string">101a 0707</Single>
+                  <Single Name="Version" Type="string">5.5.14.15</Single>
+                  <Single Name="BaseName" Type="string">CAN_1</Single>
+                </Single>
+              </Array>
+              <Array Name="Modules" Type="System.Guid">
+                <Single Type="System.Guid">0fe44153-2348-415a-a5d6-1c2e2bc6f9ca</Single>
+              </Array>
+            </Single>
+          </List>
+        </Single>
+        <Single Name="HostParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+          <List2 Name="Params" />
+          <Single Name="LmGuid" Type="System.Guid">0e2352f6-ade9-505d-9143-10ad70e76337</Single>
+          <Null Name="Sections" />
+          <Single Name="InitOnOnlineChange" Type="bool">False</Single>
+          <Single Name="AlwaysMapping" Type="bool">False</Single>
+          <Null Name="EditorName" />
+          <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+          <Single Name="CreateBitChannels" Type="bool">False</Single>
+        </Single>
+        <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+          <List Name="RequiredLibs" Type="System.Collections.ArrayList" />
+          <Null Name="RequiredTasks" />
+          <Single Name="NeedsBusCycle" Type="bool">False</Single>
+          <Single Name="BusCycleTask" Type="string"></Single>
+          <Single Name="IoApp" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="IoAppSet" Type="bool">False</Single>
+          <Array Name="PositionIds" Type="long">NhAAAAAAAAA3EAAAAAAAADgQAAAAAAAA</Array>
+          <Single Name="UseSlowestTask" Type="bool">False</Single>
+          <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+          <Single Name="GenerateForceVariables" Type="bool">False</Single>
+          <Single Name="EnableDiagnosis" Type="bool">False</Single>
+          <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+          <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+          <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+          <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+          <Single Name="SymbolicAccessMode" Type="{866ccdec-84a7-4590-aeab-383c7bd79437}">Disabled</Single>
+          <Single Name="DeviceScanSupported" Type="bool">False</Single>
+          <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+          <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+          <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+          <Single Name="UpdateIOsInStop" Type="bool">False</Single>
+          <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">KeepCurrentValues</Single>
+          <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+          <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+          <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        </Single>
+        <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}">
+          <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+            <Single Name="Name" Type="string">se:AcceptedModule</Single>
+            <Single Name="Data" Type="string">&lt;se:AcceptedModule xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;&lt;se:DeviceUniqueOnController deviceType="120" deviceId="0000 0002" /&gt;&lt;se:DeviceUniqueOnController deviceType="115" deviceId="0000 0002" /&gt;&lt;/se:AcceptedModule&gt;</Single>
+          </Single>
+        </List>
+        <Single Name="ModuleId" Type="int">-1</Single>
+        <Null Name="IoUpdateTask" />
+        <List Name="AdditionalInterfaces" Type="System.Collections.ArrayList" />
+        <List Name="Constraints" Type="System.Collections.ArrayList" />
+        <Single Name="hideInStatusPage" Type="bool">False</Single>
+        <Single Name="updateAllowed" Type="bool">True</Single>
+        <Single Name="fixedInputAddress" Type="string"></Single>
+        <Single Name="fixedOutputAddress" Type="string"></Single>
+        <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+        <List Name="AllowOnlyDevices" Type="System.Collections.ArrayList" />
+        <Single Name="InitialStatusFlag" Type="uint">1</Single>
+        <Single Name="UseBlobInitConst" Type="bool">False</Single>
+        <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        <Single Name="ConnectorGroup" Type="uint">0</Single>
+        <Array Name="AllowedPages" Type="string">
+          <Single Type="string">CommunicationPage</Single>
+          <Single Type="string">NetManagePage</Single>
+          <Single Type="string">ApplicationsPage</Single>
+          <Single Type="string">UpDownloadPage</Single>
+          <Single Type="string">LoggerPage</Single>
+          <Single Type="string">MSDPLCOptionsPage</Single>
+          <Single Type="string">MxxxServiceEditor</Single>
+          <Single Type="string">IOMappingEditor</Single>
+          <Single Type="string">TaskUpdatePage</Single>
+          <Single Type="string">EthernetServices</Single>
+          <Single Type="string">UserManagementPage</Single>
+          <Single Type="string">SymbolAuthorizationPage</Single>
+          <Single Type="string">OpcUaConfigurationEditor</Single>
+          <Single Type="string">StatusPage</Single>
+          <Single Type="string">DeviceInformation</Single>
+        </Array>
+        <Single Name="AlwaysMapping" Type="bool">False</Single>
+        <Single Name="Client" Type="string"></Single>
+        <Single Name="MaxInputSize" Type="uint">0</Single>
+        <Single Name="MaxOutputSize" Type="uint">0</Single>
+        <Single Name="MaxInOutputSize" Type="uint">0</Single>
+        <Single Name="ClientTypeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="ClientConnectorInterface" Type="string"></Single>
+        <Single Name="ClientConnectorId" Type="int">-1</Single>
+        <Single Name="AlwaysMappingDisabled" Type="bool">False</Single>
+      </Single>
+    </List>
+  </Single>
+  <Single Name="Attributes" Type="{1fdbedd8-b518-4ebd-99df-805f2f77c071}" Method="IArchivable">
+    <Dictionary Type="System.Collections.Hashtable" Name="Attributes">
+      <Entry>
+        <Key>
+          <Single Type="string">SecureOnlineMode</Single>
+        </Key>
+        <Value>
+          <Single Type="string">True</Single>
+        </Value>
+      </Entry>
+      <Entry>
+        <Key>
+          <Single Type="string">StdCommunicationLink</Single>
+        </Key>
+        <Value>
+          <Single Type="string">True</Single>
+        </Value>
+      </Entry>
+    </Dictionary>
+  </Single>
+  <Single Name="CommunicationSettings" Type="{58f2b04d-505d-4589-9fcf-0ec83491f9b2}" Method="IArchivable">
+    <Single Name="SaveLocally" Type="bool">False</Single>
+    <Single Name="CommunicationSettingFilter" Type="int">1</Single>
+    <Single Name="CommunicationSettingSorting" Type="int">0</Single>
+    <Single Name="TrackingMode" Type="int">5</Single>
+    <Single Name="GatewayGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+    <Null Name="Address" />
+    <Single Name="PromptAtLogin" Type="bool">False</Single>
+    <Single Name="SimulationMode" Type="bool">False</Single>
+    <Single Name="SecureOnlineMode" Type="bool">True</Single>
+    <Single Name="SecureOnlineModeExplicitelySet" Type="bool">False</Single>
+    <Single Name="Name" Type="string"></Single>
+    <Single Name="MonitoringIntervalMsec" Type="int">200</Single>
+    <Null Name="ScanInformation" />
+    <Single Name="IsCommunicationEncrypted" Type="bool">True</Single>
+    <Single Name="IsDefaultNameTrackingFromScanActive" Type="bool">False</Single>
+  </Single>
+  <Single Name="IoProviderBase" Type="{848f25ec-eecf-4290-8329-7f6500fd2e0f}" Method="IArchivable">
+    <Array Name="UserBaseAddress" Type="string">
+      <Null />
+      <Null />
+      <Null />
+    </Array>
+  </Single>
+  <Single Name="GuidBusCycleTask" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+  <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+    <List Name="RequiredLibs" Type="System.Collections.ArrayList">
+      <Single Type="{94d8f601-f8e4-4aaa-8f48-f3c3ec33bec1}" Method="IArchivable">
+        <Single Name="LibName" Type="string">IoStandard</Single>
+        <Single Name="Vendor" Type="string">System</Single>
+        <Single Name="Version" Type="string">3.5.17.0</Single>
+        <Single Name="Identifier" Type="string">iostandardlib</Single>
+        <List Name="FbInstances" Type="System.Collections.ArrayList" />
+        <Single Name="PlaceHolderLib" Type="string">IoStandard</Single>
+        <Single Name="loadAsSystemLibrary" Type="bool">True</Single>
+        <Single Name="IsDiagnosisLib" Type="bool">False</Single>
+        <Single Name="AddedByAP" Type="bool">False</Single>
+        <Single Name="Client" Type="string"></Single>
+      </Single>
+      <Single Type="{94d8f601-f8e4-4aaa-8f48-f3c3ec33bec1}" Method="IArchivable">
+        <Single Name="LibName" Type="string">Standard</Single>
+        <Single Name="Vendor" Type="string">System</Single>
+        <Single Name="Version" Type="string">3.5.18.0</Single>
+        <Single Name="Identifier" Type="string">standardlib</Single>
+        <List Name="FbInstances" Type="System.Collections.ArrayList" />
+        <Single Name="PlaceHolderLib" Type="string">Standard</Single>
+        <Single Name="loadAsSystemLibrary" Type="bool">True</Single>
+        <Single Name="IsDiagnosisLib" Type="bool">False</Single>
+        <Single Name="AddedByAP" Type="bool">False</Single>
+        <Single Name="Client" Type="string"></Single>
+      </Single>
+      <Single Type="{94d8f601-f8e4-4aaa-8f48-f3c3ec33bec1}" Method="IArchivable">
+        <Single Name="LibName" Type="string">Util</Single>
+        <Single Name="Vendor" Type="string">System</Single>
+        <Single Name="Version" Type="string">3.5.21.0</Single>
+        <Single Name="Identifier" Type="string">utillib</Single>
+        <List Name="FbInstances" Type="System.Collections.ArrayList" />
+        <Single Name="PlaceHolderLib" Type="string">Util</Single>
+        <Single Name="loadAsSystemLibrary" Type="bool">True</Single>
+        <Single Name="IsDiagnosisLib" Type="bool">False</Single>
+        <Single Name="AddedByAP" Type="bool">False</Single>
+        <Single Name="Client" Type="string"></Single>
+      </Single>
+      <Single Type="{94d8f601-f8e4-4aaa-8f48-f3c3ec33bec1}" Method="IArchivable">
+        <Single Name="LibName" Type="string">M241 PLCSystem</Single>
+        <Single Name="Vendor" Type="string">Schneider Electric</Single>
+        <Single Name="Version" Type="string">1.0.2.4</Single>
+        <Single Name="Identifier" Type="string">plcsystem</Single>
+        <List Name="FbInstances" Type="System.Collections.ArrayList">
+          <Single Type="{1a6d9caa-30e2-4c6c-aa84-7bcee3627153}" Method="IArchivable">
+            <Single Name="FbName" Type="string">PLCSystemFB(udiAppversion := 16#05050E0F)</Single>
+            <Single Name="BaseName" Type="string">$(DeviceName)</Single>
+            <Single Name="Instance" Type="{47edf8ea-3f84-452c-b998-e18f878578d3}" Method="IArchivable">
+              <Single Name="CreateVariable" Type="bool">True</Single>
+              <Single Name="Variable" Type="string">MyController</Single>
+            </Single>
+            <Single Name="InitMethod" Type="string"></Single>
+            <List Name="CyclicCalls" Type="System.Collections.ArrayList">
+              <Single Type="{58ff2753-3af6-4814-bcc4-9ed585515754}" Method="IArchivable">
+                <Single Name="MethodName" Type="string">EndOfMAST</Single>
+                <Single Name="WhenToCall" Type="string">beforeWriteOutputs</Single>
+                <Single Name="Task" Type="string">MAST</Single>
+              </Single>
+              <Single Type="{58ff2753-3af6-4814-bcc4-9ed585515754}" Method="IArchivable">
+                <Single Name="MethodName" Type="string">BeforeMAST</Single>
+                <Single Name="WhenToCall" Type="string">beforeReadInputs</Single>
+                <Single Name="Task" Type="string">MAST</Single>
+              </Single>
+            </List>
+            <Single Name="Location" Type="{4da2c5bd-5291-436b-b8b0-6a4480112db7}">GVL</Single>
+            <Single Name="FbNameDiag" Type="string"></Single>
+            <Single Name="PositionId" Type="long">4100</Single>
+          </Single>
+        </List>
+        <Single Name="PlaceHolderLib" Type="string">SE_PLCSystem</Single>
+        <Single Name="loadAsSystemLibrary" Type="bool">True</Single>
+        <Single Name="IsDiagnosisLib" Type="bool">False</Single>
+        <Single Name="AddedByAP" Type="bool">False</Single>
+        <Single Name="Client" Type="string"></Single>
+      </Single>
+      <Single Type="{94d8f601-f8e4-4aaa-8f48-f3c3ec33bec1}" Method="IArchivable">
+        <Single Name="LibName" Type="string">PLCCommunication</Single>
+        <Single Name="Vendor" Type="string">Schneider Electric</Single>
+        <Single Name="Version" Type="string">1.0.5.5</Single>
+        <Single Name="Identifier" Type="string">PLCCommunication</Single>
+        <List Name="FbInstances" Type="System.Collections.ArrayList" />
+        <Single Name="PlaceHolderLib" Type="string">SE_PLCCommunication</Single>
+        <Single Name="loadAsSystemLibrary" Type="bool">True</Single>
+        <Single Name="IsDiagnosisLib" Type="bool">False</Single>
+        <Single Name="AddedByAP" Type="bool">False</Single>
+        <Single Name="Client" Type="string"></Single>
+      </Single>
+      <Single Type="{94d8f601-f8e4-4aaa-8f48-f3c3ec33bec1}" Method="IArchivable">
+        <Single Name="LibName" Type="string">Relocation Table</Single>
+        <Single Name="Vendor" Type="string">Schneider Electric</Single>
+        <Single Name="Version" Type="string">1.0.3.0</Single>
+        <Single Name="Identifier" Type="string">RelocationTable</Single>
+        <List Name="FbInstances" Type="System.Collections.ArrayList">
+          <Single Type="{1a6d9caa-30e2-4c6c-aa84-7bcee3627153}" Method="IArchivable">
+            <Single Name="FbName" Type="string">RelocationTableFB(pHiddenFunc := ADR(HiddenPOU))</Single>
+            <Single Name="BaseName" Type="string">RelocTable</Single>
+            <Single Name="Instance" Type="{47edf8ea-3f84-452c-b998-e18f878578d3}" Method="IArchivable">
+              <Single Name="CreateVariable" Type="bool">True</Single>
+              <Single Name="Variable" Type="string">RelocTable</Single>
+            </Single>
+            <Single Name="InitMethod" Type="string"></Single>
+            <List Name="CyclicCalls" Type="System.Collections.ArrayList" />
+            <Single Name="Location" Type="{4da2c5bd-5291-436b-b8b0-6a4480112db7}">GVL</Single>
+            <Single Name="FbNameDiag" Type="string"></Single>
+            <Single Name="PositionId" Type="long">4101</Single>
+          </Single>
+        </List>
+        <Single Name="PlaceHolderLib" Type="string">SE_RelocationTable</Single>
+        <Single Name="loadAsSystemLibrary" Type="bool">True</Single>
+        <Single Name="IsDiagnosisLib" Type="bool">False</Single>
+        <Single Name="AddedByAP" Type="bool">False</Single>
+        <Single Name="Client" Type="string"></Single>
+      </Single>
+    </List>
+    <Null Name="RequiredTasks" />
+    <Single Name="NeedsBusCycle" Type="bool">False</Single>
+    <Single Name="BusCycleTask" Type="string">MAST</Single>
+    <Single Name="IoApp" Type="System.Guid">79e6b53e-e220-4c5a-9e0f-b5db64a50ce5</Single>
+    <Single Name="IoAppSet" Type="bool">True</Single>
+    <Array Name="PositionIds" Type="long">ARAAAAAAAAACEAAAAAAAAAMQAAAAAAAA</Array>
+    <Single Name="UseSlowestTask" Type="bool">True</Single>
+    <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+    <Single Name="GenerateForceVariables" Type="bool">False</Single>
+    <Single Name="EnableDiagnosis" Type="bool">False</Single>
+    <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+    <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+    <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+    <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+    <Single Name="SymbolicAccessMode" Type="{866ccdec-84a7-4590-aeab-383c7bd79437}">Disabled</Single>
+    <Single Name="DeviceScanSupported" Type="bool">False</Single>
+    <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+    <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+    <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+    <Single Name="UpdateIOsInStop" Type="bool">True</Single>
+    <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">SetToDefault</Single>
+    <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+    <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+    <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+    <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+  </Single>
+  <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}">
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{A151D229-E66E-417B-8439-7CE6B1B16D7B}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{E7214FB5-B3FA-4DE9-A43A-6C3209063F31}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{7F2B8BDE-3827-476b-A206-3B8E908F481F}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{B66BFE5C-EC46-4d5e-902A-2F7F8BC08DA5}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{BD20E6DB-89F7-41a7-8DD3-765F65955C77}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{199B0896-C3F1-42d4-B1BE-CCE1942B0A5E}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{8C36C310-D04C-4373-AB8A-BEA87AFFDF3C}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{6E2C532A-1565-4709-9FCD-C3EC778D6B61}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{2386013F-B92A-4B4A-8066-A159A4C6E37D}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{F06DDC73-8EAB-497E-BEC0-E3882F20D3EB}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{29B06758-D227-4A77-B303-BDBF95759915}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{2BEAA810-D4A1-40C3-92DC-6DC87F0FD6A9}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{CF4730D3-017D-44B7-A703-92F1D050D510}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{28796331-F10C-4064-8146-CAC3918B6509}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{ADA8CA2B-F8AC-4219-B58F-5DCE8E94875F}&lt;!-- For TM3 modules --&gt;&lt;se:BuildAnalyserRuleChild&gt;{A6718043-EF34-407F-B8DD-4664514827B3}&lt;/se:BuildAnalyserRuleChild&gt;&lt;!-- For TM5/7 modules --&gt;&lt;se:BuildAnalyserRuleChild&gt;{2247AC2A-D1F8-4B2A-AC94-6554C3EAA372}&lt;/se:BuildAnalyserRuleChild&gt;&lt;!-- For Edge I/O NTS modules --&gt;&lt;se:BuildAnalyserRuleChild&gt;{79CB84F8-6366-4214-B041-71C112EA690A}&lt;/se:BuildAnalyserRuleChild&gt;&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{542A1EBE-15F6-49D6-8758-20CC2CA3EDD4}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{8165EC93-4683-4712-BA03-97C97550C5C1}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:SystemArea</Single>
+      <Single Name="Data" Type="string">&lt;se:SystemArea xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;&lt;se:Read startAddress="60000" length="2000" customStartAddress="60200" /&gt;&lt;se:Write startAddress="62000" length="2000" customStartAddress="62200" /&gt;&lt;/se:SystemArea&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:FirmwareVersionInfo</Single>
+      <Single Name="Data" Type="string">&lt;se:FirmwareVersionInfo DeviceTypeName="M241" ServiceGroup="270139393" ServiceSubGroup="5" ServiceTag="24" DocumentationFile="" DocumentationLink="" xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd" /&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:FirmwareVersionFormats</Single>
+      <Single Name="Data" Type="string">&lt;se:FirmwareVersionFormats xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;&lt;se:FwVersion name="HardwareRevision" merge="true" /&gt;&lt;se:FwVersion name="ProductVersionRevisionLevel" label="localStrings:labelPVRL" skip="2" separator="  |  "&gt;X2&lt;/se:FwVersion&gt;&lt;/se:FirmwareVersionFormats&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">DataLoggingSettings</Single>
+      <Single Name="Data" Type="string">&lt;DataLoggingSettings xmlns="http://www.3s-software.com/schemas/DeviceDescription-1.0.xsd"&gt;&lt;FileLocation label="Internal Flash" path="/usr/Log" /&gt;&lt;FileLocation label="SD Card" path="/sd0" /&gt;&lt;/DataLoggingSettings&gt;</Single>
+    </Single>
+  </List>
+  <Single Name="IoConfigGlobalsGuid" Type="System.Guid">5896ae15-1b07-56df-b8be-b24cc4f6afc3</Single>
+  <Single Name="IoConfigGlobalsMappingGuid" Type="System.Guid">3a61c68a-e19f-53bb-9797-7f6a43c5c65d</Single>
+  <Single Name="IoConfigVarConfigGuid" Type="System.Guid">29bfb962-c129-59eb-84d4-a91d34de5cf7</Single>
+  <Single Name="IoConfigErrorPouGuid" Type="System.Guid">259c66ea-580f-5a0e-9c5e-7a48b448b0ed</Single>
+  <Single Name="ModuleId" Type="int">-1</Single>
+  <Null Name="IoUpdateTask" />
+  <Array Name="FunctionalChildren" Type="System.Guid">
+    <Single Type="System.Guid">40b404f9-e5dc-42c6-907f-c89f4a517386</Single>
+  </Array>
+  <Null Name="UserManagement" />
+  <Null Name="RightsManagement" />
+  <Single Name="showParamsInDevDescOrder" Type="bool">False</Single>
+  <Single Name="fixedInputAddress" Type="string"></Single>
+  <Single Name="fixedOutputAddress" Type="string"></Single>
+  <Single Name="HostObjectGuid" Type="System.Guid">801ebf5c-dbeb-4511-9a45-2ed26e25b40f</Single>
+  <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+  <Single Name="CreateBitChannels" Type="bool">False</Single>
+  <Null Name="AdditionalStringTable" />
+  <Null Name="OnlineHelpUrl" />
+  <Single Name="InteractiveLoginMode" Type="int">-1</Single>
+  <Single Name="UseDeviceApplicationStructure" Type="bool">False</Single>
+  <Single Name="AllowSymbolicVarAccessInSyncWithIecCycle" Type="bool">False</Single>
+  <Single Name="LogicalDeviceList" Type="{ec1f8a3a-98c6-404c-883e-ce9e54b42542}" Method="IArchivable">
+    <List Name="InnerList" Type="System.Collections.ArrayList" />
+  </Single>
+  <Single Name="LogicalLanguageModelPositionId" Type="long">-1</Single>
+  <List Name="SupportedLogicalBusSystems" Type="System.Collections.ArrayList" />
+  <Single Name="MappingPossible" Type="bool">False</Single>
+  <Single Name="HidePropertiesDialog" Type="bool">False</Single>
+  <Null Name="PlaceholderResolution" />
+  <Null Name="RedirectedPlaceholderResolution" />
+</Single>

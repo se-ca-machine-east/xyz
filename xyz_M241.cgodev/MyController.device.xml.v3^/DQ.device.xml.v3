@@ -1,0 +1,939 @@
+__V3_META__
+{
+  "objectGuid": "6b4bcc17-bfa6-4e0f-b79d-e571417550c2",
+  "objectTypeGuid": "225bfe47-7336-4dbc-9419-4105a7c831fa",
+  "embeddedObjectTypeGuids": [],
+  "properties": {
+    "_3S.CoDeSys.DeviceObject.DeviceProperty": "<?xml version=\"1.0\" encoding=\"utf-8\"?><Single xml:space=\"preserve\" Type=\"{cdadfc2b-8598-4621-ad56-5b1df7db910f}\" Method=\"IArchivable\"><Single Name=\"DeviceIdentification\" Type=\"{959f677a-b4e4-4930-8d88-b3b6b116d4d6}\" Method=\"IArchivable\"><Single Name=\"ModuleId\" Type=\"string\">DIG_OUT</Single><Single Name=\"Type\" Type=\"int\">4096</Single><Single Name=\"Id\" Type=\"string\">101a 0707</Single><Single Name=\"Version\" Type=\"string\">5.5.14.15</Single><Single Name=\"BaseName\" Type=\"string\">DQ</Single></Single></Single>",
+    "schneider.Automation.OEM.MSDIOManager.IOHarmonizationProperty": "<?xml version=\"1.0\" encoding=\"utf-8\"?><Single xml:space=\"preserve\" Type=\"{275991af-8cbe-452b-ad98-cb6842331ae4}\" Method=\"IArchivable\"><Single Name=\"InitialModuleName\" Type=\"string\">DQ</Single><Single Name=\"InitialTemplate\" Type=\"string\">#X#T#D_#C</Single></Single>",
+    "schneiderAutomation.Platform.Core.ObjectProperty.AlreadyHandledObjectProperty": "<?xml version=\"1.0\" encoding=\"utf-8\"?><Single xml:space=\"preserve\" Type=\"{f34a3cea-eaf7-46ee-9371-24d10b0ab1d5}\" Method=\"IArchivable\"><List2 Name=\"PropertyList\"><Single Type=\"string\">IOHarmonizationService</Single></List2></Single>"
+  },
+  "subObjects": {}
+}
+__V3_CONTENT__
+<?xml version="1.0" encoding="utf-8"?>
+<Single xml:space="preserve" Type="{225bfe47-7336-4dbc-9419-4105a7c831fa}" Method="IArchivable">
+  <Single Name="UniqueIdGenerator" Type="string">4136</Single>
+  <Null Name="TypeList" />
+  <Single Name="NeedsBusCycle" Type="bool">False</Single>
+  <Single Name="Id" Type="{959f677a-b4e4-4930-8d88-b3b6b116d4d6}" Method="IArchivable">
+    <Single Name="ModuleId" Type="string">DIG_OUT</Single>
+    <Single Name="Type" Type="int">4096</Single>
+    <Single Name="Id" Type="string">101a 0707</Single>
+    <Single Name="Version" Type="string">5.5.14.15</Single>
+    <Single Name="BaseName" Type="string">DQ</Single>
+  </Single>
+  <Single Name="DefaultDeviceInfo" Type="{59a90934-c888-40db-a9df-306fcf36d75c}" Method="IArchivable">
+    <Single Name="Name" Type="string">Digital Outputs</Single>
+    <Single Name="Description" Type="string"></Single>
+    <Single Name="Vendor" Type="string">Schneider Electric</Single>
+    <Single Name="OrderNumber" Type="string">-</Single>
+    <Array Name="Categories" Type="int" />
+    <Array Name="Families" Type="string" />
+    <Single Name="Custom" Type="string"></Single>
+    <Null Name="DefaultInstanceName" />
+  </Single>
+  <Single Name="DeviceParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+    <List2 Name="Params" />
+    <Single Name="LmGuid" Type="System.Guid">64afd34b-5bd9-5d3a-bcb9-152b57aaa9e4</Single>
+    <Null Name="Sections" />
+    <Single Name="InitOnOnlineChange" Type="bool">False</Single>
+    <Single Name="AlwaysMapping" Type="bool">False</Single>
+    <Null Name="EditorName" />
+    <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+    <Single Name="CreateBitChannels" Type="bool">False</Single>
+  </Single>
+  <Single Name="Disable" Type="bool">False</Single>
+  <Single Name="Exclude" Type="bool">False</Single>
+  <List Name="Connectors" Type="System.Collections.ArrayList" />
+  <Single Name="ConnectorList" Type="{52a6325f-063a-4748-86b6-ec8aa02d3232}" Method="IArchivable">
+    <List Name="InnerList" Type="System.Collections.ArrayList">
+      <Single Type="{850f737d-2abf-45f4-89c1-63ed6b29593d}" Method="IArchivable">
+        <Single Name="VisibleInterfaceName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+          <Single Name="Namespace" Type="string">local</Single>
+          <Single Name="Identifier" Type="string">dummy</Single>
+        </Single>
+        <Single Name="ConnectorObjectGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="IsExplicit" Type="bool">False</Single>
+        <Single Name="ModuleType" Type="ushort">45002</Single>
+        <Single Name="Interface" Type="string">MSD.M2XX</Single>
+        <Single Name="Role" Type="{6827a808-5967-49c4-a827-10f6c446e075}">Child</Single>
+        <Single Name="ConnectorId" Type="int">1</Single>
+        <Single Name="Hostpath" Type="int">-1</Single>
+        <Single Name="Adapters" Type="{1da2f14a-1c63-4268-9171-3b6869b8ccd6}" Method="IArchivable">
+          <List Name="Adapters" Type="System.Collections.ArrayList">
+            <Single Type="{6d49a564-d0d1-4914-86ee-4465387ab144}" Method="IArchivable">
+              <Single Name="AllowEmptySlot" Type="bool">True</Single>
+              <Null Name="DefaultModules" />
+              <Array Name="Modules" Type="System.Guid">
+                <Single Type="System.Guid">801ebf5c-dbeb-4511-9a45-2ed26e25b40f</Single>
+              </Array>
+              <Single Name="IncludeSlotNumber" Type="bool">False</Single>
+              <Single Name="StartSlotNumber" Type="uint">0</Single>
+              <Null Name="SlotNames" />
+              <Single Name="HiddenSlot" Type="bool">False</Single>
+            </Single>
+          </List>
+        </Single>
+        <Single Name="HostParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+          <List2 Name="Params">
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">2000</Single>
+              <Single Name="ChannelType" Type="{abf9b454-3972-4b82-88a2-feef15a02f10}">Output</Single>
+              <Single Name="DalaElement" Type="{bd387d12-7a68-42ff-9fa4-1e4e26e0dc37}" Method="IArchivable">
+                <Single Name="SubElements" Type="{45b6f676-61a0-4c78-a679-8c725851fa1e}" Method="IArchivable">
+                  <List2 Name="elements">
+                    <Single Type="{1944b378-8867-41f4-b1f4-6e5b1e6547ba}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4105</Single>
+                      <Single Name="EditorPositionId" Type="long">4106</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Channels.Base.FastOutput.Description</Single>
+                        <Single Name="Default" Type="string">Fast output, Push/Pull</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Default" Type="string">Q0</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Bit0</Single>
+                      <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Channels.Base.FastOutput.Description</Single>
+                          <Single Name="Default" Type="string">Fast output, Push/Pull</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Default" Type="string">Q0</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Bit0</Single>
+                        <Single Name="Type" Type="string">BOOL</Single>
+                      </Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                    </Single>
+                    <Single Type="{1944b378-8867-41f4-b1f4-6e5b1e6547ba}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4107</Single>
+                      <Single Name="EditorPositionId" Type="long">4108</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Channels.Base.FastOutput.Description</Single>
+                        <Single Name="Default" Type="string">Fast output, Push/Pull</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Default" Type="string">Q1</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Bit1</Single>
+                      <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Channels.Base.FastOutput.Description</Single>
+                          <Single Name="Default" Type="string">Fast output, Push/Pull</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Default" Type="string">Q1</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Bit1</Single>
+                        <Single Name="Type" Type="string">BOOL</Single>
+                      </Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                    </Single>
+                    <Single Type="{1944b378-8867-41f4-b1f4-6e5b1e6547ba}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4109</Single>
+                      <Single Name="EditorPositionId" Type="long">4110</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Channels.Base.FastOutput.Description</Single>
+                        <Single Name="Default" Type="string">Fast output, Push/Pull</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Default" Type="string">Q2</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Bit2</Single>
+                      <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Channels.Base.FastOutput.Description</Single>
+                          <Single Name="Default" Type="string">Fast output, Push/Pull</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Default" Type="string">Q2</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Bit2</Single>
+                        <Single Name="Type" Type="string">BOOL</Single>
+                      </Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                    </Single>
+                    <Single Type="{1944b378-8867-41f4-b1f4-6e5b1e6547ba}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4111</Single>
+                      <Single Name="EditorPositionId" Type="long">4112</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Channels.Base.FastOutput.Description</Single>
+                        <Single Name="Default" Type="string">Fast output, Push/Pull</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Default" Type="string">Q3</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Bit3</Single>
+                      <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Channels.Base.FastOutput.Description</Single>
+                          <Single Name="Default" Type="string">Fast output, Push/Pull</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Default" Type="string">Q3</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Bit3</Single>
+                        <Single Name="Type" Type="string">BOOL</Single>
+                      </Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                    </Single>
+                    <Single Type="{1944b378-8867-41f4-b1f4-6e5b1e6547ba}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4113</Single>
+                      <Single Name="EditorPositionId" Type="long">4114</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Channels.Base.RelayOutput.Description</Single>
+                        <Single Name="Default" Type="string">Relay output</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Default" Type="string">Q4</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Bit4</Single>
+                      <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Channels.Base.RelayOutput.Description</Single>
+                          <Single Name="Default" Type="string">Relay output</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Default" Type="string">Q4</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Bit4</Single>
+                        <Single Name="Type" Type="string">BOOL</Single>
+                      </Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                    </Single>
+                    <Single Type="{1944b378-8867-41f4-b1f4-6e5b1e6547ba}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4115</Single>
+                      <Single Name="EditorPositionId" Type="long">4116</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Channels.Base.RelayOutput.Description</Single>
+                        <Single Name="Default" Type="string">Relay output</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Default" Type="string">Q5</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Bit5</Single>
+                      <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Channels.Base.RelayOutput.Description</Single>
+                          <Single Name="Default" Type="string">Relay output</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Default" Type="string">Q5</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Bit5</Single>
+                        <Single Name="Type" Type="string">BOOL</Single>
+                      </Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                    </Single>
+                    <Single Type="{1944b378-8867-41f4-b1f4-6e5b1e6547ba}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4117</Single>
+                      <Single Name="EditorPositionId" Type="long">4118</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Channels.Base.RelayOutput.Description</Single>
+                        <Single Name="Default" Type="string">Relay output</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Default" Type="string">Q6</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Bit6</Single>
+                      <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Channels.Base.RelayOutput.Description</Single>
+                          <Single Name="Default" Type="string">Relay output</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Default" Type="string">Q6</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Bit6</Single>
+                        <Single Name="Type" Type="string">BOOL</Single>
+                      </Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                    </Single>
+                    <Single Type="{1944b378-8867-41f4-b1f4-6e5b1e6547ba}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4119</Single>
+                      <Single Name="EditorPositionId" Type="long">4120</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Channels.Base.RelayOutput.Description</Single>
+                        <Single Name="Default" Type="string">Relay output</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Default" Type="string">Q7</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Bit7</Single>
+                      <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Channels.Base.RelayOutput.Description</Single>
+                          <Single Name="Default" Type="string">Relay output</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Default" Type="string">Q7</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Bit7</Single>
+                        <Single Name="Type" Type="string">BOOL</Single>
+                      </Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                    </Single>
+                    <Single Type="{1944b378-8867-41f4-b1f4-6e5b1e6547ba}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4121</Single>
+                      <Single Name="EditorPositionId" Type="long">4122</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Channels.Base.RelayOutput.Description</Single>
+                        <Single Name="Default" Type="string">Relay output</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Default" Type="string">Q8</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Bit8</Single>
+                      <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Channels.Base.RelayOutput.Description</Single>
+                          <Single Name="Default" Type="string">Relay output</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Default" Type="string">Q8</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Bit8</Single>
+                        <Single Name="Type" Type="string">BOOL</Single>
+                      </Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                    </Single>
+                    <Single Type="{1944b378-8867-41f4-b1f4-6e5b1e6547ba}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4123</Single>
+                      <Single Name="EditorPositionId" Type="long">4124</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Channels.Base.RelayOutput.Description</Single>
+                        <Single Name="Default" Type="string">Relay output</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Default" Type="string">Q9</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Bit9</Single>
+                      <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Channels.Base.RelayOutput.Description</Single>
+                          <Single Name="Default" Type="string">Relay output</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Default" Type="string">Q9</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Bit9</Single>
+                        <Single Name="Type" Type="string">BOOL</Single>
+                      </Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                    </Single>
+                  </List2>
+                </Single>
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4103</Single>
+                <Single Name="EditorPositionId" Type="long">4104</Single>
+                <Single Name="IoMapping" Type="{d6d934cf-5ec0-42c3-b628-2a7aea7d364c}" Method="IArchivable">
+                  <Single Name="Mappings" Type="{8a62c05c-4fee-4b4a-8600-a677aedc92c7}" Method="IArchivable">
+                    <List2 Name="Mappings">
+                      <Single Type="{47edf8ea-3f84-452c-b998-e18f878578d3}" Method="IArchivable">
+                        <Single Name="CreateVariable" Type="bool">True</Single>
+                        <Single Name="Variable" Type="string">qwDQ_QW0</Single>
+                      </Single>
+                    </List2>
+                  </Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">QW0</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">2000</Single>
+                <Single Name="BaseType" Type="string">WORD</Single>
+              </Single>
+              <Single Name="SectionId" Type="int">0</Single>
+              <Single Name="ParamType" Type="string">localTypes:M2xx.LocalIOs.Outputs.Channels.Base</Single>
+              <Single Name="AlwaysMapping" Type="bool">True</Single>
+              <Single Name="IndexInDevDesc" Type="long">0</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">2002</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="ChannelType" Type="{abf9b454-3972-4b82-88a2-feef15a02f10}">Output</Single>
+              <Single Name="DalaElement" Type="{bd387d12-7a68-42ff-9fa4-1e4e26e0dc37}" Method="IArchivable">
+                <Single Name="SubElements" Type="{45b6f676-61a0-4c78-a679-8c725851fa1e}" Method="IArchivable">
+                  <List2 Name="elements">
+                    <Single Type="{1944b378-8867-41f4-b1f4-6e5b1e6547ba}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4127</Single>
+                      <Single Name="EditorPositionId" Type="long">4128</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">M2xx.LocalIOs.Channels.Outputs.RearmingOutput.Bit0.Description</Single>
+                        <Single Name="Default" Type="string">Rearming Command (on rising edge)</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Default" Type="string">Q0</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Bit0</Single>
+                      <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                        <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">M2xx.LocalIOs.Channels.Outputs.RearmingOutput.Bit0.Description</Single>
+                          <Single Name="Default" Type="string">Rearming Command (on rising edge)</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Default" Type="string">Q0</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Bit0</Single>
+                        <Single Name="Type" Type="string">BOOL</Single>
+                      </Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                    </Single>
+                  </List2>
+                </Single>
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4125</Single>
+                <Single Name="EditorPositionId" Type="long">4126</Single>
+                <Single Name="IoMapping" Type="{d6d934cf-5ec0-42c3-b628-2a7aea7d364c}" Method="IArchivable">
+                  <Single Name="Mappings" Type="{8a62c05c-4fee-4b4a-8600-a677aedc92c7}" Method="IArchivable">
+                    <List2 Name="Mappings">
+                      <Single Type="{47edf8ea-3f84-452c-b998-e18f878578d3}" Method="IArchivable">
+                        <Single Name="CreateVariable" Type="bool">True</Single>
+                        <Single Name="Variable" Type="string">qbDQ_QB1</Single>
+                      </Single>
+                    </List2>
+                  </Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">QB1</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">2002</Single>
+                <Single Name="BaseType" Type="string">BYTE</Single>
+              </Single>
+              <Single Name="SectionId" Type="int">0</Single>
+              <Single Name="ParamType" Type="string">localTypes:M2xx.LocalIOs.Outputs.Channels.RearmingOutput</Single>
+              <Single Name="AlwaysMapping" Type="bool">True</Single>
+              <Single Name="IndexInDevDesc" Type="long">1</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">10000</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Write</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Write</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+                <Single Name="PositionId" Type="long">4129</Single>
+                <Single Name="EditorPositionId" Type="long">4130</Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Default" Type="string">Outputs Usage</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">10000</Single>
+                <Single Name="Value" Type="string">0</Single>
+                <Single Name="Type" Type="string">UINT</Single>
+                <Single Name="Default" Type="string">0</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:UINT</Single>
+              <Single Name="IndexInDevDesc" Type="long">5</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">12346</Single>
+              <Single Name="DalaElement" Type="{4322e2a3-55e5-4e47-9fcd-b70eb1e6bfee}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4131</Single>
+                <Single Name="EditorPositionId" Type="long">4132</Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">localStrings</Single>
+                  <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.AlarmOutput</Single>
+                  <Single Name="Default" Type="string">Alarm Output</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">12346</Single>
+                <Single Name="TypeName" Type="string">M2xx.LocalIOs.Outputs.AlarmOutput</Single>
+                <Single Name="LmEnumTypeGuid" Type="System.Guid">ef60ece7-a58d-5010-bcd9-17201f69324a</Single>
+                <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                  <Null Name="FilterFlags" />
+                  <Single Name="PositionId" Type="long">4131</Single>
+                  <Single Name="EditorPositionId" Type="long">4132</Single>
+                  <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                    <Single Name="Namespace" Type="string">localStrings</Single>
+                    <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.AlarmOutput</Single>
+                    <Single Name="Default" Type="string">Alarm Output</Single>
+                  </Single>
+                  <Single Name="Identifier" Type="string">12346</Single>
+                  <Single Name="Value" Type="string">255</Single>
+                  <Single Name="Type" Type="string">WORD</Single>
+                  <Single Name="Default" Type="string">255</Single>
+                </Single>
+                <Array Name="Values" Type="{b955cc99-aa13-473b-b43f-7c76a865c138}">
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.AlarmOutput.Alarm_None</Single>
+                      <Single Name="Default" Type="string">None</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">Alarm_None</Single>
+                    <Single Name="Value" Type="string">255</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Default" Type="string">Q0</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">Alarm_Q0</Single>
+                    <Single Name="Value" Type="string">0</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Default" Type="string">Q1</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">Alarm_Q1</Single>
+                    <Single Name="Value" Type="string">1</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Default" Type="string">Q2</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">Alarm_Q2</Single>
+                    <Single Name="Value" Type="string">2</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Default" Type="string">Q3</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">Alarm_Q3</Single>
+                    <Single Name="Value" Type="string">3</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Default" Type="string">Q4</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">Alarm_Q4</Single>
+                    <Single Name="Value" Type="string">4</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Default" Type="string">Q5</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">Alarm_Q5</Single>
+                    <Single Name="Value" Type="string">5</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Default" Type="string">Q6</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">Alarm_Q6</Single>
+                    <Single Name="Value" Type="string">6</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Default" Type="string">Q7</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">Alarm_Q7</Single>
+                    <Single Name="Value" Type="string">7</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Default" Type="string">Q8</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">Alarm_Q8</Single>
+                    <Single Name="Value" Type="string">8</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Default" Type="string">Q9</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">Alarm_Q9</Single>
+                    <Single Name="Value" Type="string">9</Single>
+                  </Single>
+                </Array>
+              </Single>
+              <Single Name="SectionId" Type="int">1</Single>
+              <Single Name="ParamType" Type="string">localTypes:M2xx.LocalIOs.Outputs.AlarmOutput</Single>
+              <Single Name="IndexInDevDesc" Type="long">2</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">12347</Single>
+              <Single Name="DalaElement" Type="{4322e2a3-55e5-4e47-9fcd-b70eb1e6bfee}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}">
+                  <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+                    <Single Name="Name" Type="string">se:ParameterConstraints</Single>
+                    <Single Name="Data" Type="string">&lt;se:ParameterConstraints xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;&lt;se:EnableConstraint Enable="true"&gt;&lt;se:ParameterValueStatement ParameterId="12347" Type="List" Value="{0,1}" /&gt;&lt;/se:EnableConstraint&gt;&lt;/se:ParameterConstraints&gt;</Single>
+                  </Single>
+                </List>
+                <Single Name="PositionId" Type="long">4133</Single>
+                <Single Name="EditorPositionId" Type="long">4134</Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">localStrings</Single>
+                  <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.RearmingOutput.Name</Single>
+                  <Single Name="Default" Type="string">Rearming Output Mode</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">12347</Single>
+                <Single Name="TypeName" Type="string">M2xx.LocalIOs.Outputs.RearmingOutput</Single>
+                <Single Name="LmEnumTypeGuid" Type="System.Guid">64fd9284-53c0-5fc8-9cc2-ddc74142b812</Single>
+                <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                  <Null Name="FilterFlags" />
+                  <Single Name="PositionId" Type="long">4133</Single>
+                  <Single Name="EditorPositionId" Type="long">4134</Single>
+                  <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                    <Single Name="Namespace" Type="string">localStrings</Single>
+                    <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.RearmingOutput.Name</Single>
+                    <Single Name="Default" Type="string">Rearming Output Mode</Single>
+                  </Single>
+                  <Single Name="Identifier" Type="string">12347</Single>
+                  <Single Name="Value" Type="string">0</Single>
+                  <Single Name="Type" Type="string">BYTE</Single>
+                  <Single Name="Default" Type="string">0</Single>
+                </Single>
+                <Array Name="Values" Type="{b955cc99-aa13-473b-b43f-7c76a865c138}">
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.RearmingOutput.Auto</Single>
+                      <Single Name="Default" Type="string">Auto</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">Rearming_Auto</Single>
+                    <Single Name="Value" Type="string">0</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.RearmingOutput.Manual</Single>
+                      <Single Name="Default" Type="string">Manual</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">Rearming_Manual</Single>
+                    <Single Name="Value" Type="string">1</Single>
+                  </Single>
+                </Array>
+              </Single>
+              <Single Name="SectionId" Type="int">1</Single>
+              <Single Name="ParamType" Type="string">localTypes:M2xx.LocalIOs.Outputs.RearmingOutput</Single>
+              <Single Name="IndexInDevDesc" Type="long">3</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">13000</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{4322e2a3-55e5-4e47-9fcd-b70eb1e6bfee}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4135</Single>
+                <Single Name="EditorPositionId" Type="long">4136</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">localStrings</Single>
+                  <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.EnableReducingJitter.Description</Single>
+                  <Single Name="Default" Type="string">Enables the minimization of the jitter by refreshing the local output when the IEC process starts</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">localStrings</Single>
+                  <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.EnableReducingJitter.Name</Single>
+                  <Single Name="Default" Type="string">Minimize jitter for local output</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">13000</Single>
+                <Single Name="TypeName" Type="string">M2xx.EnumYesNo</Single>
+                <Single Name="LmEnumTypeGuid" Type="System.Guid">4ef57e12-4fca-5a0f-8149-79376f4e55e4</Single>
+                <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                  <Null Name="FilterFlags" />
+                  <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                  <Single Name="PositionId" Type="long">4135</Single>
+                  <Single Name="EditorPositionId" Type="long">4136</Single>
+                  <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                    <Single Name="Namespace" Type="string">localStrings</Single>
+                    <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.EnableReducingJitter.Description</Single>
+                    <Single Name="Default" Type="string">Enables the minimization of the jitter by refreshing the local output when the IEC process starts</Single>
+                  </Single>
+                  <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                    <Single Name="Namespace" Type="string">localStrings</Single>
+                    <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.EnableReducingJitter.Name</Single>
+                    <Single Name="Default" Type="string">Minimize jitter for local output</Single>
+                  </Single>
+                  <Single Name="Identifier" Type="string">13000</Single>
+                  <Single Name="Value" Type="string">0</Single>
+                  <Single Name="Type" Type="string">BYTE</Single>
+                  <Single Name="Default" Type="string">0</Single>
+                </Single>
+                <Array Name="Values" Type="{b955cc99-aa13-473b-b43f-7c76a865c138}">
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">M2xx.EnumYesNo.No</Single>
+                      <Single Name="Default" Type="string">No</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">No</Single>
+                    <Single Name="Value" Type="string">0</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">M2xx.EnumYesNo.Yes</Single>
+                      <Single Name="Default" Type="string">Yes</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">Yes</Single>
+                    <Single Name="Value" Type="string">1</Single>
+                  </Single>
+                </Array>
+              </Single>
+              <Single Name="SectionId" Type="int">2</Single>
+              <Single Name="ParamType" Type="string">localTypes:M2xx.EnumYesNo</Single>
+              <Single Name="IndexInDevDesc" Type="long">4</Single>
+            </Single>
+          </List2>
+          <Single Name="LmGuid" Type="System.Guid">b4b2ca4b-c650-5984-925e-aaa443f7da39</Single>
+          <List2 Name="Sections">
+            <Single Type="{33f58abf-62ae-4277-a80b-74c57ea00c50}" Method="IArchivable">
+              <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                <Single Name="Namespace" Type="string">localStrings</Single>
+                <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Channels.Section</Single>
+                <Single Name="Default" Type="string">Outputs</Single>
+              </Single>
+              <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+              <Single Name="ParentId" Type="int">-1</Single>
+              <Single Name="SectionId" Type="int">0</Single>
+              <Null Name="SubSections" />
+              <Null Name="CustomItems" />
+            </Single>
+            <Single Type="{33f58abf-62ae-4277-a80b-74c57ea00c50}" Method="IArchivable">
+              <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                <Single Name="Namespace" Type="string">local</Single>
+                <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Configuration.General.Section</Single>
+                <Single Name="Default" Type="string">General Parameters</Single>
+              </Single>
+              <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+              <Single Name="ParentId" Type="int">-1</Single>
+              <Single Name="SectionId" Type="int">1</Single>
+              <Null Name="SubSections" />
+              <Null Name="CustomItems" />
+            </Single>
+            <Single Type="{33f58abf-62ae-4277-a80b-74c57ea00c50}" Method="IArchivable">
+              <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                <Single Name="Namespace" Type="string">localStrings</Single>
+                <Single Name="Identifier" Type="string">M2xx.LocalIOs.Outputs.Configuration.Synchronization.Section</Single>
+                <Single Name="Default" Type="string">Synchronization</Single>
+              </Single>
+              <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+              <Single Name="ParentId" Type="int">-1</Single>
+              <Single Name="SectionId" Type="int">2</Single>
+              <Null Name="SubSections" />
+              <Null Name="CustomItems" />
+            </Single>
+          </List2>
+          <Single Name="InitOnOnlineChange" Type="bool">False</Single>
+          <Single Name="AlwaysMapping" Type="bool">False</Single>
+          <Null Name="EditorName" />
+          <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+          <Single Name="CreateBitChannels" Type="bool">False</Single>
+        </Single>
+        <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+          <List Name="RequiredLibs" Type="System.Collections.ArrayList" />
+          <Null Name="RequiredTasks" />
+          <Single Name="NeedsBusCycle" Type="bool">False</Single>
+          <Single Name="BusCycleTask" Type="string"></Single>
+          <Single Name="IoApp" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="IoAppSet" Type="bool">False</Single>
+          <Array Name="PositionIds" Type="long">BBAAAAAAAAAFEAAAAAAAAAYQAAAAAAAA</Array>
+          <Single Name="UseSlowestTask" Type="bool">False</Single>
+          <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+          <Single Name="GenerateForceVariables" Type="bool">False</Single>
+          <Single Name="EnableDiagnosis" Type="bool">False</Single>
+          <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+          <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+          <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+          <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+          <Single Name="SymbolicAccessMode" Type="{866ccdec-84a7-4590-aeab-383c7bd79437}">Disabled</Single>
+          <Single Name="DeviceScanSupported" Type="bool">False</Single>
+          <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+          <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+          <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+          <Single Name="UpdateIOsInStop" Type="bool">False</Single>
+          <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">KeepCurrentValues</Single>
+          <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+          <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+          <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        </Single>
+        <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}">
+          <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+            <Single Name="Name" Type="string">se:SchneiderEditor</Single>
+            <Single Name="Data" Type="string">&lt;se:SchneiderEditor editorVersion="2.0.0.0" xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd" /&gt;</Single>
+          </Single>
+        </List>
+        <Single Name="ModuleId" Type="int">-1</Single>
+        <Null Name="IoUpdateTask" />
+        <List Name="AdditionalInterfaces" Type="System.Collections.ArrayList" />
+        <List Name="Constraints" Type="System.Collections.ArrayList" />
+        <Single Name="hideInStatusPage" Type="bool">False</Single>
+        <Single Name="updateAllowed" Type="bool">True</Single>
+        <Single Name="fixedInputAddress" Type="string"></Single>
+        <Single Name="fixedOutputAddress" Type="string"></Single>
+        <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+        <List Name="AllowOnlyDevices" Type="System.Collections.ArrayList" />
+        <Single Name="InitialStatusFlag" Type="uint">1</Single>
+        <Single Name="UseBlobInitConst" Type="bool">False</Single>
+        <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        <Single Name="ConnectorGroup" Type="uint">0</Single>
+        <Array Name="AllowedPages" Type="string">
+          <Single Type="string">IOMappingEditor</Single>
+          <Single Type="string">MxxxIOConfigurationEditor</Single>
+        </Array>
+        <Single Name="AlwaysMapping" Type="bool">True</Single>
+        <Single Name="Client" Type="string"></Single>
+        <Single Name="MaxInputSize" Type="uint">0</Single>
+        <Single Name="MaxOutputSize" Type="uint">0</Single>
+        <Single Name="MaxInOutputSize" Type="uint">0</Single>
+        <Single Name="ClientTypeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="ClientConnectorInterface" Type="string"></Single>
+        <Single Name="ClientConnectorId" Type="int">-1</Single>
+        <Single Name="AlwaysMappingDisabled" Type="bool">True</Single>
+      </Single>
+    </List>
+  </Single>
+  <Single Name="Attributes" Type="{1fdbedd8-b518-4ebd-99df-805f2f77c071}" Method="IArchivable">
+    <Dictionary Type="System.Collections.Hashtable" Name="Attributes" />
+  </Single>
+  <Single Name="CommunicationSettings" Type="{58f2b04d-505d-4589-9fcf-0ec83491f9b2}" Method="IArchivable">
+    <Single Name="SaveLocally" Type="bool">False</Single>
+    <Single Name="CommunicationSettingFilter" Type="int">1</Single>
+    <Single Name="CommunicationSettingSorting" Type="int">0</Single>
+    <Single Name="TrackingMode" Type="int">5</Single>
+    <Single Name="GatewayGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+    <Null Name="Address" />
+    <Single Name="PromptAtLogin" Type="bool">False</Single>
+    <Single Name="SimulationMode" Type="bool">False</Single>
+    <Single Name="SecureOnlineMode" Type="bool">False</Single>
+    <Single Name="SecureOnlineModeExplicitelySet" Type="bool">False</Single>
+    <Single Name="Name" Type="string"></Single>
+    <Single Name="MonitoringIntervalMsec" Type="int">200</Single>
+    <Null Name="ScanInformation" />
+    <Single Name="IsCommunicationEncrypted" Type="bool">True</Single>
+    <Single Name="IsDefaultNameTrackingFromScanActive" Type="bool">False</Single>
+  </Single>
+  <Single Name="IoProviderBase" Type="{848f25ec-eecf-4290-8329-7f6500fd2e0f}" Method="IArchivable">
+    <Array Name="UserBaseAddress" Type="string">
+      <Null />
+      <Null />
+      <Null />
+    </Array>
+  </Single>
+  <Single Name="GuidBusCycleTask" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+  <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+    <List Name="RequiredLibs" Type="System.Collections.ArrayList" />
+    <Null Name="RequiredTasks" />
+    <Single Name="NeedsBusCycle" Type="bool">False</Single>
+    <Single Name="BusCycleTask" Type="string"></Single>
+    <Single Name="IoApp" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+    <Single Name="IoAppSet" Type="bool">False</Single>
+    <Array Name="PositionIds" Type="long">ARAAAAAAAAACEAAAAAAAAAMQAAAAAAAA</Array>
+    <Single Name="UseSlowestTask" Type="bool">False</Single>
+    <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+    <Single Name="GenerateForceVariables" Type="bool">False</Single>
+    <Single Name="EnableDiagnosis" Type="bool">False</Single>
+    <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+    <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+    <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+    <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+    <Single Name="SymbolicAccessMode" Type="{866ccdec-84a7-4590-aeab-383c7bd79437}">Disabled</Single>
+    <Single Name="DeviceScanSupported" Type="bool">False</Single>
+    <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+    <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+    <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+    <Single Name="UpdateIOsInStop" Type="bool">False</Single>
+    <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">KeepCurrentValues</Single>
+    <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+    <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+    <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+    <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+  </Single>
+  <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}">
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:IOManager</Single>
+      <Single Name="Data" Type="string">&lt;se:IOManager DefaultNamingModule="false" AutoIOMapping="true" xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd" /&gt;</Single>
+    </Single>
+  </List>
+  <Single Name="IoConfigGlobalsGuid" Type="System.Guid">0edea8c7-a877-5bcd-87b0-102963ea7d9b</Single>
+  <Single Name="IoConfigGlobalsMappingGuid" Type="System.Guid">dcb7aee8-4efb-5d6e-afec-83b38e6bd7c6</Single>
+  <Single Name="IoConfigVarConfigGuid" Type="System.Guid">02672b38-51bd-5a18-a8d6-9b4584564919</Single>
+  <Single Name="IoConfigErrorPouGuid" Type="System.Guid">53cc4529-aaaf-57bd-844c-d65c905b9766</Single>
+  <Single Name="ModuleId" Type="int">-1</Single>
+  <Null Name="IoUpdateTask" />
+  <Array Name="FunctionalChildren" Type="System.Guid" />
+  <Null Name="UserManagement" />
+  <Null Name="RightsManagement" />
+  <Single Name="showParamsInDevDescOrder" Type="bool">False</Single>
+  <Single Name="fixedInputAddress" Type="string"></Single>
+  <Single Name="fixedOutputAddress" Type="string"></Single>
+  <Single Name="HostObjectGuid" Type="System.Guid">801ebf5c-dbeb-4511-9a45-2ed26e25b40f</Single>
+  <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+  <Single Name="CreateBitChannels" Type="bool">False</Single>
+  <Null Name="AdditionalStringTable" />
+  <Null Name="OnlineHelpUrl" />
+  <Single Name="InteractiveLoginMode" Type="int">-1</Single>
+  <Single Name="UseDeviceApplicationStructure" Type="bool">False</Single>
+  <Single Name="AllowSymbolicVarAccessInSyncWithIecCycle" Type="bool">False</Single>
+  <Single Name="LogicalDeviceList" Type="{ec1f8a3a-98c6-404c-883e-ce9e54b42542}" Method="IArchivable">
+    <List Name="InnerList" Type="System.Collections.ArrayList" />
+  </Single>
+  <Single Name="LogicalLanguageModelPositionId" Type="long">-1</Single>
+  <List Name="SupportedLogicalBusSystems" Type="System.Collections.ArrayList" />
+  <Single Name="MappingPossible" Type="bool">False</Single>
+  <Single Name="HidePropertiesDialog" Type="bool">False</Single>
+  <Null Name="PlaceholderResolution" />
+  <Null Name="RedirectedPlaceholderResolution" />
+</Single>

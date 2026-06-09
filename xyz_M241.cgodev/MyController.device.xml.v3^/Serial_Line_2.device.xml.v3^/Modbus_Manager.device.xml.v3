@@ -1,0 +1,1374 @@
+__V3_META__
+{
+  "objectGuid": "d51a3600-ddf2-48bf-b825-2b0c616db484",
+  "objectTypeGuid": "225bfe47-7336-4dbc-9419-4105a7c831fa",
+  "embeddedObjectTypeGuids": [],
+  "properties": {
+    "_3S.CoDeSys.DeviceObject.DeviceProperty": "<?xml version=\"1.0\" encoding=\"utf-8\"?><Single xml:space=\"preserve\" Type=\"{cdadfc2b-8598-4621-ad56-5b1df7db910f}\" Method=\"IArchivable\"><Single Name=\"DeviceIdentification\" Type=\"{05ee0b98-6639-4276-bc32-b75578b819ef}\" Method=\"IArchivable\"><Single Name=\"Type\" Type=\"int\">41101</Single><Single Name=\"Id\" Type=\"string\">101a 000c</Single><Single Name=\"Version\" Type=\"string\">4.0.0.4</Single><Null Name=\"BaseName\" /></Single></Single>",
+    "schneider.Automation.OEM.MSDIOManager.IOHarmonizationProperty": "<?xml version=\"1.0\" encoding=\"utf-8\"?><Single xml:space=\"preserve\" Type=\"{275991af-8cbe-452b-ad98-cb6842331ae4}\" Method=\"IArchivable\"><Single Name=\"InitialModuleName\" Type=\"string\">Modbus_Manager</Single><Single Name=\"InitialTemplate\" Type=\"string\">#X#T#D_#C</Single></Single>",
+    "schneiderAutomation.Platform.Core.ObjectProperty.AlreadyHandledObjectProperty": "<?xml version=\"1.0\" encoding=\"utf-8\"?><Single xml:space=\"preserve\" Type=\"{f34a3cea-eaf7-46ee-9371-24d10b0ab1d5}\" Method=\"IArchivable\"><List2 Name=\"PropertyList\"><Single Type=\"string\">IOHarmonizationService</Single><Single Type=\"string\">MxxxSerialLinesEditor</Single></List2></Single>"
+  },
+  "subObjects": {}
+}
+__V3_CONTENT__
+<?xml version="1.0" encoding="utf-8"?>
+<Single xml:space="preserve" Type="{225bfe47-7336-4dbc-9419-4105a7c831fa}" Method="IArchivable">
+  <Single Name="UniqueIdGenerator" Type="string">4147</Single>
+  <Null Name="TypeList" />
+  <Single Name="NeedsBusCycle" Type="bool">False</Single>
+  <Single Name="Id" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}" Method="IArchivable">
+    <Single Name="Type" Type="int">41101</Single>
+    <Single Name="Id" Type="string">101a 000c</Single>
+    <Single Name="Version" Type="string">4.0.0.4</Single>
+    <Null Name="BaseName" />
+  </Single>
+  <Single Name="DefaultDeviceInfo" Type="{59a90934-c888-40db-a9df-306fcf36d75c}" Method="IArchivable">
+    <Single Name="Name" Type="string">Modbus Manager</Single>
+    <Single Name="Description" Type="string">Modbus manager</Single>
+    <Single Name="Vendor" Type="string">Schneider Electric</Single>
+    <Single Name="OrderNumber" Type="string"></Single>
+    <Array Name="Categories" Type="int">XAAAAA==</Array>
+    <Array Name="Families" Type="string">
+      <Single Type="string">4122:1050</Single>
+    </Array>
+    <Single Name="Custom" Type="string">&lt;Catalog name="Devices &amp;amp; Modules" xmlns="http://www.3s-software.com/schemas/DeviceDescription-1.0.xsd"&gt;
+            &lt;Section name="PLC Components"&gt;
+              &lt;Category name="Communication"&gt;
+                &lt;SubCategory name="Serial" /&gt;
+              &lt;/Category&gt;
+            &lt;/Section&gt;
+          &lt;/Catalog&gt;</Single>
+    <Single Name="DefaultInstanceName" Type="string">Modbus_Manager</Single>
+  </Single>
+  <Single Name="DeviceParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+    <List2 Name="Params" />
+    <Single Name="LmGuid" Type="System.Guid">60d2c282-68eb-59ca-a105-ae3554b82e82</Single>
+    <Null Name="Sections" />
+    <Single Name="InitOnOnlineChange" Type="bool">False</Single>
+    <Single Name="AlwaysMapping" Type="bool">False</Single>
+    <Null Name="EditorName" />
+    <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+    <Single Name="CreateBitChannels" Type="bool">False</Single>
+  </Single>
+  <Single Name="Disable" Type="bool">False</Single>
+  <Single Name="Exclude" Type="bool">False</Single>
+  <List Name="Connectors" Type="System.Collections.ArrayList" />
+  <Single Name="ConnectorList" Type="{52a6325f-063a-4748-86b6-ec8aa02d3232}" Method="IArchivable">
+    <List Name="InnerList" Type="System.Collections.ArrayList">
+      <Single Type="{850f737d-2abf-45f4-89c1-63ed6b29593d}" Method="IArchivable">
+        <Single Name="VisibleInterfaceName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+          <Single Name="Namespace" Type="string">local</Single>
+          <Single Name="Identifier" Type="string">dummy</Single>
+          <Single Name="Default" Type="string">Serial Line</Single>
+        </Single>
+        <Single Name="ConnectorObjectGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="IsExplicit" Type="bool">False</Single>
+        <Single Name="ModuleType" Type="ushort">40112</Single>
+        <Single Name="Interface" Type="string">Schneider.Serial.Modbus</Single>
+        <Single Name="Role" Type="{6827a808-5967-49c4-a827-10f6c446e075}">Child</Single>
+        <Single Name="ConnectorId" Type="int">1</Single>
+        <Single Name="Hostpath" Type="int">-1</Single>
+        <Single Name="Adapters" Type="{1da2f14a-1c63-4268-9171-3b6869b8ccd6}" Method="IArchivable">
+          <List Name="Adapters" Type="System.Collections.ArrayList">
+            <Single Type="{6d49a564-d0d1-4914-86ee-4465387ab144}" Method="IArchivable">
+              <Single Name="AllowEmptySlot" Type="bool">False</Single>
+              <Null Name="DefaultModules" />
+              <Array Name="Modules" Type="System.Guid">
+                <Single Type="System.Guid">35f460e4-c12e-41fb-96b7-f18ee01a722d</Single>
+              </Array>
+              <Single Name="IncludeSlotNumber" Type="bool">False</Single>
+              <Single Name="StartSlotNumber" Type="uint">0</Single>
+              <Null Name="SlotNames" />
+              <Single Name="HiddenSlot" Type="bool">False</Single>
+            </Single>
+          </List>
+        </Single>
+        <Single Name="HostParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+          <List2 Name="Params">
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">10020</Single>
+              <Single Name="DalaElement" Type="{87130527-d8a8-4a3f-a43d-fabaec05f356}" Method="IArchivable">
+                <Single Name="SubElements" Type="{45b6f676-61a0-4c78-a679-8c725851fa1e}" Method="IArchivable">
+                  <List2 Name="elements">
+                    <Single Type="{c2659c15-b6d3-41a4-88b2-50a445913e2e}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}">
+                        <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+                          <Single Name="Name" Type="string">se:CustomParameterValidation</Single>
+                          <Single Name="Data" Type="string">&lt;se:CustomParameterValidation xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;InterframeDelayValidate&lt;/se:CustomParameterValidation&gt;</Single>
+                        </Single>
+                      </List>
+                      <Single Name="PositionId" Type="long">4105</Single>
+                      <Single Name="EditorPositionId" Type="long">4106</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">Modbus.Description.InterframeDelay</Single>
+                        <Single Name="Default" Type="string">Delay between frames</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">Inter-frame delay</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">InterframeDelay</Single>
+                      <Single Name="Min" Type="string">0</Single>
+                      <Single Name="Max" Type="string">65535</Single>
+                      <Single Name="SimpleType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">Modbus.Description.InterframeDelay</Single>
+                          <Single Name="Default" Type="string">Delay between frames</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">local</Single>
+                          <Single Name="Identifier" Type="string">dummy</Single>
+                          <Single Name="Default" Type="string">Inter-frame delay</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">InterframeDelay</Single>
+                        <Single Name="Value" Type="string">10</Single>
+                        <Single Name="Type" Type="string">WORD</Single>
+                        <Single Name="Default" Type="string">10</Single>
+                      </Single>
+                    </Single>
+                    <Single Type="{c2659c15-b6d3-41a4-88b2-50a445913e2e}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4107</Single>
+                      <Single Name="EditorPositionId" Type="long">4108</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">Modbus.Description.Address</Single>
+                        <Single Name="Default" Type="string">Address value</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">Address</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Address</Single>
+                      <Single Name="Min" Type="string">0</Single>
+                      <Single Name="Max" Type="string">247</Single>
+                      <Single Name="SimpleType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">Modbus.Description.Address</Single>
+                          <Single Name="Default" Type="string">Address value</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">local</Single>
+                          <Single Name="Identifier" Type="string">dummy</Single>
+                          <Single Name="Default" Type="string">Address</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Address</Single>
+                        <Single Name="Value" Type="string">1</Single>
+                        <Single Name="Type" Type="string">BYTE</Single>
+                        <Single Name="Default" Type="string">1</Single>
+                      </Single>
+                    </Single>
+                    <Single Type="{4322e2a3-55e5-4e47-9fcd-b70eb1e6bfee}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4109</Single>
+                      <Single Name="EditorPositionId" Type="long">4110</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">Modbus.Description.Mode</Single>
+                        <Single Name="Default" Type="string">Transmission Mode</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">Transmission Mode</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Mode</Single>
+                      <Single Name="TypeName" Type="string">Modbus.EnumMode</Single>
+                      <Single Name="LmEnumTypeGuid" Type="System.Guid">825faf13-7656-5902-b889-71539d01ea71</Single>
+                      <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="PositionId" Type="long">4109</Single>
+                        <Single Name="EditorPositionId" Type="long">4110</Single>
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">Modbus.Description.Mode</Single>
+                          <Single Name="Default" Type="string">Transmission Mode</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">local</Single>
+                          <Single Name="Identifier" Type="string">dummy</Single>
+                          <Single Name="Default" Type="string">Transmission Mode</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Mode</Single>
+                        <Single Name="Value" Type="string">0</Single>
+                        <Single Name="Type" Type="string">BYTE</Single>
+                        <Single Name="Default" Type="string">0</Single>
+                      </Single>
+                      <Array Name="Values" Type="{b955cc99-aa13-473b-b43f-7c76a865c138}">
+                        <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                          <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                            <Single Name="Namespace" Type="string">localStrings</Single>
+                            <Single Name="Identifier" Type="string">Modbus.EnumMode.RTU</Single>
+                            <Single Name="Default" Type="string">RTU</Single>
+                          </Single>
+                          <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                          <Single Name="Identifier" Type="string">RTU</Single>
+                          <Single Name="Value" Type="string">0</Single>
+                        </Single>
+                        <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                          <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                            <Single Name="Namespace" Type="string">localStrings</Single>
+                            <Single Name="Identifier" Type="string">Modbus.EnumMode.ASCII</Single>
+                            <Single Name="Default" Type="string">ASCII</Single>
+                          </Single>
+                          <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                          <Single Name="Identifier" Type="string">ASCII</Single>
+                          <Single Name="Value" Type="string">1</Single>
+                        </Single>
+                      </Array>
+                    </Single>
+                    <Single Type="{4322e2a3-55e5-4e47-9fcd-b70eb1e6bfee}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4111</Single>
+                      <Single Name="EditorPositionId" Type="long">4112</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">Modbus.Description.Codesys</Single>
+                        <Single Name="Default" Type="string">CoDeSys compliance</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">CoDeSys compliance</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Codesys</Single>
+                      <Single Name="TypeName" Type="string">Modbus.EnumYesNo</Single>
+                      <Single Name="LmEnumTypeGuid" Type="System.Guid">bf7cda19-3333-5a68-aad8-0a4238b4ae3c</Single>
+                      <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="PositionId" Type="long">4111</Single>
+                        <Single Name="EditorPositionId" Type="long">4112</Single>
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">Modbus.Description.Codesys</Single>
+                          <Single Name="Default" Type="string">CoDeSys compliance</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">local</Single>
+                          <Single Name="Identifier" Type="string">dummy</Single>
+                          <Single Name="Default" Type="string">CoDeSys compliance</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Codesys</Single>
+                        <Single Name="Value" Type="string">0</Single>
+                        <Single Name="Type" Type="string">BYTE</Single>
+                        <Single Name="Default" Type="string">0</Single>
+                      </Single>
+                      <Array Name="Values" Type="{b955cc99-aa13-473b-b43f-7c76a865c138}">
+                        <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                          <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                            <Single Name="Namespace" Type="string">localStrings</Single>
+                            <Single Name="Identifier" Type="string">Modbus.EnumYesNo.No</Single>
+                            <Single Name="Default" Type="string">No</Single>
+                          </Single>
+                          <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                          <Single Name="Identifier" Type="string">No</Single>
+                          <Single Name="Value" Type="string">0</Single>
+                        </Single>
+                        <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                          <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                            <Single Name="Namespace" Type="string">localStrings</Single>
+                            <Single Name="Identifier" Type="string">Modbus.EnumYesNo.Yes</Single>
+                            <Single Name="Default" Type="string">Yes</Single>
+                          </Single>
+                          <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                          <Single Name="Identifier" Type="string">Yes</Single>
+                          <Single Name="Value" Type="string">1</Single>
+                        </Single>
+                      </Array>
+                    </Single>
+                    <Single Type="{4322e2a3-55e5-4e47-9fcd-b70eb1e6bfee}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4113</Single>
+                      <Single Name="EditorPositionId" Type="long">4114</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">Modbus.Description.Router</Single>
+                        <Single Name="Default" Type="string">Routing Mode</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">Routing Mode</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Router</Single>
+                      <Single Name="TypeName" Type="string">Modbus.EnumRouter</Single>
+                      <Single Name="LmEnumTypeGuid" Type="System.Guid">dc76937c-a4d5-54cf-ad81-fbd4a19fd3ee</Single>
+                      <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="PositionId" Type="long">4113</Single>
+                        <Single Name="EditorPositionId" Type="long">4114</Single>
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">Modbus.Description.Router</Single>
+                          <Single Name="Default" Type="string">Routing Mode</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">local</Single>
+                          <Single Name="Identifier" Type="string">dummy</Single>
+                          <Single Name="Default" Type="string">Routing Mode</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Router</Single>
+                        <Single Name="Value" Type="string">0</Single>
+                        <Single Name="Type" Type="string">BYTE</Single>
+                        <Single Name="Default" Type="string">0</Single>
+                      </Single>
+                      <Array Name="Values" Type="{b955cc99-aa13-473b-b43f-7c76a865c138}">
+                        <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                          <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                            <Single Name="Namespace" Type="string">localStrings</Single>
+                            <Single Name="Identifier" Type="string">Modbus.EnumRouter.MainNet</Single>
+                            <Single Name="Default" Type="string">Main Net</Single>
+                          </Single>
+                          <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                          <Single Name="Identifier" Type="string">MainNet</Single>
+                          <Single Name="Value" Type="string">0</Single>
+                        </Single>
+                        <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                          <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                            <Single Name="Namespace" Type="string">localStrings</Single>
+                            <Single Name="Identifier" Type="string">Modbus.EnumRouter.SubNet</Single>
+                            <Single Name="Default" Type="string">Sub Net</Single>
+                          </Single>
+                          <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                          <Single Name="Identifier" Type="string">SubNet</Single>
+                          <Single Name="Value" Type="string">1</Single>
+                        </Single>
+                      </Array>
+                    </Single>
+                  </List2>
+                </Single>
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4103</Single>
+                <Single Name="EditorPositionId" Type="long">4104</Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">localStrings</Single>
+                  <Single Name="Identifier" Type="string">Modbus.ParameterName</Single>
+                  <Single Name="Default" Type="string">Modbus Configuration</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">10020</Single>
+                <Single Name="TypeName" Type="string">Modbus</Single>
+                <Single Name="LmStructTypeGuid" Type="System.Guid">5cfde7b6-fe98-5487-a49a-6f0a27ef7f6b</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">localTypes:Modbus</Single>
+              <Single Name="IndexInDevDesc" Type="long">0</Single>
+            </Single>
+          </List2>
+          <Single Name="LmGuid" Type="System.Guid">df5b83cb-c743-52b0-812c-d2e7dab9cff8</Single>
+          <Null Name="Sections" />
+          <Single Name="InitOnOnlineChange" Type="bool">False</Single>
+          <Single Name="AlwaysMapping" Type="bool">False</Single>
+          <Null Name="EditorName" />
+          <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+          <Single Name="CreateBitChannels" Type="bool">False</Single>
+        </Single>
+        <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+          <List Name="RequiredLibs" Type="System.Collections.ArrayList" />
+          <Null Name="RequiredTasks" />
+          <Single Name="NeedsBusCycle" Type="bool">False</Single>
+          <Single Name="BusCycleTask" Type="string"></Single>
+          <Single Name="IoApp" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="IoAppSet" Type="bool">False</Single>
+          <Array Name="PositionIds" Type="long">BBAAAAAAAAAFEAAAAAAAAAYQAAAAAAAA</Array>
+          <Single Name="UseSlowestTask" Type="bool">False</Single>
+          <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+          <Single Name="GenerateForceVariables" Type="bool">False</Single>
+          <Single Name="EnableDiagnosis" Type="bool">False</Single>
+          <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+          <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+          <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+          <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+          <Single Name="SymbolicAccessMode" Type="{866ccdec-84a7-4590-aeab-383c7bd79437}">Disabled</Single>
+          <Single Name="DeviceScanSupported" Type="bool">False</Single>
+          <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+          <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+          <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+          <Single Name="UpdateIOsInStop" Type="bool">False</Single>
+          <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">KeepCurrentValues</Single>
+          <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+          <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+          <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        </Single>
+        <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}" />
+        <Single Name="ModuleId" Type="int">-1</Single>
+        <Null Name="IoUpdateTask" />
+        <List Name="AdditionalInterfaces" Type="System.Collections.ArrayList" />
+        <List Name="Constraints" Type="System.Collections.ArrayList" />
+        <Single Name="hideInStatusPage" Type="bool">False</Single>
+        <Single Name="updateAllowed" Type="bool">True</Single>
+        <Single Name="fixedInputAddress" Type="string"></Single>
+        <Single Name="fixedOutputAddress" Type="string"></Single>
+        <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+        <List Name="AllowOnlyDevices" Type="System.Collections.ArrayList" />
+        <Single Name="InitialStatusFlag" Type="uint">1</Single>
+        <Single Name="UseBlobInitConst" Type="bool">False</Single>
+        <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        <Single Name="ConnectorGroup" Type="uint">0</Single>
+        <Array Name="AllowedPages" Type="string" />
+        <Single Name="AlwaysMapping" Type="bool">False</Single>
+        <Single Name="Client" Type="string"></Single>
+        <Single Name="MaxInputSize" Type="uint">0</Single>
+        <Single Name="MaxOutputSize" Type="uint">0</Single>
+        <Single Name="MaxInOutputSize" Type="uint">0</Single>
+        <Single Name="ClientTypeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="ClientConnectorInterface" Type="string"></Single>
+        <Single Name="ClientConnectorId" Type="int">-1</Single>
+        <Single Name="AlwaysMappingDisabled" Type="bool">False</Single>
+      </Single>
+      <Single Type="{850f737d-2abf-45f4-89c1-63ed6b29593d}" Method="IArchivable">
+        <Single Name="VisibleInterfaceName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+          <Single Name="Namespace" Type="string">local</Single>
+          <Single Name="Identifier" Type="string">dummy</Single>
+          <Single Name="Default" Type="string">Modbus</Single>
+        </Single>
+        <Single Name="ConnectorObjectGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="IsExplicit" Type="bool">False</Single>
+        <Single Name="ModuleType" Type="ushort">40122</Single>
+        <Single Name="Interface" Type="string">Schneider.Mxxx.Modbus</Single>
+        <Single Name="Role" Type="{6827a808-5967-49c4-a827-10f6c446e075}">Parent</Single>
+        <Single Name="ConnectorId" Type="int">2</Single>
+        <Single Name="Hostpath" Type="int">-1</Single>
+        <Single Name="Adapters" Type="{1da2f14a-1c63-4268-9171-3b6869b8ccd6}" Method="IArchivable">
+          <List Name="Adapters" Type="System.Collections.ArrayList">
+            <Single Type="{3f828f0b-c67b-430a-8c93-1e9bc324df64}" Method="IArchivable">
+              <List Name="Modules" Type="System.Collections.ArrayList" />
+              <Single Name="MaxDevices" Type="int">1</Single>
+              <Single Name="SupportPlaceholderObjects" Type="bool">False</Single>
+            </Single>
+          </List>
+        </Single>
+        <Single Name="HostParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+          <List2 Name="Params" />
+          <Single Name="LmGuid" Type="System.Guid">88979fba-2d93-5954-a25d-3202a0c1a6fc</Single>
+          <Null Name="Sections" />
+          <Single Name="InitOnOnlineChange" Type="bool">False</Single>
+          <Single Name="AlwaysMapping" Type="bool">False</Single>
+          <Null Name="EditorName" />
+          <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+          <Single Name="CreateBitChannels" Type="bool">False</Single>
+        </Single>
+        <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+          <List Name="RequiredLibs" Type="System.Collections.ArrayList" />
+          <Null Name="RequiredTasks" />
+          <Single Name="NeedsBusCycle" Type="bool">False</Single>
+          <Single Name="BusCycleTask" Type="string"></Single>
+          <Single Name="IoApp" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="IoAppSet" Type="bool">False</Single>
+          <Array Name="PositionIds" Type="long">ExAAAAAAAAAUEAAAAAAAABUQAAAAAAAA</Array>
+          <Single Name="UseSlowestTask" Type="bool">False</Single>
+          <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+          <Single Name="GenerateForceVariables" Type="bool">False</Single>
+          <Single Name="EnableDiagnosis" Type="bool">False</Single>
+          <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+          <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+          <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+          <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+          <Single Name="SymbolicAccessMode" Type="{866ccdec-84a7-4590-aeab-383c7bd79437}">Disabled</Single>
+          <Single Name="DeviceScanSupported" Type="bool">False</Single>
+          <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+          <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+          <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+          <Single Name="UpdateIOsInStop" Type="bool">False</Single>
+          <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">KeepCurrentValues</Single>
+          <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+          <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+          <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        </Single>
+        <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}">
+          <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+            <Single Name="Name" Type="string">se:AcceptedModule</Single>
+            <Single Name="Data" Type="string">&lt;se:AcceptedModule CountMax="0" xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;&lt;!-- For M218 &amp; HMI : all these devices are not allowed --&gt;&lt;se:ApplicableForDevice regEx="true" operator="Or"&gt;101a 05..&lt;/se:ApplicableForDevice&gt;&lt;se:ApplicableForDevice regEx="true" operator="Or"&gt;101a 1.+&lt;/se:ApplicableForDevice&gt;&lt;se:ModuleId&gt;Modem&lt;/se:ModuleId&gt;&lt;se:DeviceIdentification deviceType="41103" deviceId="101a 001b" /&gt;&lt;se:ModuleId&gt;SR2MOD01&lt;/se:ModuleId&gt;&lt;se:DeviceIdentification deviceType="41103" deviceId="101a 001c" /&gt;&lt;se:ModuleId&gt;SR2MOD03&lt;/se:ModuleId&gt;&lt;se:DeviceIdentification deviceType="41103" deviceId="101a 001d" /&gt;&lt;se:ModuleId&gt;TDW33&lt;/se:ModuleId&gt;&lt;se:DeviceIdentification deviceType="41103" deviceId="101a 001e" /&gt;&lt;se:ModuleId&gt;499TWD01100&lt;/se:ModuleId&gt;&lt;se:DeviceIdentification deviceType="41103" deviceId="101a 001f" /&gt;&lt;/se:AcceptedModule&gt;</Single>
+          </Single>
+          <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+            <Single Name="Name" Type="string">se:AcceptedModule</Single>
+            <Single Name="Data" Type="string">&lt;se:AcceptedModule xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;&lt;!-- For M258/LMC058 &amp; M241/M251 : all modem are allowed (except 499TWD01100)--&gt;&lt;se:ApplicableForDevice regEx="true" operator="Or"&gt;101a 02..&lt;/se:ApplicableForDevice&gt;&lt;se:ApplicableForDevice regEx="true" operator="Or"&gt;101a 07..&lt;/se:ApplicableForDevice&gt;&lt;se:ModuleId&gt;Modem&lt;/se:ModuleId&gt;&lt;se:DeviceIdentification deviceType="41103" deviceId="101a 001b" /&gt;&lt;se:ModuleId&gt;SR2MOD01&lt;/se:ModuleId&gt;&lt;se:DeviceIdentification deviceType="41103" deviceId="101a 001c" /&gt;&lt;se:ModuleId&gt;SR2MOD03&lt;/se:ModuleId&gt;&lt;se:DeviceIdentification deviceType="41103" deviceId="101a 001d" /&gt;&lt;se:ModuleId&gt;TDW33&lt;/se:ModuleId&gt;&lt;se:DeviceIdentification deviceType="41103" deviceId="101a 001e" /&gt;&lt;/se:AcceptedModule&gt;</Single>
+          </Single>
+          <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+            <Single Name="Name" Type="string">se:AcceptedModule</Single>
+            <Single Name="Data" Type="string">&lt;se:AcceptedModule xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;&lt;!-- For M238 : all modem are allowed --&gt;&lt;se:ApplicableForDevice regEx="true"&gt;101a 01..&lt;/se:ApplicableForDevice&gt;&lt;se:ModuleId&gt;Modem&lt;/se:ModuleId&gt;&lt;se:DeviceIdentification deviceType="41103" deviceId="101a 001b" /&gt;&lt;se:ModuleId&gt;SR2MOD01&lt;/se:ModuleId&gt;&lt;se:DeviceIdentification deviceType="41103" deviceId="101a 001c" /&gt;&lt;se:ModuleId&gt;SR2MOD03&lt;/se:ModuleId&gt;&lt;se:DeviceIdentification deviceType="41103" deviceId="101a 001d" /&gt;&lt;se:ModuleId&gt;TDW33&lt;/se:ModuleId&gt;&lt;se:DeviceIdentification deviceType="41103" deviceId="101a 001e" /&gt;&lt;se:ModuleId&gt;499TWD01100&lt;/se:ModuleId&gt;&lt;se:DeviceIdentification deviceType="41103" deviceId="101a 001f" /&gt;&lt;/se:AcceptedModule&gt;</Single>
+          </Single>
+        </List>
+        <Single Name="ModuleId" Type="int">-1</Single>
+        <Null Name="IoUpdateTask" />
+        <List Name="AdditionalInterfaces" Type="System.Collections.ArrayList">
+          <Single Type="string">Schneider.Serial.ModemGeneric</Single>
+          <Single Type="string">Schneider.Serial.ModemSR2MOD01</Single>
+          <Single Type="string">Schneider.Serial.ModemSR2MOD03</Single>
+          <Single Type="string">Schneider.Serial.ModemTDW33</Single>
+          <Single Type="string">Schneider.Serial.499TWD01100</Single>
+        </List>
+        <List Name="Constraints" Type="System.Collections.ArrayList" />
+        <Single Name="hideInStatusPage" Type="bool">False</Single>
+        <Single Name="updateAllowed" Type="bool">True</Single>
+        <Single Name="fixedInputAddress" Type="string"></Single>
+        <Single Name="fixedOutputAddress" Type="string"></Single>
+        <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+        <List Name="AllowOnlyDevices" Type="System.Collections.ArrayList" />
+        <Single Name="InitialStatusFlag" Type="uint">1</Single>
+        <Single Name="UseBlobInitConst" Type="bool">False</Single>
+        <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        <Single Name="ConnectorGroup" Type="uint">0</Single>
+        <Array Name="AllowedPages" Type="string">
+          <Single Type="string">MxxxModbusEditor</Single>
+          <Single Type="string">XBTModbusEditor</Single>
+          <Single Type="string">StatusPage</Single>
+          <Single Type="string">DeviceInformation</Single>
+        </Array>
+        <Single Name="AlwaysMapping" Type="bool">False</Single>
+        <Single Name="Client" Type="string"></Single>
+        <Single Name="MaxInputSize" Type="uint">0</Single>
+        <Single Name="MaxOutputSize" Type="uint">0</Single>
+        <Single Name="MaxInOutputSize" Type="uint">0</Single>
+        <Single Name="ClientTypeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="ClientConnectorInterface" Type="string"></Single>
+        <Single Name="ClientConnectorId" Type="int">-1</Single>
+        <Single Name="AlwaysMappingDisabled" Type="bool">False</Single>
+      </Single>
+      <Single Type="{850f737d-2abf-45f4-89c1-63ed6b29593d}" Method="IArchivable">
+        <Single Name="VisibleInterfaceName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+          <Single Name="Namespace" Type="string">local</Single>
+          <Single Name="Identifier" Type="string">dummy</Single>
+          <Single Name="Default" Type="string">COM1</Single>
+        </Single>
+        <Single Name="ConnectorObjectGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="IsExplicit" Type="bool">False</Single>
+        <Single Name="ModuleType" Type="ushort">61003</Single>
+        <Single Name="Interface" Type="string">Schneider.XBT.Serial1</Single>
+        <Single Name="Role" Type="{6827a808-5967-49c4-a827-10f6c446e075}">Child</Single>
+        <Single Name="ConnectorId" Type="int">3</Single>
+        <Single Name="Hostpath" Type="int">-1</Single>
+        <Single Name="Adapters" Type="{1da2f14a-1c63-4268-9171-3b6869b8ccd6}" Method="IArchivable">
+          <List Name="Adapters" Type="System.Collections.ArrayList">
+            <Single Type="{6d49a564-d0d1-4914-86ee-4465387ab144}" Method="IArchivable">
+              <Single Name="AllowEmptySlot" Type="bool">False</Single>
+              <Null Name="DefaultModules" />
+              <Array Name="Modules" Type="System.Guid">
+                <Single Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+              </Array>
+              <Single Name="IncludeSlotNumber" Type="bool">False</Single>
+              <Single Name="StartSlotNumber" Type="uint">0</Single>
+              <Null Name="SlotNames" />
+              <Single Name="HiddenSlot" Type="bool">False</Single>
+            </Single>
+          </List>
+        </Single>
+        <Single Name="HostParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+          <List2 Name="Params">
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">10020</Single>
+              <Single Name="DalaElement" Type="{87130527-d8a8-4a3f-a43d-fabaec05f356}" Method="IArchivable">
+                <Single Name="SubElements" Type="{45b6f676-61a0-4c78-a679-8c725851fa1e}" Method="IArchivable">
+                  <List2 Name="elements">
+                    <Single Type="{c2659c15-b6d3-41a4-88b2-50a445913e2e}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}">
+                        <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+                          <Single Name="Name" Type="string">se:CustomParameterValidation</Single>
+                          <Single Name="Data" Type="string">&lt;se:CustomParameterValidation xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;InterframeDelayValidate&lt;/se:CustomParameterValidation&gt;</Single>
+                        </Single>
+                      </List>
+                      <Single Name="PositionId" Type="long">4123</Single>
+                      <Single Name="EditorPositionId" Type="long">4124</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">Modbus.Description.InterframeDelay</Single>
+                        <Single Name="Default" Type="string">Delay between frames</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">Inter-frame delay</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">InterframeDelay</Single>
+                      <Single Name="Min" Type="string">0</Single>
+                      <Single Name="Max" Type="string">65535</Single>
+                      <Single Name="SimpleType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">Modbus.Description.InterframeDelay</Single>
+                          <Single Name="Default" Type="string">Delay between frames</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">local</Single>
+                          <Single Name="Identifier" Type="string">dummy</Single>
+                          <Single Name="Default" Type="string">Inter-frame delay</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">InterframeDelay</Single>
+                        <Single Name="Value" Type="string">10</Single>
+                        <Single Name="Type" Type="string">WORD</Single>
+                        <Single Name="Default" Type="string">10</Single>
+                      </Single>
+                    </Single>
+                    <Single Type="{c2659c15-b6d3-41a4-88b2-50a445913e2e}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4125</Single>
+                      <Single Name="EditorPositionId" Type="long">4126</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">Modbus.Description.Address</Single>
+                        <Single Name="Default" Type="string">Address value</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">Address</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Address</Single>
+                      <Single Name="Min" Type="string">0</Single>
+                      <Single Name="Max" Type="string">247</Single>
+                      <Single Name="SimpleType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">Modbus.Description.Address</Single>
+                          <Single Name="Default" Type="string">Address value</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">local</Single>
+                          <Single Name="Identifier" Type="string">dummy</Single>
+                          <Single Name="Default" Type="string">Address</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Address</Single>
+                        <Single Name="Value" Type="string">0</Single>
+                        <Single Name="Type" Type="string">BYTE</Single>
+                        <Single Name="Default" Type="string">0</Single>
+                      </Single>
+                    </Single>
+                    <Single Type="{4322e2a3-55e5-4e47-9fcd-b70eb1e6bfee}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4127</Single>
+                      <Single Name="EditorPositionId" Type="long">4128</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">Modbus.Description.Mode</Single>
+                        <Single Name="Default" Type="string">Transmission Mode</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">Transmission Mode</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Mode</Single>
+                      <Single Name="TypeName" Type="string">Modbus.EnumMode</Single>
+                      <Single Name="LmEnumTypeGuid" Type="System.Guid">3fef57e6-32ff-52d9-9135-a2784a4fa766</Single>
+                      <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="PositionId" Type="long">4127</Single>
+                        <Single Name="EditorPositionId" Type="long">4128</Single>
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">Modbus.Description.Mode</Single>
+                          <Single Name="Default" Type="string">Transmission Mode</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">local</Single>
+                          <Single Name="Identifier" Type="string">dummy</Single>
+                          <Single Name="Default" Type="string">Transmission Mode</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Mode</Single>
+                        <Single Name="Value" Type="string">0</Single>
+                        <Single Name="Type" Type="string">BYTE</Single>
+                        <Single Name="Default" Type="string">0</Single>
+                      </Single>
+                      <Array Name="Values" Type="{b955cc99-aa13-473b-b43f-7c76a865c138}">
+                        <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                          <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                            <Single Name="Namespace" Type="string">localStrings</Single>
+                            <Single Name="Identifier" Type="string">Modbus.EnumMode.RTU</Single>
+                            <Single Name="Default" Type="string">RTU</Single>
+                          </Single>
+                          <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                          <Single Name="Identifier" Type="string">RTU</Single>
+                          <Single Name="Value" Type="string">0</Single>
+                        </Single>
+                        <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                          <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                            <Single Name="Namespace" Type="string">localStrings</Single>
+                            <Single Name="Identifier" Type="string">Modbus.EnumMode.ASCII</Single>
+                            <Single Name="Default" Type="string">ASCII</Single>
+                          </Single>
+                          <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                          <Single Name="Identifier" Type="string">ASCII</Single>
+                          <Single Name="Value" Type="string">1</Single>
+                        </Single>
+                      </Array>
+                    </Single>
+                    <Single Type="{4322e2a3-55e5-4e47-9fcd-b70eb1e6bfee}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4129</Single>
+                      <Single Name="EditorPositionId" Type="long">4130</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">Modbus.Description.Codesys</Single>
+                        <Single Name="Default" Type="string">CoDeSys compliance</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">CoDeSys compliance</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Codesys</Single>
+                      <Single Name="TypeName" Type="string">Modbus.EnumYesNo</Single>
+                      <Single Name="LmEnumTypeGuid" Type="System.Guid">dd555245-d0d1-598d-a25c-396eed64c1f2</Single>
+                      <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="PositionId" Type="long">4129</Single>
+                        <Single Name="EditorPositionId" Type="long">4130</Single>
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">Modbus.Description.Codesys</Single>
+                          <Single Name="Default" Type="string">CoDeSys compliance</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">local</Single>
+                          <Single Name="Identifier" Type="string">dummy</Single>
+                          <Single Name="Default" Type="string">CoDeSys compliance</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Codesys</Single>
+                        <Single Name="Value" Type="string">0</Single>
+                        <Single Name="Type" Type="string">BYTE</Single>
+                        <Single Name="Default" Type="string">0</Single>
+                      </Single>
+                      <Array Name="Values" Type="{b955cc99-aa13-473b-b43f-7c76a865c138}">
+                        <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                          <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                            <Single Name="Namespace" Type="string">localStrings</Single>
+                            <Single Name="Identifier" Type="string">Modbus.EnumYesNo.No</Single>
+                            <Single Name="Default" Type="string">No</Single>
+                          </Single>
+                          <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                          <Single Name="Identifier" Type="string">No</Single>
+                          <Single Name="Value" Type="string">0</Single>
+                        </Single>
+                        <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                          <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                            <Single Name="Namespace" Type="string">localStrings</Single>
+                            <Single Name="Identifier" Type="string">Modbus.EnumYesNo.Yes</Single>
+                            <Single Name="Default" Type="string">Yes</Single>
+                          </Single>
+                          <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                          <Single Name="Identifier" Type="string">Yes</Single>
+                          <Single Name="Value" Type="string">1</Single>
+                        </Single>
+                      </Array>
+                    </Single>
+                    <Single Type="{4322e2a3-55e5-4e47-9fcd-b70eb1e6bfee}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4131</Single>
+                      <Single Name="EditorPositionId" Type="long">4132</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">Modbus.Description.Router</Single>
+                        <Single Name="Default" Type="string">Routing Mode</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">Routing Mode</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Router</Single>
+                      <Single Name="TypeName" Type="string">Modbus.EnumRouter</Single>
+                      <Single Name="LmEnumTypeGuid" Type="System.Guid">a5e0baa1-2cdc-5d7b-8bc2-a08b2a03bd30</Single>
+                      <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="PositionId" Type="long">4131</Single>
+                        <Single Name="EditorPositionId" Type="long">4132</Single>
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">Modbus.Description.Router</Single>
+                          <Single Name="Default" Type="string">Routing Mode</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">local</Single>
+                          <Single Name="Identifier" Type="string">dummy</Single>
+                          <Single Name="Default" Type="string">Routing Mode</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Router</Single>
+                        <Single Name="Value" Type="string">0</Single>
+                        <Single Name="Type" Type="string">BYTE</Single>
+                        <Single Name="Default" Type="string">0</Single>
+                      </Single>
+                      <Array Name="Values" Type="{b955cc99-aa13-473b-b43f-7c76a865c138}">
+                        <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                          <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                            <Single Name="Namespace" Type="string">localStrings</Single>
+                            <Single Name="Identifier" Type="string">Modbus.EnumRouter.MainNet</Single>
+                            <Single Name="Default" Type="string">Main Net</Single>
+                          </Single>
+                          <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                          <Single Name="Identifier" Type="string">MainNet</Single>
+                          <Single Name="Value" Type="string">0</Single>
+                        </Single>
+                        <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                          <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                            <Single Name="Namespace" Type="string">localStrings</Single>
+                            <Single Name="Identifier" Type="string">Modbus.EnumRouter.SubNet</Single>
+                            <Single Name="Default" Type="string">Sub Net</Single>
+                          </Single>
+                          <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                          <Single Name="Identifier" Type="string">SubNet</Single>
+                          <Single Name="Value" Type="string">1</Single>
+                        </Single>
+                      </Array>
+                    </Single>
+                  </List2>
+                </Single>
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4121</Single>
+                <Single Name="EditorPositionId" Type="long">4122</Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">localStrings</Single>
+                  <Single Name="Identifier" Type="string">Modbus.ParameterName</Single>
+                  <Single Name="Default" Type="string">Modbus Configuration</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">10020</Single>
+                <Single Name="TypeName" Type="string">Modbus</Single>
+                <Single Name="LmStructTypeGuid" Type="System.Guid">96da1bf8-5b3c-5078-b3a6-8f2b9a354b47</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">localTypes:Modbus</Single>
+              <Single Name="IndexInDevDesc" Type="long">0</Single>
+            </Single>
+          </List2>
+          <Single Name="LmGuid" Type="System.Guid">25cd6fc6-b0f7-5ff6-84b7-ff2e4746ec7f</Single>
+          <Null Name="Sections" />
+          <Single Name="InitOnOnlineChange" Type="bool">False</Single>
+          <Single Name="AlwaysMapping" Type="bool">False</Single>
+          <Null Name="EditorName" />
+          <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+          <Single Name="CreateBitChannels" Type="bool">False</Single>
+        </Single>
+        <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+          <List Name="RequiredLibs" Type="System.Collections.ArrayList" />
+          <Null Name="RequiredTasks" />
+          <Single Name="NeedsBusCycle" Type="bool">False</Single>
+          <Single Name="BusCycleTask" Type="string"></Single>
+          <Single Name="IoApp" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="IoAppSet" Type="bool">False</Single>
+          <Array Name="PositionIds" Type="long">FhAAAAAAAAAXEAAAAAAAABgQAAAAAAAA</Array>
+          <Single Name="UseSlowestTask" Type="bool">False</Single>
+          <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+          <Single Name="GenerateForceVariables" Type="bool">False</Single>
+          <Single Name="EnableDiagnosis" Type="bool">False</Single>
+          <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+          <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+          <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+          <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+          <Single Name="SymbolicAccessMode" Type="{866ccdec-84a7-4590-aeab-383c7bd79437}">Disabled</Single>
+          <Single Name="DeviceScanSupported" Type="bool">False</Single>
+          <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+          <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+          <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+          <Single Name="UpdateIOsInStop" Type="bool">False</Single>
+          <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">KeepCurrentValues</Single>
+          <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+          <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+          <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        </Single>
+        <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}" />
+        <Single Name="ModuleId" Type="int">-1</Single>
+        <Null Name="IoUpdateTask" />
+        <List Name="AdditionalInterfaces" Type="System.Collections.ArrayList" />
+        <List Name="Constraints" Type="System.Collections.ArrayList" />
+        <Single Name="hideInStatusPage" Type="bool">False</Single>
+        <Single Name="updateAllowed" Type="bool">True</Single>
+        <Single Name="fixedInputAddress" Type="string"></Single>
+        <Single Name="fixedOutputAddress" Type="string"></Single>
+        <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+        <List Name="AllowOnlyDevices" Type="System.Collections.ArrayList" />
+        <Single Name="InitialStatusFlag" Type="uint">1</Single>
+        <Single Name="UseBlobInitConst" Type="bool">False</Single>
+        <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        <Single Name="ConnectorGroup" Type="uint">0</Single>
+        <Array Name="AllowedPages" Type="string">
+          <Single Type="string">MxxxModbusEditor</Single>
+          <Single Type="string">XBTModbusEditor</Single>
+          <Single Type="string">StatusPage</Single>
+          <Single Type="string">DeviceInformation</Single>
+        </Array>
+        <Single Name="AlwaysMapping" Type="bool">False</Single>
+        <Single Name="Client" Type="string"></Single>
+        <Single Name="MaxInputSize" Type="uint">0</Single>
+        <Single Name="MaxOutputSize" Type="uint">0</Single>
+        <Single Name="MaxInOutputSize" Type="uint">0</Single>
+        <Single Name="ClientTypeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="ClientConnectorInterface" Type="string"></Single>
+        <Single Name="ClientConnectorId" Type="int">-1</Single>
+        <Single Name="AlwaysMappingDisabled" Type="bool">False</Single>
+      </Single>
+      <Single Type="{850f737d-2abf-45f4-89c1-63ed6b29593d}" Method="IArchivable">
+        <Single Name="VisibleInterfaceName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+          <Single Name="Namespace" Type="string">local</Single>
+          <Single Name="Identifier" Type="string">dummy</Single>
+          <Single Name="Default" Type="string">COM2</Single>
+        </Single>
+        <Single Name="ConnectorObjectGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="IsExplicit" Type="bool">False</Single>
+        <Single Name="ModuleType" Type="ushort">61013</Single>
+        <Single Name="Interface" Type="string">Schneider.XBT.Serial4</Single>
+        <Single Name="Role" Type="{6827a808-5967-49c4-a827-10f6c446e075}">Child</Single>
+        <Single Name="ConnectorId" Type="int">4</Single>
+        <Single Name="Hostpath" Type="int">-1</Single>
+        <Single Name="Adapters" Type="{1da2f14a-1c63-4268-9171-3b6869b8ccd6}" Method="IArchivable">
+          <List Name="Adapters" Type="System.Collections.ArrayList">
+            <Single Type="{6d49a564-d0d1-4914-86ee-4465387ab144}" Method="IArchivable">
+              <Single Name="AllowEmptySlot" Type="bool">False</Single>
+              <Null Name="DefaultModules" />
+              <Array Name="Modules" Type="System.Guid">
+                <Single Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+              </Array>
+              <Single Name="IncludeSlotNumber" Type="bool">False</Single>
+              <Single Name="StartSlotNumber" Type="uint">0</Single>
+              <Null Name="SlotNames" />
+              <Single Name="HiddenSlot" Type="bool">False</Single>
+            </Single>
+          </List>
+        </Single>
+        <Single Name="HostParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+          <List2 Name="Params">
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">10020</Single>
+              <Single Name="DalaElement" Type="{87130527-d8a8-4a3f-a43d-fabaec05f356}" Method="IArchivable">
+                <Single Name="SubElements" Type="{45b6f676-61a0-4c78-a679-8c725851fa1e}" Method="IArchivable">
+                  <List2 Name="elements">
+                    <Single Type="{c2659c15-b6d3-41a4-88b2-50a445913e2e}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}">
+                        <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+                          <Single Name="Name" Type="string">se:CustomParameterValidation</Single>
+                          <Single Name="Data" Type="string">&lt;se:CustomParameterValidation xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;InterframeDelayValidate&lt;/se:CustomParameterValidation&gt;</Single>
+                        </Single>
+                      </List>
+                      <Single Name="PositionId" Type="long">4138</Single>
+                      <Single Name="EditorPositionId" Type="long">4139</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">Modbus.Description.InterframeDelay</Single>
+                        <Single Name="Default" Type="string">Delay between frames</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">Inter-frame delay</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">InterframeDelay</Single>
+                      <Single Name="Min" Type="string">0</Single>
+                      <Single Name="Max" Type="string">65535</Single>
+                      <Single Name="SimpleType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">Modbus.Description.InterframeDelay</Single>
+                          <Single Name="Default" Type="string">Delay between frames</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">local</Single>
+                          <Single Name="Identifier" Type="string">dummy</Single>
+                          <Single Name="Default" Type="string">Inter-frame delay</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">InterframeDelay</Single>
+                        <Single Name="Value" Type="string">10</Single>
+                        <Single Name="Type" Type="string">WORD</Single>
+                        <Single Name="Default" Type="string">10</Single>
+                      </Single>
+                    </Single>
+                    <Single Type="{c2659c15-b6d3-41a4-88b2-50a445913e2e}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4140</Single>
+                      <Single Name="EditorPositionId" Type="long">4141</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">Modbus.Description.Address</Single>
+                        <Single Name="Default" Type="string">Address value</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">Address</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Address</Single>
+                      <Single Name="Min" Type="string">0</Single>
+                      <Single Name="Max" Type="string">247</Single>
+                      <Single Name="SimpleType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">Modbus.Description.Address</Single>
+                          <Single Name="Default" Type="string">Address value</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">local</Single>
+                          <Single Name="Identifier" Type="string">dummy</Single>
+                          <Single Name="Default" Type="string">Address</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Address</Single>
+                        <Single Name="Value" Type="string">0</Single>
+                        <Single Name="Type" Type="string">BYTE</Single>
+                        <Single Name="Default" Type="string">0</Single>
+                      </Single>
+                    </Single>
+                    <Single Type="{4322e2a3-55e5-4e47-9fcd-b70eb1e6bfee}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4142</Single>
+                      <Single Name="EditorPositionId" Type="long">4143</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">Modbus.Description.Mode</Single>
+                        <Single Name="Default" Type="string">Transmission Mode</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">Transmission Mode</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Mode</Single>
+                      <Single Name="TypeName" Type="string">Modbus.EnumMode</Single>
+                      <Single Name="LmEnumTypeGuid" Type="System.Guid">f453ef22-2e23-585b-85b5-70b5f04c24ec</Single>
+                      <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="PositionId" Type="long">4142</Single>
+                        <Single Name="EditorPositionId" Type="long">4143</Single>
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">Modbus.Description.Mode</Single>
+                          <Single Name="Default" Type="string">Transmission Mode</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">local</Single>
+                          <Single Name="Identifier" Type="string">dummy</Single>
+                          <Single Name="Default" Type="string">Transmission Mode</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Mode</Single>
+                        <Single Name="Value" Type="string">0</Single>
+                        <Single Name="Type" Type="string">BYTE</Single>
+                        <Single Name="Default" Type="string">0</Single>
+                      </Single>
+                      <Array Name="Values" Type="{b955cc99-aa13-473b-b43f-7c76a865c138}">
+                        <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                          <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                            <Single Name="Namespace" Type="string">localStrings</Single>
+                            <Single Name="Identifier" Type="string">Modbus.EnumMode.RTU</Single>
+                            <Single Name="Default" Type="string">RTU</Single>
+                          </Single>
+                          <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                          <Single Name="Identifier" Type="string">RTU</Single>
+                          <Single Name="Value" Type="string">0</Single>
+                        </Single>
+                        <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                          <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                            <Single Name="Namespace" Type="string">localStrings</Single>
+                            <Single Name="Identifier" Type="string">Modbus.EnumMode.ASCII</Single>
+                            <Single Name="Default" Type="string">ASCII</Single>
+                          </Single>
+                          <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                          <Single Name="Identifier" Type="string">ASCII</Single>
+                          <Single Name="Value" Type="string">1</Single>
+                        </Single>
+                      </Array>
+                    </Single>
+                    <Single Type="{4322e2a3-55e5-4e47-9fcd-b70eb1e6bfee}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4144</Single>
+                      <Single Name="EditorPositionId" Type="long">4145</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">Modbus.Description.Codesys</Single>
+                        <Single Name="Default" Type="string">CoDeSys compliance</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">CoDeSys compliance</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Codesys</Single>
+                      <Single Name="TypeName" Type="string">Modbus.EnumYesNo</Single>
+                      <Single Name="LmEnumTypeGuid" Type="System.Guid">230b923f-71bc-5d59-93dc-a17a3a2ca357</Single>
+                      <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="PositionId" Type="long">4144</Single>
+                        <Single Name="EditorPositionId" Type="long">4145</Single>
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">Modbus.Description.Codesys</Single>
+                          <Single Name="Default" Type="string">CoDeSys compliance</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">local</Single>
+                          <Single Name="Identifier" Type="string">dummy</Single>
+                          <Single Name="Default" Type="string">CoDeSys compliance</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Codesys</Single>
+                        <Single Name="Value" Type="string">0</Single>
+                        <Single Name="Type" Type="string">BYTE</Single>
+                        <Single Name="Default" Type="string">0</Single>
+                      </Single>
+                      <Array Name="Values" Type="{b955cc99-aa13-473b-b43f-7c76a865c138}">
+                        <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                          <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                            <Single Name="Namespace" Type="string">localStrings</Single>
+                            <Single Name="Identifier" Type="string">Modbus.EnumYesNo.No</Single>
+                            <Single Name="Default" Type="string">No</Single>
+                          </Single>
+                          <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                          <Single Name="Identifier" Type="string">No</Single>
+                          <Single Name="Value" Type="string">0</Single>
+                        </Single>
+                        <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                          <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                            <Single Name="Namespace" Type="string">localStrings</Single>
+                            <Single Name="Identifier" Type="string">Modbus.EnumYesNo.Yes</Single>
+                            <Single Name="Default" Type="string">Yes</Single>
+                          </Single>
+                          <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                          <Single Name="Identifier" Type="string">Yes</Single>
+                          <Single Name="Value" Type="string">1</Single>
+                        </Single>
+                      </Array>
+                    </Single>
+                    <Single Type="{4322e2a3-55e5-4e47-9fcd-b70eb1e6bfee}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4146</Single>
+                      <Single Name="EditorPositionId" Type="long">4147</Single>
+                      <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">localStrings</Single>
+                        <Single Name="Identifier" Type="string">Modbus.Description.Router</Single>
+                        <Single Name="Default" Type="string">Routing Mode</Single>
+                      </Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">Routing Mode</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">Router</Single>
+                      <Single Name="TypeName" Type="string">Modbus.EnumRouter</Single>
+                      <Single Name="LmEnumTypeGuid" Type="System.Guid">1a4e16bb-7ec1-50b4-b41c-c00b0269b5dc</Single>
+                      <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                        <Null Name="FilterFlags" />
+                        <Single Name="PositionId" Type="long">4146</Single>
+                        <Single Name="EditorPositionId" Type="long">4147</Single>
+                        <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">localStrings</Single>
+                          <Single Name="Identifier" Type="string">Modbus.Description.Router</Single>
+                          <Single Name="Default" Type="string">Routing Mode</Single>
+                        </Single>
+                        <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                          <Single Name="Namespace" Type="string">local</Single>
+                          <Single Name="Identifier" Type="string">dummy</Single>
+                          <Single Name="Default" Type="string">Routing Mode</Single>
+                        </Single>
+                        <Single Name="Identifier" Type="string">Router</Single>
+                        <Single Name="Value" Type="string">0</Single>
+                        <Single Name="Type" Type="string">BYTE</Single>
+                        <Single Name="Default" Type="string">0</Single>
+                      </Single>
+                      <Array Name="Values" Type="{b955cc99-aa13-473b-b43f-7c76a865c138}">
+                        <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                          <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                            <Single Name="Namespace" Type="string">localStrings</Single>
+                            <Single Name="Identifier" Type="string">Modbus.EnumRouter.MainNet</Single>
+                            <Single Name="Default" Type="string">Main Net</Single>
+                          </Single>
+                          <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                          <Single Name="Identifier" Type="string">MainNet</Single>
+                          <Single Name="Value" Type="string">0</Single>
+                        </Single>
+                        <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                          <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                            <Single Name="Namespace" Type="string">localStrings</Single>
+                            <Single Name="Identifier" Type="string">Modbus.EnumRouter.SubNet</Single>
+                            <Single Name="Default" Type="string">Sub Net</Single>
+                          </Single>
+                          <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                          <Single Name="Identifier" Type="string">SubNet</Single>
+                          <Single Name="Value" Type="string">1</Single>
+                        </Single>
+                      </Array>
+                    </Single>
+                  </List2>
+                </Single>
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4136</Single>
+                <Single Name="EditorPositionId" Type="long">4137</Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">localStrings</Single>
+                  <Single Name="Identifier" Type="string">Modbus.ParameterName</Single>
+                  <Single Name="Default" Type="string">Modbus Configuration</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">10020</Single>
+                <Single Name="TypeName" Type="string">Modbus</Single>
+                <Single Name="LmStructTypeGuid" Type="System.Guid">398633f5-4b6a-5f3a-8087-b32ceb8db26b</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">localTypes:Modbus</Single>
+              <Single Name="IndexInDevDesc" Type="long">0</Single>
+            </Single>
+          </List2>
+          <Single Name="LmGuid" Type="System.Guid">c91d81d6-6073-5705-a45c-76f3cc9665b0</Single>
+          <Null Name="Sections" />
+          <Single Name="InitOnOnlineChange" Type="bool">False</Single>
+          <Single Name="AlwaysMapping" Type="bool">False</Single>
+          <Null Name="EditorName" />
+          <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+          <Single Name="CreateBitChannels" Type="bool">False</Single>
+        </Single>
+        <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+          <List Name="RequiredLibs" Type="System.Collections.ArrayList" />
+          <Null Name="RequiredTasks" />
+          <Single Name="NeedsBusCycle" Type="bool">False</Single>
+          <Single Name="BusCycleTask" Type="string"></Single>
+          <Single Name="IoApp" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="IoAppSet" Type="bool">False</Single>
+          <Array Name="PositionIds" Type="long">JRAAAAAAAAAmEAAAAAAAACcQAAAAAAAA</Array>
+          <Single Name="UseSlowestTask" Type="bool">False</Single>
+          <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+          <Single Name="GenerateForceVariables" Type="bool">False</Single>
+          <Single Name="EnableDiagnosis" Type="bool">False</Single>
+          <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+          <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+          <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+          <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+          <Single Name="SymbolicAccessMode" Type="{866ccdec-84a7-4590-aeab-383c7bd79437}">Disabled</Single>
+          <Single Name="DeviceScanSupported" Type="bool">False</Single>
+          <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+          <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+          <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+          <Single Name="UpdateIOsInStop" Type="bool">False</Single>
+          <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">KeepCurrentValues</Single>
+          <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+          <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+          <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        </Single>
+        <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}" />
+        <Single Name="ModuleId" Type="int">-1</Single>
+        <Null Name="IoUpdateTask" />
+        <List Name="AdditionalInterfaces" Type="System.Collections.ArrayList" />
+        <List Name="Constraints" Type="System.Collections.ArrayList" />
+        <Single Name="hideInStatusPage" Type="bool">False</Single>
+        <Single Name="updateAllowed" Type="bool">True</Single>
+        <Single Name="fixedInputAddress" Type="string"></Single>
+        <Single Name="fixedOutputAddress" Type="string"></Single>
+        <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+        <List Name="AllowOnlyDevices" Type="System.Collections.ArrayList" />
+        <Single Name="InitialStatusFlag" Type="uint">1</Single>
+        <Single Name="UseBlobInitConst" Type="bool">False</Single>
+        <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        <Single Name="ConnectorGroup" Type="uint">0</Single>
+        <Array Name="AllowedPages" Type="string">
+          <Single Type="string">MxxxModbusEditor</Single>
+          <Single Type="string">XBTModbusEditor</Single>
+          <Single Type="string">StatusPage</Single>
+          <Single Type="string">DeviceInformation</Single>
+        </Array>
+        <Single Name="AlwaysMapping" Type="bool">False</Single>
+        <Single Name="Client" Type="string"></Single>
+        <Single Name="MaxInputSize" Type="uint">0</Single>
+        <Single Name="MaxOutputSize" Type="uint">0</Single>
+        <Single Name="MaxInOutputSize" Type="uint">0</Single>
+        <Single Name="ClientTypeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="ClientConnectorInterface" Type="string"></Single>
+        <Single Name="ClientConnectorId" Type="int">-1</Single>
+        <Single Name="AlwaysMappingDisabled" Type="bool">False</Single>
+      </Single>
+    </List>
+  </Single>
+  <Single Name="Attributes" Type="{1fdbedd8-b518-4ebd-99df-805f2f77c071}" Method="IArchivable">
+    <Dictionary Type="System.Collections.Hashtable" Name="Attributes" />
+  </Single>
+  <Single Name="CommunicationSettings" Type="{58f2b04d-505d-4589-9fcf-0ec83491f9b2}" Method="IArchivable">
+    <Single Name="SaveLocally" Type="bool">False</Single>
+    <Single Name="CommunicationSettingFilter" Type="int">1</Single>
+    <Single Name="CommunicationSettingSorting" Type="int">0</Single>
+    <Single Name="TrackingMode" Type="int">5</Single>
+    <Single Name="GatewayGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+    <Null Name="Address" />
+    <Single Name="PromptAtLogin" Type="bool">False</Single>
+    <Single Name="SimulationMode" Type="bool">False</Single>
+    <Single Name="SecureOnlineMode" Type="bool">False</Single>
+    <Single Name="SecureOnlineModeExplicitelySet" Type="bool">False</Single>
+    <Single Name="Name" Type="string"></Single>
+    <Single Name="MonitoringIntervalMsec" Type="int">200</Single>
+    <Null Name="ScanInformation" />
+    <Single Name="IsCommunicationEncrypted" Type="bool">False</Single>
+    <Single Name="IsDefaultNameTrackingFromScanActive" Type="bool">False</Single>
+  </Single>
+  <Single Name="IoProviderBase" Type="{848f25ec-eecf-4290-8329-7f6500fd2e0f}" Method="IArchivable">
+    <Array Name="UserBaseAddress" Type="string">
+      <Null />
+      <Null />
+      <Null />
+    </Array>
+  </Single>
+  <Single Name="GuidBusCycleTask" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+  <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+    <List Name="RequiredLibs" Type="System.Collections.ArrayList" />
+    <Null Name="RequiredTasks" />
+    <Single Name="NeedsBusCycle" Type="bool">False</Single>
+    <Single Name="BusCycleTask" Type="string"></Single>
+    <Single Name="IoApp" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+    <Single Name="IoAppSet" Type="bool">False</Single>
+    <Array Name="PositionIds" Type="long">ARAAAAAAAAACEAAAAAAAAAMQAAAAAAAA</Array>
+    <Single Name="UseSlowestTask" Type="bool">False</Single>
+    <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+    <Single Name="GenerateForceVariables" Type="bool">False</Single>
+    <Single Name="EnableDiagnosis" Type="bool">False</Single>
+    <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+    <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+    <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+    <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+    <Single Name="SymbolicAccessMode" Type="{866ccdec-84a7-4590-aeab-383c7bd79437}">Disabled</Single>
+    <Single Name="DeviceScanSupported" Type="bool">False</Single>
+    <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+    <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+    <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+    <Single Name="UpdateIOsInStop" Type="bool">False</Single>
+    <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">KeepCurrentValues</Single>
+    <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+    <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+    <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+    <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+  </Single>
+  <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}" />
+  <Single Name="IoConfigGlobalsGuid" Type="System.Guid">461bed3c-e11f-58f4-8d18-7df615237119</Single>
+  <Single Name="IoConfigGlobalsMappingGuid" Type="System.Guid">83a7eef9-e65f-5ffc-be23-d8206c6e4180</Single>
+  <Single Name="IoConfigVarConfigGuid" Type="System.Guid">0323e296-798e-5b87-b0f0-d52a79b350dc</Single>
+  <Single Name="IoConfigErrorPouGuid" Type="System.Guid">c04ef9ec-879c-5c9c-8f89-a73810b3a13a</Single>
+  <Single Name="ModuleId" Type="int">-1</Single>
+  <Null Name="IoUpdateTask" />
+  <Array Name="FunctionalChildren" Type="System.Guid" />
+  <Null Name="UserManagement" />
+  <Null Name="RightsManagement" />
+  <Single Name="showParamsInDevDescOrder" Type="bool">False</Single>
+  <Single Name="fixedInputAddress" Type="string"></Single>
+  <Single Name="fixedOutputAddress" Type="string"></Single>
+  <Single Name="HostObjectGuid" Type="System.Guid">801ebf5c-dbeb-4511-9a45-2ed26e25b40f</Single>
+  <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+  <Single Name="CreateBitChannels" Type="bool">False</Single>
+  <Null Name="AdditionalStringTable" />
+  <Null Name="OnlineHelpUrl" />
+  <Single Name="InteractiveLoginMode" Type="int">-1</Single>
+  <Single Name="UseDeviceApplicationStructure" Type="bool">False</Single>
+  <Single Name="AllowSymbolicVarAccessInSyncWithIecCycle" Type="bool">False</Single>
+  <Single Name="LogicalDeviceList" Type="{ec1f8a3a-98c6-404c-883e-ce9e54b42542}" Method="IArchivable">
+    <List Name="InnerList" Type="System.Collections.ArrayList" />
+  </Single>
+  <Single Name="LogicalLanguageModelPositionId" Type="long">-1</Single>
+  <List Name="SupportedLogicalBusSystems" Type="System.Collections.ArrayList" />
+  <Single Name="MappingPossible" Type="bool">False</Single>
+  <Single Name="HidePropertiesDialog" Type="bool">False</Single>
+  <Null Name="PlaceholderResolution" />
+  <Null Name="RedirectedPlaceholderResolution" />
+</Single>

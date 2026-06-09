@@ -1,0 +1,2191 @@
+__V3_META__
+{
+  "objectGuid": "77729652-614c-4a12-8656-be3696812e21",
+  "objectTypeGuid": "225bfe47-7336-4dbc-9419-4105a7c831fa",
+  "embeddedObjectTypeGuids": [],
+  "properties": {
+    "_3S.CoDeSys.DeviceObject.DeviceProperty": "<?xml version=\"1.0\" encoding=\"utf-8\"?><Single xml:space=\"preserve\" Type=\"{cdadfc2b-8598-4621-ad56-5b1df7db910f}\" Method=\"IArchivable\"><Single Name=\"DeviceIdentification\" Type=\"{959f677a-b4e4-4930-8d88-b3b6b116d4d6}\" Method=\"IArchivable\"><Single Name=\"ModuleId\" Type=\"string\">ETHERNET_1</Single><Single Name=\"Type\" Type=\"int\">4096</Single><Single Name=\"Id\" Type=\"string\">101a 0707</Single><Single Name=\"Version\" Type=\"string\">5.5.14.15</Single><Single Name=\"BaseName\" Type=\"string\">Ethernet_1</Single></Single></Single>",
+    "schneider.Automation.OEM.MSDIOManager.IOHarmonizationProperty": "<?xml version=\"1.0\" encoding=\"utf-8\"?><Single xml:space=\"preserve\" Type=\"{275991af-8cbe-452b-ad98-cb6842331ae4}\" Method=\"IArchivable\"><Single Name=\"InitialModuleName\" Type=\"string\">Ethernet_1</Single><Single Name=\"InitialTemplate\" Type=\"string\">#X#T#D_#C</Single></Single>",
+    "schneiderAutomation.Platform.Core.ObjectProperty.AlreadyHandledObjectProperty": "<?xml version=\"1.0\" encoding=\"utf-8\"?><Single xml:space=\"preserve\" Type=\"{f34a3cea-eaf7-46ee-9371-24d10b0ab1d5}\" Method=\"IArchivable\"><List2 Name=\"PropertyList\"><Single Type=\"string\">IOHarmonizationService</Single></List2></Single>"
+  },
+  "subObjects": {}
+}
+__V3_CONTENT__
+<?xml version="1.0" encoding="utf-8"?>
+<Single xml:space="preserve" Type="{225bfe47-7336-4dbc-9419-4105a7c831fa}" Method="IArchivable">
+  <Single Name="UniqueIdGenerator" Type="string">4217</Single>
+  <Null Name="TypeList" />
+  <Single Name="NeedsBusCycle" Type="bool">False</Single>
+  <Single Name="Id" Type="{959f677a-b4e4-4930-8d88-b3b6b116d4d6}" Method="IArchivable">
+    <Single Name="ModuleId" Type="string">ETHERNET_1</Single>
+    <Single Name="Type" Type="int">4096</Single>
+    <Single Name="Id" Type="string">101a 0707</Single>
+    <Single Name="Version" Type="string">5.5.14.15</Single>
+    <Single Name="BaseName" Type="string">Ethernet_1</Single>
+  </Single>
+  <Single Name="DefaultDeviceInfo" Type="{59a90934-c888-40db-a9df-306fcf36d75c}" Method="IArchivable">
+    <Single Name="Name" Type="string">Ethernet Network</Single>
+    <Single Name="Description" Type="string"></Single>
+    <Single Name="Vendor" Type="string">Schneider Electric</Single>
+    <Single Name="OrderNumber" Type="string">-</Single>
+    <Array Name="Categories" Type="int" />
+    <Array Name="Families" Type="string" />
+    <Single Name="Custom" Type="string"></Single>
+    <Null Name="DefaultInstanceName" />
+  </Single>
+  <Single Name="DeviceParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+    <List2 Name="Params" />
+    <Single Name="LmGuid" Type="System.Guid">87094c78-b96c-52da-b088-731b8ff9ea88</Single>
+    <Null Name="Sections" />
+    <Single Name="InitOnOnlineChange" Type="bool">False</Single>
+    <Single Name="AlwaysMapping" Type="bool">False</Single>
+    <Null Name="EditorName" />
+    <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+    <Single Name="CreateBitChannels" Type="bool">False</Single>
+  </Single>
+  <Single Name="Disable" Type="bool">False</Single>
+  <Single Name="Exclude" Type="bool">False</Single>
+  <List Name="Connectors" Type="System.Collections.ArrayList" />
+  <Single Name="ConnectorList" Type="{52a6325f-063a-4748-86b6-ec8aa02d3232}" Method="IArchivable">
+    <List Name="InnerList" Type="System.Collections.ArrayList">
+      <Single Type="{850f737d-2abf-45f4-89c1-63ed6b29593d}" Method="IArchivable">
+        <Single Name="VisibleInterfaceName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+          <Single Name="Namespace" Type="string">local</Single>
+          <Single Name="Identifier" Type="string">dummy</Single>
+        </Single>
+        <Single Name="ConnectorObjectGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="IsExplicit" Type="bool">False</Single>
+        <Single Name="ModuleType" Type="ushort">45040</Single>
+        <Single Name="Interface" Type="string">MSD.M2XX</Single>
+        <Single Name="Role" Type="{6827a808-5967-49c4-a827-10f6c446e075}">Child</Single>
+        <Single Name="ConnectorId" Type="int">1</Single>
+        <Single Name="Hostpath" Type="int">-1</Single>
+        <Single Name="Adapters" Type="{1da2f14a-1c63-4268-9171-3b6869b8ccd6}" Method="IArchivable">
+          <List Name="Adapters" Type="System.Collections.ArrayList">
+            <Single Type="{6d49a564-d0d1-4914-86ee-4465387ab144}" Method="IArchivable">
+              <Single Name="AllowEmptySlot" Type="bool">True</Single>
+              <Null Name="DefaultModules" />
+              <Array Name="Modules" Type="System.Guid">
+                <Single Type="System.Guid">801ebf5c-dbeb-4511-9a45-2ed26e25b40f</Single>
+              </Array>
+              <Single Name="IncludeSlotNumber" Type="bool">False</Single>
+              <Single Name="StartSlotNumber" Type="uint">0</Single>
+              <Null Name="SlotNames" />
+              <Single Name="HiddenSlot" Type="bool">False</Single>
+            </Single>
+          </List>
+        </Single>
+        <Single Name="HostParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+          <List2 Name="Params" />
+          <Single Name="LmGuid" Type="System.Guid">fdc52e1b-85b9-53d9-b92a-81ae14ced45c</Single>
+          <Null Name="Sections" />
+          <Single Name="InitOnOnlineChange" Type="bool">False</Single>
+          <Single Name="AlwaysMapping" Type="bool">False</Single>
+          <Null Name="EditorName" />
+          <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+          <Single Name="CreateBitChannels" Type="bool">False</Single>
+        </Single>
+        <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+          <List Name="RequiredLibs" Type="System.Collections.ArrayList" />
+          <Null Name="RequiredTasks" />
+          <Single Name="NeedsBusCycle" Type="bool">False</Single>
+          <Single Name="BusCycleTask" Type="string"></Single>
+          <Single Name="IoApp" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="IoAppSet" Type="bool">False</Single>
+          <Array Name="PositionIds" Type="long">BBAAAAAAAAAFEAAAAAAAAAYQAAAAAAAA</Array>
+          <Single Name="UseSlowestTask" Type="bool">False</Single>
+          <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+          <Single Name="GenerateForceVariables" Type="bool">False</Single>
+          <Single Name="EnableDiagnosis" Type="bool">False</Single>
+          <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+          <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+          <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+          <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+          <Single Name="SymbolicAccessMode" Type="{866ccdec-84a7-4590-aeab-383c7bd79437}">Disabled</Single>
+          <Single Name="DeviceScanSupported" Type="bool">False</Single>
+          <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+          <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+          <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+          <Single Name="UpdateIOsInStop" Type="bool">False</Single>
+          <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">KeepCurrentValues</Single>
+          <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+          <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+          <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        </Single>
+        <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}" />
+        <Single Name="ModuleId" Type="int">-1</Single>
+        <Null Name="IoUpdateTask" />
+        <List Name="AdditionalInterfaces" Type="System.Collections.ArrayList" />
+        <List Name="Constraints" Type="System.Collections.ArrayList" />
+        <Single Name="hideInStatusPage" Type="bool">False</Single>
+        <Single Name="updateAllowed" Type="bool">True</Single>
+        <Single Name="fixedInputAddress" Type="string"></Single>
+        <Single Name="fixedOutputAddress" Type="string"></Single>
+        <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+        <List Name="AllowOnlyDevices" Type="System.Collections.ArrayList" />
+        <Single Name="InitialStatusFlag" Type="uint">1</Single>
+        <Single Name="UseBlobInitConst" Type="bool">False</Single>
+        <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        <Single Name="ConnectorGroup" Type="uint">0</Single>
+        <Array Name="AllowedPages" Type="string" />
+        <Single Name="AlwaysMapping" Type="bool">False</Single>
+        <Single Name="Client" Type="string"></Single>
+        <Single Name="MaxInputSize" Type="uint">0</Single>
+        <Single Name="MaxOutputSize" Type="uint">0</Single>
+        <Single Name="MaxInOutputSize" Type="uint">0</Single>
+        <Single Name="ClientTypeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="ClientConnectorInterface" Type="string"></Single>
+        <Single Name="ClientConnectorId" Type="int">-1</Single>
+        <Single Name="AlwaysMappingDisabled" Type="bool">False</Single>
+      </Single>
+      <Single Type="{850f737d-2abf-45f4-89c1-63ed6b29593d}" Method="IArchivable">
+        <Single Name="VisibleInterfaceName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+          <Single Name="Namespace" Type="string">local</Single>
+          <Single Name="Identifier" Type="string">dummy</Single>
+          <Single Name="Default" Type="string">Ethernet</Single>
+        </Single>
+        <Single Name="ConnectorObjectGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="IsExplicit" Type="bool">False</Single>
+        <Single Name="ModuleType" Type="ushort">111</Single>
+        <Single Name="Interface" Type="string">Common.Ethernet</Single>
+        <Single Name="Role" Type="{6827a808-5967-49c4-a827-10f6c446e075}">Parent</Single>
+        <Single Name="ConnectorId" Type="int">2</Single>
+        <Single Name="Hostpath" Type="int">-1</Single>
+        <Single Name="Adapters" Type="{1da2f14a-1c63-4268-9171-3b6869b8ccd6}" Method="IArchivable">
+          <List Name="Adapters" Type="System.Collections.ArrayList">
+            <Single Type="{3f828f0b-c67b-430a-8c93-1e9bc324df64}" Method="IArchivable">
+              <List Name="Modules" Type="System.Collections.ArrayList" />
+              <Single Name="MaxDevices" Type="int">2147483647</Single>
+              <Single Name="SupportPlaceholderObjects" Type="bool">False</Single>
+            </Single>
+          </List>
+        </Single>
+        <Single Name="HostParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+          <List2 Name="Params">
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">0</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}">
+                  <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+                    <Single Name="Name" Type="string">se:LateConfiguration</Single>
+                    <Single Name="Data" Type="string">&lt;se:LateConfiguration xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;Ethernet IP address&lt;/se:LateConfiguration&gt;</Single>
+                  </Single>
+                </List>
+                <Single Name="PositionId" Type="long">4106</Single>
+                <Single Name="EditorPositionId" Type="long">4107</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Configure IP Address of the Controller on the EtherNet bus (IP).</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">IPAddress</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">0</Single>
+                <Single Name="Value" Type="string">[0, 0, 0, 0]</Single>
+                <Single Name="Type" Type="string">ARRAY[0..3] OF BYTE</Single>
+                <Single Name="Default" Type="string">[0, 0, 0, 0]</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:ARRAY[0..3] OF BYTE</Single>
+              <Single Name="IndexInDevDesc" Type="long">0</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">1</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}">
+                  <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+                    <Single Name="Name" Type="string">se:LateConfiguration</Single>
+                    <Single Name="Data" Type="string">&lt;se:LateConfiguration xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;Ethernet IP mask&lt;/se:LateConfiguration&gt;</Single>
+                  </Single>
+                </List>
+                <Single Name="PositionId" Type="long">4108</Single>
+                <Single Name="EditorPositionId" Type="long">4109</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Configure IP Address of the Controller on the EtherNet bus (Mask).</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">SubnetMask</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">1</Single>
+                <Single Name="Value" Type="string">[0, 0, 0, 0]</Single>
+                <Single Name="Type" Type="string">ARRAY[0..3] OF BYTE</Single>
+                <Single Name="Default" Type="string">[0, 0, 0, 0]</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:ARRAY[0..3] OF BYTE</Single>
+              <Single Name="IndexInDevDesc" Type="long">1</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">2</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}">
+                  <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+                    <Single Name="Name" Type="string">se:LateConfiguration</Single>
+                    <Single Name="Data" Type="string">&lt;se:LateConfiguration xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;Ethernet IP gateway address&lt;/se:LateConfiguration&gt;</Single>
+                  </Single>
+                </List>
+                <Single Name="PositionId" Type="long">4110</Single>
+                <Single Name="EditorPositionId" Type="long">4111</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Configure IP Address of the Controller on the EtherNet bus (Gateway).</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">GatewayAddress</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">2</Single>
+                <Single Name="Value" Type="string">[0, 0, 0, 0]</Single>
+                <Single Name="Type" Type="string">ARRAY[0..3] OF BYTE</Single>
+                <Single Name="Default" Type="string">[0, 0, 0, 0]</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:ARRAY[0..3] OF BYTE</Single>
+              <Single Name="IndexInDevDesc" Type="long">2</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">3</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{4322e2a3-55e5-4e47-9fcd-b70eb1e6bfee}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4112</Single>
+                <Single Name="EditorPositionId" Type="long">4113</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Configure Bus speed of the EtherNet.</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">TransferRate</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">3</Single>
+                <Single Name="TypeName" Type="string">TransferRateType</Single>
+                <Single Name="LmEnumTypeGuid" Type="System.Guid">639658d0-4fff-5a69-ad33-69fe37cae3a4</Single>
+                <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                  <Null Name="FilterFlags" />
+                  <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                  <Single Name="PositionId" Type="long">4112</Single>
+                  <Single Name="EditorPositionId" Type="long">4113</Single>
+                  <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                    <Single Name="Namespace" Type="string">local</Single>
+                    <Single Name="Identifier" Type="string">dummy</Single>
+                    <Single Name="Default" Type="string">Configure Bus speed of the EtherNet.</Single>
+                  </Single>
+                  <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                    <Single Name="Namespace" Type="string">local</Single>
+                    <Single Name="Identifier" Type="string">dummy</Single>
+                    <Single Name="Default" Type="string">TransferRate</Single>
+                  </Single>
+                  <Single Name="Identifier" Type="string">3</Single>
+                  <Single Name="Value" Type="string">0</Single>
+                  <Single Name="Type" Type="string">BYTE</Single>
+                  <Single Name="Default" Type="string">0</Single>
+                </Single>
+                <Array Name="Values" Type="{b955cc99-aa13-473b-b43f-7c76a865c138}">
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">TransferRateType.Auto</Single>
+                      <Single Name="Default" Type="string">Auto</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">Auto</Single>
+                    <Single Name="Value" Type="string">0</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">TransferRateType.10MBit_full</Single>
+                      <Single Name="Default" Type="string">10 MBit full</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">e10MBit_full</Single>
+                    <Single Name="Value" Type="string">1</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">TransferRateType.10MBit_half</Single>
+                      <Single Name="Default" Type="string">10 MBit half</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">e10MBit_half</Single>
+                    <Single Name="Value" Type="string">2</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">TransferRateType.100MBit_full</Single>
+                      <Single Name="Default" Type="string">100 MBit full</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">e100MBit_full</Single>
+                    <Single Name="Value" Type="string">3</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">TransferRateType.100MBit_half</Single>
+                      <Single Name="Default" Type="string">100 MBit half</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">e100MBit_half</Single>
+                    <Single Name="Value" Type="string">4</Single>
+                  </Single>
+                </Array>
+              </Single>
+              <Single Name="ParamType" Type="string">localTypes:TransferRateType</Single>
+              <Single Name="IndexInDevDesc" Type="long">3</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">4</Single>
+              <Single Name="DalaElement" Type="{4322e2a3-55e5-4e47-9fcd-b70eb1e6bfee}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}">
+                  <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+                    <Single Name="Name" Type="string">se:LateConfiguration</Single>
+                    <Single Name="Data" Type="string">&lt;se:LateConfiguration xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;IP configuration mode: 0:FIXED 1:BOOTP 2:DHCP&lt;/se:LateConfiguration&gt;</Single>
+                  </Single>
+                </List>
+                <Single Name="PositionId" Type="long">4114</Single>
+                <Single Name="EditorPositionId" Type="long">4115</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Configure the method this device uses for obtaining an IP address.</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">IPConfigMode</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">4</Single>
+                <Single Name="TypeName" Type="string">IPConfigModeType</Single>
+                <Single Name="LmEnumTypeGuid" Type="System.Guid">4b5981da-0754-53b1-89da-9e0c7d259f85</Single>
+                <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                  <Null Name="FilterFlags" />
+                  <Single Name="PositionId" Type="long">4114</Single>
+                  <Single Name="EditorPositionId" Type="long">4115</Single>
+                  <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                    <Single Name="Namespace" Type="string">local</Single>
+                    <Single Name="Identifier" Type="string">dummy</Single>
+                    <Single Name="Default" Type="string">Configure the method this device uses for obtaining an IP address.</Single>
+                  </Single>
+                  <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                    <Single Name="Namespace" Type="string">local</Single>
+                    <Single Name="Identifier" Type="string">dummy</Single>
+                    <Single Name="Default" Type="string">IPConfigMode</Single>
+                  </Single>
+                  <Single Name="Identifier" Type="string">4</Single>
+                  <Single Name="Value" Type="string">0</Single>
+                  <Single Name="Type" Type="string">BYTE</Single>
+                  <Single Name="Default" Type="string">0</Single>
+                </Single>
+                <Array Name="Values" Type="{b955cc99-aa13-473b-b43f-7c76a865c138}">
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">IPConfigModeType.FIXED</Single>
+                      <Single Name="Default" Type="string">FIXED</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">FIXED</Single>
+                    <Single Name="Value" Type="string">0</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">IPConfigModeType.BOOTP</Single>
+                      <Single Name="Default" Type="string">BOOTP</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">BOOTP</Single>
+                    <Single Name="Value" Type="string">1</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">IPConfigModeType.DHCP</Single>
+                      <Single Name="Default" Type="string">DHCP</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">DHCP</Single>
+                    <Single Name="Value" Type="string">2</Single>
+                  </Single>
+                </Array>
+              </Single>
+              <Single Name="ParamType" Type="string">localTypes:IPConfigModeType</Single>
+              <Single Name="IndexInDevDesc" Type="long">4</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">5</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}">
+                  <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+                    <Single Name="Name" Type="string">se:LateConfiguration</Single>
+                    <Single Name="Data" Type="string">&lt;se:LateConfiguration xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;Name of the device on the Ethernet network&lt;/se:LateConfiguration&gt;</Single>
+                  </Single>
+                </List>
+                <Single Name="PositionId" Type="long">4116</Single>
+                <Single Name="EditorPositionId" Type="long">4117</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Configure the Network-/Device- Name, e.g. for DHCP addressing Use case.</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">DeviceName</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">5</Single>
+                <Single Name="Value" Type="string">'my_Device'</Single>
+                <Single Name="Type" Type="string">STRING(16)</Single>
+                <Single Name="Default" Type="string">'my_Device'</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:STRING(16)</Single>
+              <Single Name="IndexInDevDesc" Type="long">5</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">6</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4118</Single>
+                <Single Name="EditorPositionId" Type="long">4119</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Configure activation of WEB server</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">WebServer</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">6</Single>
+                <Single Name="Value" Type="string">true</Single>
+                <Single Name="Type" Type="string">BOOL</Single>
+                <Single Name="Default" Type="string">true</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:BOOL</Single>
+              <Single Name="IndexInDevDesc" Type="long">6</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">10</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+                <Single Name="PositionId" Type="long">4120</Single>
+                <Single Name="EditorPositionId" Type="long">4121</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Configure Name of Network Interface</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">NetworkInterfaceName</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">10</Single>
+                <Single Name="Value" Type="string">'EthernetPort0'</Single>
+                <Single Name="Type" Type="string">STRING</Single>
+                <Single Name="Default" Type="string">'EthernetPort0'</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:STRING</Single>
+              <Single Name="IndexInDevDesc" Type="long">7</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">11</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{4322e2a3-55e5-4e47-9fcd-b70eb1e6bfee}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4122</Single>
+                <Single Name="EditorPositionId" Type="long">4123</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Configure EtherNet Protocol (Ethernet2 or 802.3 frames)</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">EtherNetProtocol</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">11</Single>
+                <Single Name="TypeName" Type="string">ProtocolEnumType</Single>
+                <Single Name="LmEnumTypeGuid" Type="System.Guid">037dfb66-5b02-55a0-88f8-f227b8b84bff</Single>
+                <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                  <Null Name="FilterFlags" />
+                  <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                  <Single Name="PositionId" Type="long">4122</Single>
+                  <Single Name="EditorPositionId" Type="long">4123</Single>
+                  <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                    <Single Name="Namespace" Type="string">local</Single>
+                    <Single Name="Identifier" Type="string">dummy</Single>
+                    <Single Name="Default" Type="string">Configure EtherNet Protocol (Ethernet2 or 802.3 frames)</Single>
+                  </Single>
+                  <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                    <Single Name="Namespace" Type="string">local</Single>
+                    <Single Name="Identifier" Type="string">dummy</Single>
+                    <Single Name="Default" Type="string">EtherNetProtocol</Single>
+                  </Single>
+                  <Single Name="Identifier" Type="string">11</Single>
+                  <Single Name="Value" Type="string">1</Single>
+                  <Single Name="Type" Type="string">BYTE</Single>
+                  <Single Name="Default" Type="string">1</Single>
+                </Single>
+                <Array Name="Values" Type="{b955cc99-aa13-473b-b43f-7c76a865c138}">
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">ProtocolEnumType.IEEE_802_3</Single>
+                      <Single Name="Default" Type="string">IEEE 802.3</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">IEEE_802_3</Single>
+                    <Single Name="Value" Type="string">0</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">ProtocolEnumType.Ethernet2</Single>
+                      <Single Name="Default" Type="string">Ethernet 2</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">IEEE_802_4</Single>
+                    <Single Name="Value" Type="string">1</Single>
+                  </Single>
+                </Array>
+              </Single>
+              <Single Name="ParamType" Type="string">localTypes:ProtocolEnumType</Single>
+              <Single Name="IndexInDevDesc" Type="long">8</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">21</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4124</Single>
+                <Single Name="EditorPositionId" Type="long">4125</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Configure activation of FTP server</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">FTP Server</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">21</Single>
+                <Single Name="Value" Type="string">true</Single>
+                <Single Name="Type" Type="string">BOOL</Single>
+                <Single Name="Default" Type="string">true</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:BOOL</Single>
+              <Single Name="IndexInDevDesc" Type="long">9</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">22</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4126</Single>
+                <Single Name="EditorPositionId" Type="long">4127</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Configure activation of SoMachine Protocol</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">SoMachine Protocol</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">22</Single>
+                <Single Name="Value" Type="string">true</Single>
+                <Single Name="Type" Type="string">BOOL</Single>
+                <Single Name="Default" Type="string">true</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:BOOL</Single>
+              <Single Name="IndexInDevDesc" Type="long">10</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">23</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4128</Single>
+                <Single Name="EditorPositionId" Type="long">4129</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Configure activation of Modbus server</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Modbus Server</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">23</Single>
+                <Single Name="Value" Type="string">false</Single>
+                <Single Name="Type" Type="string">BOOL</Single>
+                <Single Name="Default" Type="string">false</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:BOOL</Single>
+              <Single Name="IndexInDevDesc" Type="long">11</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">24</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4130</Single>
+                <Single Name="EditorPositionId" Type="long">4131</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Configure activation of NetManage protocol</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">NetManage Protocol</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">24</Single>
+                <Single Name="Value" Type="string">true</Single>
+                <Single Name="Type" Type="string">BOOL</Single>
+                <Single Name="Default" Type="string">true</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:BOOL</Single>
+              <Single Name="IndexInDevDesc" Type="long">12</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">25</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4132</Single>
+                <Single Name="EditorPositionId" Type="long">4133</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Configure activation of snmp protocol</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">SNMP protocol</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">25</Single>
+                <Single Name="Value" Type="string">false</Single>
+                <Single Name="Type" Type="string">BOOL</Single>
+                <Single Name="Default" Type="string">false</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:BOOL</Single>
+              <Single Name="IndexInDevDesc" Type="long">13</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">26</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+                <Single Name="PositionId" Type="long">4134</Single>
+                <Single Name="EditorPositionId" Type="long">4135</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Configure activation of routing</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Enable Routing</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">26</Single>
+                <Single Name="Value" Type="string">false</Single>
+                <Single Name="Type" Type="string">BOOL</Single>
+                <Single Name="Default" Type="string">false</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:BOOL</Single>
+              <Single Name="IndexInDevDesc" Type="long">14</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">27</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4136</Single>
+                <Single Name="EditorPositionId" Type="long">4137</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Configure activation of WebVisu protocol</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">WebVisu protocol</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">27</Single>
+                <Single Name="Value" Type="string">false</Single>
+                <Single Name="Type" Type="string">BOOL</Single>
+                <Single Name="Default" Type="string">false</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:BOOL</Single>
+              <Single Name="IndexInDevDesc" Type="long">15</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">28</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4138</Single>
+                <Single Name="EditorPositionId" Type="long">4139</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Number Maximum of EiP connections</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Maximum EiP connections</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">28</Single>
+                <Single Name="Value" Type="string">16</Single>
+                <Single Name="Type" Type="string">UINT</Single>
+                <Single Name="Default" Type="string">16</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:UINT</Single>
+              <Single Name="IndexInDevDesc" Type="long">16</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">29</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="Download" Type="bool">False</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4140</Single>
+                <Single Name="EditorPositionId" Type="long">4141</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Number Maximum EiP input bytes</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Maximum EiP input bytes</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">29</Single>
+                <Single Name="Value" Type="string">2048</Single>
+                <Single Name="Type" Type="string">UINT</Single>
+                <Single Name="Default" Type="string">2048</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:UINT</Single>
+              <Single Name="IndexInDevDesc" Type="long">17</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">30</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="Download" Type="bool">False</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4142</Single>
+                <Single Name="EditorPositionId" Type="long">4143</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Number Maximum EiP output bytes</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Maximum EiP output bytes</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">30</Single>
+                <Single Name="Value" Type="string">2048</Single>
+                <Single Name="Type" Type="string">UINT</Single>
+                <Single Name="Default" Type="string">2048</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:UINT</Single>
+              <Single Name="IndexInDevDesc" Type="long">18</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">31</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="Download" Type="bool">False</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4144</Single>
+                <Single Name="EditorPositionId" Type="long">4145</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Configure activation of DHCP Service</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">DHCP Server Active</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">31</Single>
+                <Single Name="Value" Type="string">true</Single>
+                <Single Name="Type" Type="string">BOOL</Single>
+                <Single Name="Default" Type="string">true</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:BOOL</Single>
+              <Single Name="IndexInDevDesc" Type="long">19</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">32</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="Download" Type="bool">False</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4146</Single>
+                <Single Name="EditorPositionId" Type="long">4147</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Number Maximum of dhcp entries in bootp or dhcp supported</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Maximum DHCP entries supported</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">32</Single>
+                <Single Name="Value" Type="string">64</Single>
+                <Single Name="Type" Type="string">UINT</Single>
+                <Single Name="Default" Type="string">64</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:UINT</Single>
+              <Single Name="IndexInDevDesc" Type="long">20</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">34</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4148</Single>
+                <Single Name="EditorPositionId" Type="long">4149</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Configure activation of Secured Web Server</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Secured Web Server</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">34</Single>
+                <Single Name="Value" Type="string">true</Single>
+                <Single Name="Type" Type="string">BOOL</Single>
+                <Single Name="Default" Type="string">true</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:BOOL</Single>
+              <Single Name="IndexInDevDesc" Type="long">21</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">35</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4150</Single>
+                <Single Name="EditorPositionId" Type="long">4151</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Configure activation of Remote Connection (Fast TCP)</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Remote Connection</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">35</Single>
+                <Single Name="Value" Type="string">true</Single>
+                <Single Name="Type" Type="string">BOOL</Single>
+                <Single Name="Default" Type="string">true</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:BOOL</Single>
+              <Single Name="IndexInDevDesc" Type="long">22</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">100</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4152</Single>
+                <Single Name="EditorPositionId" Type="long">4153</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Actual IP Address of the Controller on the EtherNet bus (IP).</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">IPAddress</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">100</Single>
+                <Single Name="Value" Type="string">[0, 0, 0, 0]</Single>
+                <Single Name="Type" Type="string">ARRAY[0..3] OF BYTE</Single>
+                <Single Name="Default" Type="string">[0, 0, 0, 0]</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:ARRAY[0..3] OF BYTE</Single>
+              <Single Name="IndexInDevDesc" Type="long">23</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">101</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4154</Single>
+                <Single Name="EditorPositionId" Type="long">4155</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Actual IP Address of the Controller on the EtherNet bus (Mask).</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">SubnetMask</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">101</Single>
+                <Single Name="Value" Type="string">[255, 255, 255, 0]</Single>
+                <Single Name="Type" Type="string">ARRAY[0..3] OF BYTE</Single>
+                <Single Name="Default" Type="string">[255, 255, 255, 0]</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:ARRAY[0..3] OF BYTE</Single>
+              <Single Name="IndexInDevDesc" Type="long">24</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">102</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4156</Single>
+                <Single Name="EditorPositionId" Type="long">4157</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Actual IP Address of the Controller on the EtherNet bus (Gateway).</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">GatewayAddress</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">102</Single>
+                <Single Name="Value" Type="string">[0, 0, 0, 0]</Single>
+                <Single Name="Type" Type="string">ARRAY[0..3] OF BYTE</Single>
+                <Single Name="Default" Type="string">[0, 0, 0, 0]</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:ARRAY[0..3] OF BYTE</Single>
+              <Single Name="IndexInDevDesc" Type="long">25</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">103</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{4322e2a3-55e5-4e47-9fcd-b70eb1e6bfee}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4158</Single>
+                <Single Name="EditorPositionId" Type="long">4159</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Actual Bus speed of the EtherNet.</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">TransferRate</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">103</Single>
+                <Single Name="TypeName" Type="string">TransferRateType</Single>
+                <Single Name="LmEnumTypeGuid" Type="System.Guid">dec47024-9ee7-5658-b7b2-068daf9f6bbc</Single>
+                <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                  <Null Name="FilterFlags" />
+                  <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                  <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                  <Single Name="PositionId" Type="long">4158</Single>
+                  <Single Name="EditorPositionId" Type="long">4159</Single>
+                  <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                    <Single Name="Namespace" Type="string">local</Single>
+                    <Single Name="Identifier" Type="string">dummy</Single>
+                    <Single Name="Default" Type="string">Actual Bus speed of the EtherNet.</Single>
+                  </Single>
+                  <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                    <Single Name="Namespace" Type="string">local</Single>
+                    <Single Name="Identifier" Type="string">dummy</Single>
+                    <Single Name="Default" Type="string">TransferRate</Single>
+                  </Single>
+                  <Single Name="Identifier" Type="string">103</Single>
+                  <Single Name="Value" Type="string">0</Single>
+                  <Single Name="Type" Type="string">BYTE</Single>
+                  <Single Name="Default" Type="string">0</Single>
+                </Single>
+                <Array Name="Values" Type="{b955cc99-aa13-473b-b43f-7c76a865c138}">
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">TransferRateType.Auto</Single>
+                      <Single Name="Default" Type="string">Auto</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">Auto</Single>
+                    <Single Name="Value" Type="string">0</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">TransferRateType.10MBit_full</Single>
+                      <Single Name="Default" Type="string">10 MBit full</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">e10MBit_full</Single>
+                    <Single Name="Value" Type="string">1</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">TransferRateType.10MBit_half</Single>
+                      <Single Name="Default" Type="string">10 MBit half</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">e10MBit_half</Single>
+                    <Single Name="Value" Type="string">2</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">TransferRateType.100MBit_full</Single>
+                      <Single Name="Default" Type="string">100 MBit full</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">e100MBit_full</Single>
+                    <Single Name="Value" Type="string">3</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">TransferRateType.100MBit_half</Single>
+                      <Single Name="Default" Type="string">100 MBit half</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">e100MBit_half</Single>
+                    <Single Name="Value" Type="string">4</Single>
+                  </Single>
+                </Array>
+              </Single>
+              <Single Name="ParamType" Type="string">localTypes:TransferRateType</Single>
+              <Single Name="IndexInDevDesc" Type="long">26</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">104</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{4322e2a3-55e5-4e47-9fcd-b70eb1e6bfee}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4160</Single>
+                <Single Name="EditorPositionId" Type="long">4161</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Actual method this device uses for obtaining an IP address.</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">IPConfigMode</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">104</Single>
+                <Single Name="TypeName" Type="string">IPConfigModeType</Single>
+                <Single Name="LmEnumTypeGuid" Type="System.Guid">28b54b92-4460-5d31-9bfe-7c095447ba87</Single>
+                <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                  <Null Name="FilterFlags" />
+                  <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                  <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                  <Single Name="PositionId" Type="long">4160</Single>
+                  <Single Name="EditorPositionId" Type="long">4161</Single>
+                  <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                    <Single Name="Namespace" Type="string">local</Single>
+                    <Single Name="Identifier" Type="string">dummy</Single>
+                    <Single Name="Default" Type="string">Actual method this device uses for obtaining an IP address.</Single>
+                  </Single>
+                  <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                    <Single Name="Namespace" Type="string">local</Single>
+                    <Single Name="Identifier" Type="string">dummy</Single>
+                    <Single Name="Default" Type="string">IPConfigMode</Single>
+                  </Single>
+                  <Single Name="Identifier" Type="string">104</Single>
+                  <Single Name="Value" Type="string">1</Single>
+                  <Single Name="Type" Type="string">BYTE</Single>
+                  <Single Name="Default" Type="string">1</Single>
+                </Single>
+                <Array Name="Values" Type="{b955cc99-aa13-473b-b43f-7c76a865c138}">
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">IPConfigModeType.FIXED</Single>
+                      <Single Name="Default" Type="string">FIXED</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">FIXED</Single>
+                    <Single Name="Value" Type="string">0</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">IPConfigModeType.BOOTP</Single>
+                      <Single Name="Default" Type="string">BOOTP</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">BOOTP</Single>
+                    <Single Name="Value" Type="string">1</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">IPConfigModeType.DHCP</Single>
+                      <Single Name="Default" Type="string">DHCP</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">DHCP</Single>
+                    <Single Name="Value" Type="string">2</Single>
+                  </Single>
+                </Array>
+              </Single>
+              <Single Name="ParamType" Type="string">localTypes:IPConfigModeType</Single>
+              <Single Name="IndexInDevDesc" Type="long">27</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">105</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4162</Single>
+                <Single Name="EditorPositionId" Type="long">4163</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Actual Network-/Device- Name, e.g. for DHCP addressing Use case.</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">DeviceName</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">105</Single>
+                <Single Name="Value" Type="string">'my_Device'</Single>
+                <Single Name="Type" Type="string">STRING</Single>
+                <Single Name="Default" Type="string">'my_Device'</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:STRING</Single>
+              <Single Name="IndexInDevDesc" Type="long">28</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">106</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4164</Single>
+                <Single Name="EditorPositionId" Type="long">4165</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Actual activation state of WEB server</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">WebServer</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">106</Single>
+                <Single Name="Value" Type="string">true</Single>
+                <Single Name="Type" Type="string">BOOL</Single>
+                <Single Name="Default" Type="string">true</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:BOOL</Single>
+              <Single Name="IndexInDevDesc" Type="long">29</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">107</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{4322e2a3-55e5-4e47-9fcd-b70eb1e6bfee}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4166</Single>
+                <Single Name="EditorPositionId" Type="long">4167</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Actual network status.</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">NetworkStatus</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">107</Single>
+                <Single Name="TypeName" Type="string">NetworkStatusType</Single>
+                <Single Name="LmEnumTypeGuid" Type="System.Guid">2e781e3c-63f3-50e2-8a33-e2d79dcf1af5</Single>
+                <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                  <Null Name="FilterFlags" />
+                  <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                  <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                  <Single Name="PositionId" Type="long">4166</Single>
+                  <Single Name="EditorPositionId" Type="long">4167</Single>
+                  <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                    <Single Name="Namespace" Type="string">local</Single>
+                    <Single Name="Identifier" Type="string">dummy</Single>
+                    <Single Name="Default" Type="string">Actual network status.</Single>
+                  </Single>
+                  <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                    <Single Name="Namespace" Type="string">local</Single>
+                    <Single Name="Identifier" Type="string">dummy</Single>
+                    <Single Name="Default" Type="string">NetworkStatus</Single>
+                  </Single>
+                  <Single Name="Identifier" Type="string">107</Single>
+                  <Single Name="Value" Type="string">1</Single>
+                  <Single Name="Type" Type="string">BYTE</Single>
+                  <Single Name="Default" Type="string">1</Single>
+                </Single>
+                <Array Name="Values" Type="{b955cc99-aa13-473b-b43f-7c76a865c138}">
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">NetworkStatusType.WaitParameters</Single>
+                      <Single Name="Default" Type="string">Wait Parameters</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">WaitParameters</Single>
+                    <Single Name="Value" Type="string">0</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">NetworkStatusType.WaitConfiguration</Single>
+                      <Single Name="Default" Type="string">Wait Configuration</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">WaitConfiguration</Single>
+                    <Single Name="Value" Type="string">1</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">NetworkStatusType.DataExchanges</Single>
+                      <Single Name="Default" Type="string">Data Exchanges</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">DataExchanges</Single>
+                    <Single Name="Value" Type="string">2</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">NetworkStatusType.Error</Single>
+                      <Single Name="Default" Type="string">Error</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">Error</Single>
+                    <Single Name="Value" Type="string">3</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">NetworkStatusType.DuplicateIPAddress</Single>
+                      <Single Name="Default" Type="string">Duplicate IP Address</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">DuplicateIPAddress</Single>
+                    <Single Name="Value" Type="string">4</Single>
+                  </Single>
+                </Array>
+              </Single>
+              <Single Name="ParamType" Type="string">localTypes:NetworkStatusType</Single>
+              <Single Name="IndexInDevDesc" Type="long">30</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">108</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+              <Single Name="DalaElement" Type="{4322e2a3-55e5-4e47-9fcd-b70eb1e6bfee}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+                <Single Name="PositionId" Type="long">4168</Single>
+                <Single Name="EditorPositionId" Type="long">4169</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Actual module status.</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">ModuleStatus</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">108</Single>
+                <Single Name="TypeName" Type="string">ModuleStatusType</Single>
+                <Single Name="LmEnumTypeGuid" Type="System.Guid">0332862a-bddb-5135-8ec7-eb2091ab8253</Single>
+                <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                  <Null Name="FilterFlags" />
+                  <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                  <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+                  <Single Name="PositionId" Type="long">4168</Single>
+                  <Single Name="EditorPositionId" Type="long">4169</Single>
+                  <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                    <Single Name="Namespace" Type="string">local</Single>
+                    <Single Name="Identifier" Type="string">dummy</Single>
+                    <Single Name="Default" Type="string">Actual module status.</Single>
+                  </Single>
+                  <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                    <Single Name="Namespace" Type="string">local</Single>
+                    <Single Name="Identifier" Type="string">dummy</Single>
+                    <Single Name="Default" Type="string">ModuleStatus</Single>
+                  </Single>
+                  <Single Name="Identifier" Type="string">108</Single>
+                  <Single Name="Value" Type="string">1</Single>
+                  <Single Name="Type" Type="string">BYTE</Single>
+                  <Single Name="Default" Type="string">1</Single>
+                </Single>
+                <Array Name="Values" Type="{b955cc99-aa13-473b-b43f-7c76a865c138}">
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">ModuleStatusType.WaitParameters</Single>
+                      <Single Name="Default" Type="string">Wait Parameters</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">WaitParameters</Single>
+                    <Single Name="Value" Type="string">0</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">ModuleStatusType.WaitConfiguration</Single>
+                      <Single Name="Default" Type="string">Wait Configuration</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">WaitConfiguration</Single>
+                    <Single Name="Value" Type="string">1</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">ModuleStatusType.Running</Single>
+                      <Single Name="Default" Type="string">Running</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">Running</Single>
+                    <Single Name="Value" Type="string">2</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">ModuleStatusType.RecoverableError</Single>
+                      <Single Name="Default" Type="string">Recoverable Error</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">RecoverableError</Single>
+                    <Single Name="Value" Type="string">3</Single>
+                  </Single>
+                </Array>
+              </Single>
+              <Single Name="ParamType" Type="string">localTypes:ModuleStatusType</Single>
+              <Single Name="IndexInDevDesc" Type="long">31</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">109</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4170</Single>
+                <Single Name="EditorPositionId" Type="long">4171</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Actual MAC Address.</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">MACAddress</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">109</Single>
+                <Single Name="Value" Type="string">[16#0, 16#0, 16#0, 16#0, 16#0, 16#0]</Single>
+                <Single Name="Type" Type="string">ARRAY[0..5] OF BYTE</Single>
+                <Single Name="Default" Type="string">[16#0, 16#0, 16#0, 16#0, 16#0, 16#0]</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:ARRAY[0..5] OF BYTE</Single>
+              <Single Name="IndexInDevDesc" Type="long">32</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">110</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4172</Single>
+                <Single Name="EditorPositionId" Type="long">4173</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Actual Name of Network Interface</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">NetworkInterfaceName</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">110</Single>
+                <Single Name="Value" Type="string">'ether_0'</Single>
+                <Single Name="Type" Type="string">STRING</Single>
+                <Single Name="Default" Type="string">'ether_0'</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:STRING</Single>
+              <Single Name="IndexInDevDesc" Type="long">33</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">111</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{4322e2a3-55e5-4e47-9fcd-b70eb1e6bfee}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4174</Single>
+                <Single Name="EditorPositionId" Type="long">4175</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Actual configured EtherNet Protocol</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">EtherNetProtocol</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">111</Single>
+                <Single Name="TypeName" Type="string">ProtocolEnumType</Single>
+                <Single Name="LmEnumTypeGuid" Type="System.Guid">1c6f5d0a-0972-57cc-a77e-f6194567d0bf</Single>
+                <Single Name="BaseType" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                  <Null Name="FilterFlags" />
+                  <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                  <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                  <Single Name="PositionId" Type="long">4174</Single>
+                  <Single Name="EditorPositionId" Type="long">4175</Single>
+                  <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                    <Single Name="Namespace" Type="string">local</Single>
+                    <Single Name="Identifier" Type="string">dummy</Single>
+                    <Single Name="Default" Type="string">Actual configured EtherNet Protocol</Single>
+                  </Single>
+                  <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                    <Single Name="Namespace" Type="string">local</Single>
+                    <Single Name="Identifier" Type="string">dummy</Single>
+                    <Single Name="Default" Type="string">EtherNetProtocol</Single>
+                  </Single>
+                  <Single Name="Identifier" Type="string">111</Single>
+                  <Single Name="Value" Type="string">0</Single>
+                  <Single Name="Type" Type="string">BYTE</Single>
+                  <Single Name="Default" Type="string">0</Single>
+                </Single>
+                <Array Name="Values" Type="{b955cc99-aa13-473b-b43f-7c76a865c138}">
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">ProtocolEnumType.IEEE_802_3</Single>
+                      <Single Name="Default" Type="string">IEEE 802.3</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">IEEE_802_3</Single>
+                    <Single Name="Value" Type="string">0</Single>
+                  </Single>
+                  <Single Type="{b955cc99-aa13-473b-b43f-7c76a865c138}" Method="IArchivable">
+                    <Single Name="Name" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                      <Single Name="Namespace" Type="string">localStrings</Single>
+                      <Single Name="Identifier" Type="string">ProtocolEnumType.Ethernet2</Single>
+                      <Single Name="Default" Type="string">Ethernet 2</Single>
+                    </Single>
+                    <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable" />
+                    <Single Name="Identifier" Type="string">IEEE_802_4</Single>
+                    <Single Name="Value" Type="string">1</Single>
+                  </Single>
+                </Array>
+              </Single>
+              <Single Name="ParamType" Type="string">localTypes:ProtocolEnumType</Single>
+              <Single Name="IndexInDevDesc" Type="long">34</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">112</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4176</Single>
+                <Single Name="EditorPositionId" Type="long">4177</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Security configuration overloaded</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">Configuration Overloaded</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">112</Single>
+                <Single Name="Value" Type="string">false</Single>
+                <Single Name="Type" Type="string">BOOL</Single>
+                <Single Name="Default" Type="string">false</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:BOOL</Single>
+              <Single Name="IndexInDevDesc" Type="long">35</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">4096</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+              <Single Name="Download" Type="bool">False</Single>
+              <Single Name="DalaElement" Type="{87130527-d8a8-4a3f-a43d-fabaec05f356}" Method="IArchivable">
+                <Single Name="SubElements" Type="{45b6f676-61a0-4c78-a679-8c725851fa1e}" Method="IArchivable">
+                  <List2 Name="elements">
+                    <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4180</Single>
+                      <Single Name="EditorPositionId" Type="long">4181</Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">OTNullSupported</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">OTNullSupported</Single>
+                      <Single Name="Value" Type="string">FALSE</Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                      <Single Name="Default" Type="string">FALSE</Single>
+                    </Single>
+                    <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4182</Single>
+                      <Single Name="EditorPositionId" Type="long">4183</Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">OTMulticastSupported</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">OTMulticastSupported</Single>
+                      <Single Name="Value" Type="string">FALSE</Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                      <Single Name="Default" Type="string">FALSE</Single>
+                    </Single>
+                    <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4184</Single>
+                      <Single Name="EditorPositionId" Type="long">4185</Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">OTPoint2PointSupported</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">OTPoint2PointSupported</Single>
+                      <Single Name="Value" Type="string">TRUE</Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                      <Single Name="Default" Type="string">TRUE</Single>
+                    </Single>
+                    <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4186</Single>
+                      <Single Name="EditorPositionId" Type="long">4187</Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">TONullSupported</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">TONullSupported</Single>
+                      <Single Name="Value" Type="string">FALSE</Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                      <Single Name="Default" Type="string">FALSE</Single>
+                    </Single>
+                    <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4188</Single>
+                      <Single Name="EditorPositionId" Type="long">4189</Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">TOMulticastSupported</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">TOMulticastSupported</Single>
+                      <Single Name="Value" Type="string">TRUE</Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                      <Single Name="Default" Type="string">TRUE</Single>
+                    </Single>
+                    <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4190</Single>
+                      <Single Name="EditorPositionId" Type="long">4191</Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">TOPoint2PointSupported</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">TOPoint2PointSupported</Single>
+                      <Single Name="Value" Type="string">TRUE</Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                      <Single Name="Default" Type="string">TRUE</Single>
+                    </Single>
+                    <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4192</Single>
+                      <Single Name="EditorPositionId" Type="long">4193</Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">OTFixedSize</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">OTFixedSize</Single>
+                      <Single Name="Value" Type="string">TRUE</Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                      <Single Name="Default" Type="string">TRUE</Single>
+                    </Single>
+                    <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4194</Single>
+                      <Single Name="EditorPositionId" Type="long">4195</Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">OTVariableSize</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">OTVariableSize</Single>
+                      <Single Name="Value" Type="string">FALSE</Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                      <Single Name="Default" Type="string">FALSE</Single>
+                    </Single>
+                    <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4196</Single>
+                      <Single Name="EditorPositionId" Type="long">4197</Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">TOFixedSize</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">TOFixedSize</Single>
+                      <Single Name="Value" Type="string">TRUE</Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                      <Single Name="Default" Type="string">TRUE</Single>
+                    </Single>
+                    <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4198</Single>
+                      <Single Name="EditorPositionId" Type="long">4199</Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">TOVariableSize</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">TOVariableSize</Single>
+                      <Single Name="Value" Type="string">FALSE</Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                      <Single Name="Default" Type="string">FALSE</Single>
+                    </Single>
+                    <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4200</Single>
+                      <Single Name="EditorPositionId" Type="long">4201</Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">TriggerApplicationSupported</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">TriggerApplicationSupported</Single>
+                      <Single Name="Value" Type="string">FALSE</Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                      <Single Name="Default" Type="string">FALSE</Single>
+                    </Single>
+                    <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4202</Single>
+                      <Single Name="EditorPositionId" Type="long">4203</Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">TriggerCoSSupported</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">TriggerCoSSupported</Single>
+                      <Single Name="Value" Type="string">TRUE</Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                      <Single Name="Default" Type="string">TRUE</Single>
+                    </Single>
+                    <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4204</Single>
+                      <Single Name="EditorPositionId" Type="long">4205</Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">TriggerCyclicSupported</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">TriggerCyclicSupported</Single>
+                      <Single Name="Value" Type="string">TRUE</Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                      <Single Name="Default" Type="string">TRUE</Single>
+                    </Single>
+                    <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4206</Single>
+                      <Single Name="EditorPositionId" Type="long">4207</Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">TransportRedundantOwnerSupported</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">TransportRedundantOwnerSupported</Single>
+                      <Single Name="Value" Type="string">FALSE</Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                      <Single Name="Default" Type="string">FALSE</Single>
+                    </Single>
+                    <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4208</Single>
+                      <Single Name="EditorPositionId" Type="long">4209</Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">TransportListenOnlySupported</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">TransportListenOnlySupported</Single>
+                      <Single Name="Value" Type="string">FALSE</Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                      <Single Name="Default" Type="string">FALSE</Single>
+                    </Single>
+                    <Single Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                      <Null Name="FilterFlags" />
+                      <Single Name="PositionId" Type="long">4210</Single>
+                      <Single Name="EditorPositionId" Type="long">4211</Single>
+                      <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                        <Single Name="Namespace" Type="string">local</Single>
+                        <Single Name="Identifier" Type="string">dummy</Single>
+                        <Single Name="Default" Type="string">TransportInputOnlySupported</Single>
+                      </Single>
+                      <Single Name="Identifier" Type="string">TransportInputOnlySupported</Single>
+                      <Single Name="Value" Type="string">FALSE</Single>
+                      <Single Name="Type" Type="string">BOOL</Single>
+                      <Single Name="Default" Type="string">FALSE</Single>
+                    </Single>
+                  </List2>
+                </Single>
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+                <Single Name="PositionId" Type="long">4178</Single>
+                <Single Name="EditorPositionId" Type="long">4179</Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">NONE</Single>
+                  <Single Name="Default" Type="string">DeviceOptions</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">4096</Single>
+                <Single Name="TypeName" Type="string">StructDeviceOptions</Single>
+                <Single Name="LmStructTypeGuid" Type="System.Guid">57c544ed-263b-5275-a7df-9182d6297637</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">localTypes:StructDeviceOptions</Single>
+              <Single Name="IndexInDevDesc" Type="long">36</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">10000000</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4212</Single>
+                <Single Name="EditorPositionId" Type="long">4213</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">enable/disable configuration of parameter WebServer</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">WebserverVisible</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">10000000</Single>
+                <Single Name="Value" Type="string">false</Single>
+                <Single Name="Type" Type="string">BOOL</Single>
+                <Single Name="Default" Type="string">false</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:BOOL</Single>
+              <Single Name="IndexInDevDesc" Type="long">37</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">10000001</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+                <Single Name="PositionId" Type="long">4214</Single>
+                <Single Name="EditorPositionId" Type="long">4215</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">enable/disable configuration of parameter NetworkInterfaceName</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">NetworkInterfaceVisible</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">10000001</Single>
+                <Single Name="Value" Type="string">true</Single>
+                <Single Name="Type" Type="string">BOOL</Single>
+                <Single Name="Default" Type="string">true</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:BOOL</Single>
+              <Single Name="IndexInDevDesc" Type="long">38</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="Id" Type="uint">10000002</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+              <Single Name="Download" Type="bool">False</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Null Name="FilterFlags" />
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">None</Single>
+                <Single Name="PositionId" Type="long">4216</Single>
+                <Single Name="EditorPositionId" Type="long">4217</Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">enable/disable Online-Status Screen</Single>
+                </Single>
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string">local</Single>
+                  <Single Name="Identifier" Type="string">dummy</Single>
+                  <Single Name="Default" Type="string">OnlineStatusScreenEnabled</Single>
+                </Single>
+                <Single Name="Identifier" Type="string">10000002</Single>
+                <Single Name="Value" Type="string">true</Single>
+                <Single Name="Type" Type="string">BOOL</Single>
+                <Single Name="Default" Type="string">true</Single>
+              </Single>
+              <Single Name="ParamType" Type="string">std:BOOL</Single>
+              <Single Name="IndexInDevDesc" Type="long">39</Single>
+            </Single>
+          </List2>
+          <Single Name="LmGuid" Type="System.Guid">9980f56b-7def-5f68-a674-1fec2c6134d7</Single>
+          <Null Name="Sections" />
+          <Single Name="InitOnOnlineChange" Type="bool">False</Single>
+          <Single Name="AlwaysMapping" Type="bool">False</Single>
+          <Null Name="EditorName" />
+          <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+          <Single Name="CreateBitChannels" Type="bool">False</Single>
+        </Single>
+        <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+          <List Name="RequiredLibs" Type="System.Collections.ArrayList" />
+          <Null Name="RequiredTasks" />
+          <Single Name="NeedsBusCycle" Type="bool">False</Single>
+          <Single Name="BusCycleTask" Type="string"></Single>
+          <Single Name="IoApp" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="IoAppSet" Type="bool">False</Single>
+          <Array Name="PositionIds" Type="long">BxAAAAAAAAAIEAAAAAAAAAkQAAAAAAAA</Array>
+          <Single Name="UseSlowestTask" Type="bool">False</Single>
+          <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+          <Single Name="GenerateForceVariables" Type="bool">False</Single>
+          <Single Name="EnableDiagnosis" Type="bool">False</Single>
+          <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+          <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+          <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+          <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+          <Single Name="SymbolicAccessMode" Type="{866ccdec-84a7-4590-aeab-383c7bd79437}">Disabled</Single>
+          <Single Name="DeviceScanSupported" Type="bool">False</Single>
+          <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+          <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+          <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+          <Single Name="UpdateIOsInStop" Type="bool">False</Single>
+          <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">KeepCurrentValues</Single>
+          <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+          <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+          <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        </Single>
+        <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}">
+          <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+            <Single Name="Name" Type="string">se:AcceptedModule</Single>
+            <Single Name="Data" Type="string">&lt;se:AcceptedModule CountMax="1" xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;&lt;se:DeviceIdentification deviceType="88" deviceId="101a 8801" groupId="1" /&gt;&lt;!-- IOScanner --&gt;&lt;se:DeviceIdentification deviceType="88" deviceId="ModbusTCP Brick DTM" groupId="1" /&gt;&lt;!-- IOScanner DTM --&gt;&lt;/se:AcceptedModule&gt;</Single>
+          </Single>
+          <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+            <Single Name="Name" Type="string">se:AcceptedModule</Single>
+            <Single Name="Data" Type="string">&lt;se:AcceptedModule xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;&lt;se:DeviceIdentification deviceType="45117" deviceId="101a 0037" groupId="1" /&gt;&lt;!-- DHCP Server --&gt;&lt;se:DeviceIdentification deviceType="120" deviceId="0000 0002" groupId="2" /&gt;&lt;se:DeviceIdentification deviceType="115" deviceId="0000 0002" groupId="2" /&gt;&lt;!-- Modbus Slave IP --&gt;&lt;/se:AcceptedModule&gt;</Single>
+          </Single>
+        </List>
+        <Single Name="ModuleId" Type="int">-1</Single>
+        <Null Name="IoUpdateTask" />
+        <List Name="AdditionalInterfaces" Type="System.Collections.ArrayList">
+          <Single Type="string">Common.Ethernet.ModbusIOScanner</Single>
+          <Single Type="string">Common.Ethernet.ScannerManager</Single>
+        </List>
+        <List Name="Constraints" Type="System.Collections.ArrayList">
+          <Single Type="{a634937e-e915-467d-9324-96cf67e2f426}" Method="IArchivable">
+            <Single Name="devIdent" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}" Method="IArchivable">
+              <Single Name="Type" Type="int">120</Single>
+              <Single Name="Id" Type="string">0000 0002</Single>
+              <Single Name="Version" Type="string"></Single>
+              <Single Name="BaseName" Type="string">$(DeviceName)</Single>
+            </Single>
+            <Single Name="MaxNumber" Type="uint">1</Single>
+            <Single Name="CheckRecursive" Type="bool">False</Single>
+          </Single>
+          <Single Type="{a634937e-e915-467d-9324-96cf67e2f426}" Method="IArchivable">
+            <Single Name="devIdent" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}" Method="IArchivable">
+              <Single Name="Type" Type="int">115</Single>
+              <Single Name="Id" Type="string">0000 0002</Single>
+              <Single Name="Version" Type="string"></Single>
+              <Single Name="BaseName" Type="string">$(DeviceName)</Single>
+            </Single>
+            <Single Name="MaxNumber" Type="uint">1</Single>
+            <Single Name="CheckRecursive" Type="bool">False</Single>
+          </Single>
+          <Single Type="{a634937e-e915-467d-9324-96cf67e2f426}" Method="IArchivable">
+            <Single Name="devIdent" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}" Method="IArchivable">
+              <Single Name="Type" Type="int">88</Single>
+              <Single Name="Id" Type="string">0000 0003</Single>
+              <Single Name="Version" Type="string"></Single>
+              <Single Name="BaseName" Type="string">$(DeviceName)</Single>
+            </Single>
+            <Single Name="MaxNumber" Type="uint">1</Single>
+            <Single Name="CheckRecursive" Type="bool">False</Single>
+          </Single>
+          <Single Type="{a634937e-e915-467d-9324-96cf67e2f426}" Method="IArchivable">
+            <Single Name="devIdent" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}" Method="IArchivable">
+              <Single Name="Type" Type="int">45117</Single>
+              <Single Name="Id" Type="string">101a 0037</Single>
+              <Single Name="Version" Type="string"></Single>
+              <Single Name="BaseName" Type="string">$(DeviceName)</Single>
+            </Single>
+            <Single Name="MaxNumber" Type="uint">1</Single>
+            <Single Name="CheckRecursive" Type="bool">False</Single>
+          </Single>
+          <Single Type="{a634937e-e915-467d-9324-96cf67e2f426}" Method="IArchivable">
+            <Single Name="devIdent" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}" Method="IArchivable">
+              <Single Name="Type" Type="int">88</Single>
+              <Single Name="Id" Type="string">101a 8801</Single>
+              <Single Name="Version" Type="string"></Single>
+              <Single Name="BaseName" Type="string">$(DeviceName)</Single>
+            </Single>
+            <Single Name="MaxNumber" Type="uint">1</Single>
+            <Single Name="CheckRecursive" Type="bool">False</Single>
+          </Single>
+          <Single Type="{a634937e-e915-467d-9324-96cf67e2f426}" Method="IArchivable">
+            <Single Name="devIdent" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}" Method="IArchivable">
+              <Single Name="Type" Type="int">88</Single>
+              <Single Name="Id" Type="string">ModbusTCP Brick DTM</Single>
+              <Single Name="Version" Type="string"></Single>
+              <Single Name="BaseName" Type="string">$(DeviceName)</Single>
+            </Single>
+            <Single Name="MaxNumber" Type="uint">1</Single>
+            <Single Name="CheckRecursive" Type="bool">False</Single>
+          </Single>
+        </List>
+        <Single Name="hideInStatusPage" Type="bool">False</Single>
+        <Single Name="updateAllowed" Type="bool">True</Single>
+        <Single Name="fixedInputAddress" Type="string"></Single>
+        <Single Name="fixedOutputAddress" Type="string"></Single>
+        <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+        <List Name="AllowOnlyDevices" Type="System.Collections.ArrayList" />
+        <Single Name="InitialStatusFlag" Type="uint">1</Single>
+        <Single Name="UseBlobInitConst" Type="bool">False</Single>
+        <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        <Single Name="ConnectorGroup" Type="uint">0</Single>
+        <Array Name="AllowedPages" Type="string">
+          <Single Type="string">MSDEthernetPage</Single>
+        </Array>
+        <Single Name="AlwaysMapping" Type="bool">True</Single>
+        <Single Name="Client" Type="string"></Single>
+        <Single Name="MaxInputSize" Type="uint">0</Single>
+        <Single Name="MaxOutputSize" Type="uint">0</Single>
+        <Single Name="MaxInOutputSize" Type="uint">0</Single>
+        <Single Name="ClientTypeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="ClientConnectorInterface" Type="string"></Single>
+        <Single Name="ClientConnectorId" Type="int">-1</Single>
+        <Single Name="AlwaysMappingDisabled" Type="bool">True</Single>
+      </Single>
+    </List>
+  </Single>
+  <Single Name="Attributes" Type="{1fdbedd8-b518-4ebd-99df-805f2f77c071}" Method="IArchivable">
+    <Dictionary Type="System.Collections.Hashtable" Name="Attributes" />
+  </Single>
+  <Single Name="CommunicationSettings" Type="{58f2b04d-505d-4589-9fcf-0ec83491f9b2}" Method="IArchivable">
+    <Single Name="SaveLocally" Type="bool">False</Single>
+    <Single Name="CommunicationSettingFilter" Type="int">1</Single>
+    <Single Name="CommunicationSettingSorting" Type="int">0</Single>
+    <Single Name="TrackingMode" Type="int">5</Single>
+    <Single Name="GatewayGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+    <Null Name="Address" />
+    <Single Name="PromptAtLogin" Type="bool">False</Single>
+    <Single Name="SimulationMode" Type="bool">False</Single>
+    <Single Name="SecureOnlineMode" Type="bool">False</Single>
+    <Single Name="SecureOnlineModeExplicitelySet" Type="bool">False</Single>
+    <Single Name="Name" Type="string"></Single>
+    <Single Name="MonitoringIntervalMsec" Type="int">200</Single>
+    <Null Name="ScanInformation" />
+    <Single Name="IsCommunicationEncrypted" Type="bool">True</Single>
+    <Single Name="IsDefaultNameTrackingFromScanActive" Type="bool">False</Single>
+  </Single>
+  <Single Name="IoProviderBase" Type="{848f25ec-eecf-4290-8329-7f6500fd2e0f}" Method="IArchivable">
+    <Array Name="UserBaseAddress" Type="string">
+      <Null />
+      <Null />
+      <Null />
+    </Array>
+  </Single>
+  <Single Name="GuidBusCycleTask" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+  <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+    <List Name="RequiredLibs" Type="System.Collections.ArrayList" />
+    <Null Name="RequiredTasks" />
+    <Single Name="NeedsBusCycle" Type="bool">False</Single>
+    <Single Name="BusCycleTask" Type="string"></Single>
+    <Single Name="IoApp" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+    <Single Name="IoAppSet" Type="bool">False</Single>
+    <Array Name="PositionIds" Type="long">ARAAAAAAAAACEAAAAAAAAAMQAAAAAAAA</Array>
+    <Single Name="UseSlowestTask" Type="bool">False</Single>
+    <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+    <Single Name="GenerateForceVariables" Type="bool">False</Single>
+    <Single Name="EnableDiagnosis" Type="bool">False</Single>
+    <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+    <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+    <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+    <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+    <Single Name="SymbolicAccessMode" Type="{866ccdec-84a7-4590-aeab-383c7bd79437}">Disabled</Single>
+    <Single Name="DeviceScanSupported" Type="bool">False</Single>
+    <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+    <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+    <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+    <Single Name="UpdateIOsInStop" Type="bool">False</Single>
+    <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">KeepCurrentValues</Single>
+    <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+    <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+    <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+    <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+  </Single>
+  <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}">
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{1C619455-9A54-4adb-9D24-F56F802E8031}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{AFB5A7A2-B6B3-4076-9492-1FB3DA3519D0}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+    <Single Type="{dd6be685-9be1-40f4-855e-c5c0352a5200}" Method="IArchivable">
+      <Single Name="Name" Type="string">se:BuildAnalyserRules</Single>
+      <Single Name="Data" Type="string">&lt;se:BuildAnalyserRules xmlns:se="http://www.schneider-electric.com/schemas/OEMcCustom.xsd"&gt;{947A5A6F-6EC1-465D-866F-42C9E91DF075}&lt;/se:BuildAnalyserRules&gt;</Single>
+    </Single>
+  </List>
+  <Single Name="IoConfigGlobalsGuid" Type="System.Guid">c7632156-3d7f-57ae-bed8-d79f03b5247b</Single>
+  <Single Name="IoConfigGlobalsMappingGuid" Type="System.Guid">ac329bd2-c4be-5c63-bf5e-deb913670194</Single>
+  <Single Name="IoConfigVarConfigGuid" Type="System.Guid">89f36ed7-549d-5fa1-89e9-ce5d5761a9b0</Single>
+  <Single Name="IoConfigErrorPouGuid" Type="System.Guid">aff9e343-1137-5985-a64a-35e224098507</Single>
+  <Single Name="ModuleId" Type="int">-1</Single>
+  <Null Name="IoUpdateTask" />
+  <Array Name="FunctionalChildren" Type="System.Guid" />
+  <Null Name="UserManagement" />
+  <Null Name="RightsManagement" />
+  <Single Name="showParamsInDevDescOrder" Type="bool">False</Single>
+  <Single Name="fixedInputAddress" Type="string"></Single>
+  <Single Name="fixedOutputAddress" Type="string"></Single>
+  <Single Name="HostObjectGuid" Type="System.Guid">801ebf5c-dbeb-4511-9a45-2ed26e25b40f</Single>
+  <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+  <Single Name="CreateBitChannels" Type="bool">False</Single>
+  <Null Name="AdditionalStringTable" />
+  <Null Name="OnlineHelpUrl" />
+  <Single Name="InteractiveLoginMode" Type="int">-1</Single>
+  <Single Name="UseDeviceApplicationStructure" Type="bool">False</Single>
+  <Single Name="AllowSymbolicVarAccessInSyncWithIecCycle" Type="bool">False</Single>
+  <Single Name="LogicalDeviceList" Type="{ec1f8a3a-98c6-404c-883e-ce9e54b42542}" Method="IArchivable">
+    <List Name="InnerList" Type="System.Collections.ArrayList" />
+  </Single>
+  <Single Name="LogicalLanguageModelPositionId" Type="long">-1</Single>
+  <List Name="SupportedLogicalBusSystems" Type="System.Collections.ArrayList" />
+  <Single Name="MappingPossible" Type="bool">False</Single>
+  <Single Name="HidePropertiesDialog" Type="bool">False</Single>
+  <Null Name="PlaceholderResolution" />
+  <Null Name="RedirectedPlaceholderResolution" />
+</Single>
